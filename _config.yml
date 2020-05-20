@@ -1,1 +1,10 @@
 theme: jekyll-theme-minimal
+
+title : Sharon Zhang
+tagline: Site Tagline
+author :
+	  name : Sharon Zhang
+	  email : zsharonx@gmail.com
+	  github : sxzhang25
+
+markdown: kramdown
