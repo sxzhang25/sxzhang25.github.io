@@ -1,9 +1,9 @@
 title : Sharon Zhang
 tagline: Site Tagline
 author :
-	  name : Sharon Zhang
-	  email : zsharonx@gmail.com
-	  github : sxzhang25
+name : Sharon Zhang
+email : zsharonx@gmail.com
+github : sxzhang25
 
 theme: jekyll-theme-minimal
 markdown: kramdown
