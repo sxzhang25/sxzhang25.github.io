@@ -33,11 +33,11 @@ footer {
   font-size: .8em;
 }
 
-ul.posts, ul.projects { 
+ul.projects { 
   margin: 20px auto 40px; 
   font-size: 1.5em;
 }
 
-ul.posts li, ul.projects li {
+ul.projects li {
   list-style: none;
 }
