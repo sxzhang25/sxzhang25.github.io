@@ -4,5 +4,5 @@ name : Sharon Zhang
 email : zsharonx@gmail.com
 github : sxzhang25
 
-theme: jekyll-theme-minimal
 markdown: kramdown
+permalink: /projects/:year/:month/:day/:title
