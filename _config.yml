@@ -5,4 +5,4 @@ email : zsharonx@gmail.com
 github : sxzhang25
 
 markdown: kramdown
-permalink: /projects/:year/:month/:day/:title
+# permalink: /projects/:year/:month/:day/:title
