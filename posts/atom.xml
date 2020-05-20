@@ -4,23 +4,23 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Sharon's Projects</title>
-	<link href="http://sxzhang25.github.io/projects/atom.xml" rel="self"/>
-	<link href="http://sxzhang25.github.io/projects"/>
+	<title>Sharon's Posts</title>
+	<link href="http://sxzhang25.github.io/posts/atom.xml" rel="self"/>
+	<link href="http://sxzhang25.github.io/posts"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://sxzhang25.github.io/projects</id>
+	<id>http://sxzhang25.github.io/posts</id>
 	<author>
 		<name>Sharon Zhang</name>
 		<email>zsharonx@gmail.com</email>
 	</author>
 
-	{% for project in site.projects %}
+	{% for post in site.posts %}
 		<entry>
-			<title>{{ project.title }}</title>
-			<link href="http://szhang25.github.io{{ project.url }}"/>
-			<updated>{{ project.date | date_to_xmlschema }}</updated>
-			<id>http://sxzhang25.github.io{{ project.id }}</id>
-			<content type="html">{{ project.content | xml_escape }}</content>
+			<title>{{ post.title }}</title>
+			<link href="http://szhang25.github.io{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://sxzhang25.github.io{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
 
