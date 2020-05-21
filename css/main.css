@@ -101,6 +101,7 @@ header h1 {
 }
 .title a:hover{
   text-decoration: none;
+  color: red;
 }
 
 .about {
