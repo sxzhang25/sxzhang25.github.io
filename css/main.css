@@ -3,7 +3,7 @@ body {
   width: 70%;
 }
 footer ul {
-  font-family:'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
   padding: 0px;
   list-style: none;
   font-weight: bold;
@@ -25,7 +25,7 @@ h1 {
   font-weight: 700;
 }
 h1, h2, h3 {
-  font-family:'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
 }
 
 p {
@@ -40,8 +40,8 @@ footer {
   min-width: 900px;
 }
 
-ul.posts { 
-  margin: 20px auto 40px; 
+ul.posts {
+  margin: 20px auto 40px;
 }
 
 ul.posts li {
@@ -59,17 +59,17 @@ header {
   min-width: 900px;
 }
 
-nav ul { 
-  margin: 0; 
-  height: 100%; 
-  display: table; 
-  font-family:'Helvetica Neue', 'Arial', 'Sans-Serif';
+nav ul {
+  margin: 0;
+  height: 100%;
+  display: table;
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
   list-style: none;
   font-weight: bold;
 }
-nav ul li {    
-  height: 100%; 
-  vertical-align: middle; 
+nav ul li {
+  height: 100%;
+  vertical-align: middle;
   display: table-cell;
 }
 
@@ -88,18 +88,50 @@ header h1 {
   font-size: 36px;
 }
 
+.refs ol {
+  margin: 0px;
+  padding-bottom: 25px;
+  height: 100%;
+  display: block;
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-size: 16px;
+  color: #333;
+}
+
+.refs ol li {
+  padding-bottom: 10px;
+}
+
+figure {
+  padding: 20px;
+  align: center;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  min-width: 400px;
+}
+
+figcaption {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  text-decoration: italic;
+  color: #999;
+  text-align: center;
+  padding-top: 20px;
+}
+
 .title {
   float: left;
-  margin: 0; 
-  display: table; 
+  margin: 0;
+  display: table;
   width: 300px;
   padding-top: 10px;
 }
 
-.title a{
+.title a {
   color: #000;
 }
-.title a:hover{
+.title a:hover {
   text-decoration: none;
   color: red;
 }

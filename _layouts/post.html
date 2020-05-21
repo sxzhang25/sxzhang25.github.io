@@ -7,3 +7,14 @@ layout: default
 <div class="post">
   {{ content }}
 </div>
+
+{% if page.refs %}
+<div class="refs">
+  <h2>References</h2>
+  <ol>
+  {% for ref in page.refs %}
+    <li>{{ ref }}</li>
+  {% endfor %}
+  </ol>
+</div>
+{% endif %}
