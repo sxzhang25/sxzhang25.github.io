@@ -47,6 +47,7 @@ ul.posts {
 ul.posts li {
   list-style: none;
   font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-size: 20px;
 }
 
 header, nav {
