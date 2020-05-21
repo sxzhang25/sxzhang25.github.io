@@ -17,13 +17,17 @@ a {
   color: #999;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: red;
 }
 h1 {
   font-size: 3em;
 }
 h1, h2, h3 {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h2 {
+  color: red;
 }
 p {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
@@ -38,11 +42,11 @@ footer {
 
 ul.posts { 
   margin: 20px auto 40px; 
-  font-size: 1.5em;
 }
 
 ul.posts li {
   list-style: none;
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 header, nav {
@@ -58,7 +62,6 @@ nav ul {
   margin: 0; 
   height: 100%; 
   display: table; 
-  width: 100%;
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   list-style: none;
   font-weight: bold;
@@ -81,13 +84,26 @@ header nav {
 }
 
 header h1 {
-  top: 0;
-  left: 0;
+  font-size: 36px;
+}
+
+.title {
   float: left;
+  margin: 0; 
+  display: table; 
+  width: 50%;
+  padding-top: 10px;
+}
+
+.title a{
+  color: #000;
+}
+.title a:hover{
+  text-decoration: none;
 }
 
 .about {
-  height: 600px;
+  height: 300px;
   min-width: 850px;
   max-width: 1000px;
 }
@@ -96,4 +112,29 @@ header h1 {
   padding-right: 50px;
   width: 400px;
   float: left;
+}
+
+.project {
+  padding-bottom: 20px;
+  min-width: 600px;
+  max-width: 900px;
+}
+
+.project h2 a {
+  color: red;
+}
+.project h2 a:hover {
+  text-decoration: none;
+  color: #999;
+}
+.project p a:hover {
+  color: red;
+}
+
+.desc {
+  font-style: italic;
+}
+
+.meta {
+  color: #999;
 }
