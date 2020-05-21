@@ -114,19 +114,24 @@ header h1 {
   float: left;
 }
 
-.project {
+.project, .pub {
   padding-bottom: 20px;
   min-width: 600px;
   max-width: 900px;
 }
 
-.project h2 a {
+.pub h2 {
+  color: #999;
+}
+
+/* .project h2 a {
   color: red;
 }
 .project h2 a:hover {
   text-decoration: none;
   color: #999;
-}
+} */
+
 .project p a:hover {
   color: red;
 }
