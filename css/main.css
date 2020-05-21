@@ -26,9 +26,7 @@ h1 {
 h1, h2, h3 {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-h2 {
-  color: red;
-}
+
 p {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
   font-size: 1.0em;
