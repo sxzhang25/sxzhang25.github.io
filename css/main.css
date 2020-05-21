@@ -141,3 +141,32 @@ header h1 {
 .meta {
   color: #999;
 }
+
+/*** Works on common browsers ***/
+::selection {
+  background-color: red;
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: red;
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: red;
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: red;
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: red;
+  color: #fff;
+}
