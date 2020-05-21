@@ -47,7 +47,7 @@ ul.posts {
 ul.posts li {
   list-style: none;
   font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
-  font-size: 20px;
+  font-size: 24px;
 }
 
 header, nav {
@@ -86,6 +86,20 @@ header nav {
 
 header h1 {
   font-size: 36px;
+}
+
+.excerpt {
+  margin-left: 20px;
+}
+
+.excerpt, .excerpt a, .excerpt a:hover {
+  color: #333;
+}
+
+.read-more {
+  margin-left: 20px;
+  text-decoration: italic;
+  margin-bottom: 40px;
 }
 
 .refs ol {

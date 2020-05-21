@@ -8,5 +8,11 @@ title: blog
 
 {% for post in site.posts %}
 <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+<div class="excerpt">
+<p>{{ post.excerpt }}</p>
+</div>
+<div class="read-more">
+<p><a href="{{ post.url }}"><i>Read more...</i></a></p>
+</div>
 {% endfor %}
 </ul>
