@@ -29,13 +29,14 @@ h1, h2, h3 {
 
 p {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-  font-size: 1.0em;
+  font-size: 16px;
   line-height: 1.4em;
   color: #333;
 }
 footer {
   border-top: 1px solid #d5d5d5;
   font-size: .8em;
+  min-width: 900px;
 }
 
 ul.posts { 
@@ -53,7 +54,7 @@ header, nav {
 
 header {
   vertical-align: middle;
-  min-width: 800px;
+  min-width: 900px;
 }
 
 nav ul { 
@@ -101,14 +102,13 @@ header h1 {
 }
 
 .about {
-  height: 400px;
-  min-width: 850px;
-  max-width: 1000px;
+  height: 500px;
+  min-width: 900px;
 }
 
 .about img {
   padding-right: 50px;
-  width: 400px;
+  width: 500px;
   float: left;
 }
 
