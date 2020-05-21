@@ -89,7 +89,7 @@ header h1 {
   float: left;
   margin: 0; 
   display: table; 
-  width: 50%;
+  width: 300px;
   padding-top: 10px;
 }
 
@@ -140,6 +140,11 @@ header h1 {
 
 .meta {
   color: #999;
+}
+
+.post {
+  min-width: 800px;
+  max-width: 1000px;
 }
 
 /*** Works on common browsers ***/
