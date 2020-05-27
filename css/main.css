@@ -131,6 +131,20 @@ header h1 {
   padding-bottom: 10px;
 }
 
+.refs ol {
+  counter-reset: list;
+}
+.refs ol > li {
+  list-style: none;
+  position: relative;
+}
+.refs ol > li:before {
+  counter-increment: list;
+  content: counter(list) ". ";
+  position: absolute;
+  left: -1.4em;
+}
+
 figure {
   padding: 20px;
   align: center;
