@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "the weekly paper: in defense of nearest neighbors"
+title: "in defense of nearest neighbors"
 date: 2020-05-21
 refs:
   - >
