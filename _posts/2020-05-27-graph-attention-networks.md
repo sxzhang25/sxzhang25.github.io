@@ -50,6 +50,11 @@ Despite being more technical in background than some other papers I've read, the
 
 Originally, I planned on reading more papers related to object recognition and few-shot recognition this week--GATs came up only because they were an unfamiliar term in a paper on one-shot recognition using image segmentation [1]. But in the process of working through [2], I realized that the space of graphical models is actually way deeper than I thought, and I sort of want to explore it more in depth. So, in the coming weeks I'm going to shift focus a little and dive more into other graphical models and their applications.
 
+<h3>updates</h3>
+<ul>
+  <li>5/28/2020: attended a tutorial session on non-local operators, of which a specific instance are self-attention mechanisms. A neat little coincidence that definitely made me appreciate this a little more.</li>
+</ul>
+
 <div class="footnotes">
 <hr align="left" size="1">
 <section id="footnote1"><sup>1</sup>I wasn't taught from the linked slides, but I found them to be a nice quick reference and refresher. Sometimes slides can be sparse and unhelpful without the lecturer, but these were pretty thorough.</section>
