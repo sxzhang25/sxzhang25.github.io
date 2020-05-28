@@ -20,6 +20,7 @@ a:hover {
   text-decoration: none;
   color: red;
 }
+
 h1 {
   font-size: 3em;
   font-weight: 700;
@@ -143,6 +144,24 @@ header h1 {
   content: counter(list) ". ";
   position: absolute;
   left: -1.4em;
+}
+
+.footnotes {
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-size: 12px;
+  color: #333;
+  padding-top: 10px;
+}
+
+.footnotes hr {
+  width: 100px;
+  background-color: #000;
+  border-color: transparent;
+}
+
+hr {
+  background-color: #000;
+  border-color: transparent;
 }
 
 figure {
