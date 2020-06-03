@@ -46,7 +46,7 @@ It can be easy for technologists and computer scientists to separate themselves 
 </ul>
 
 <br>
-<a href="http://www.sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-2">[Go back to part 1]</a>
+<a href="https://sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-1">[Go back to part 1]</a>
 
 
 <div class="footnotes">
