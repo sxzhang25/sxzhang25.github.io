@@ -10,7 +10,7 @@ refs:
     
 ---
 
-Continuing on the theme of my <a href="http://www.sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-1">previous blog post,</a> I want to turn towards the topic of race and technology, particularly in computer vision. Computer vision and artificial intelligence (AI) have an extremely imperfect relationship with race, from the misuse of facial recognition technology to the racial misclassifications by neural networks on Black faces. This technology is still relatively young--it is imperative that we fix these issues early on in the development and continued research of artificial intelligence and computer vision.
+Continuing on the theme of my <a href="https://sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-1">previous blog post,</a> I want to turn towards the topic of race and technology, particularly in computer vision. Computer vision and artificial intelligence (AI) have an extremely imperfect relationship with race, from the misuse of facial recognition technology to the racial misclassifications by neural networks on Black faces. This technology is still relatively young--it is imperative that we fix these issues early on in the development and continued research of artificial intelligence and computer vision.
 
 <!--excerpt-->
 

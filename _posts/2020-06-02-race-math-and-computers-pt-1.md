@@ -44,7 +44,7 @@ Though my sample size is small, in comparing my Black peers' experiences with my
 </ul>
 
 <br>
-<a href="http://www.sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-2">[Continue reading part 2]</a>
+<a href="https://sxzhang25.github.io/blog/2020/06/02/race-math-and-computers-pt-2">[Continue reading part 2]</a>
 
 
 <div class="footnotes">
