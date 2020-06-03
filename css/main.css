@@ -159,6 +159,27 @@ header h1 {
   border-color: transparent;
 }
 
+.pagination a, .pagination span {
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 20px;
+  }
+
+.pagination a:hover {
+  color: red;
+ }
+
+.pagination {
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  font-size: 20px;
+  color: red;
+  text-align: center;
+ }
+
 hr {
   background-color: #000;
   border-color: transparent;

@@ -4,6 +4,13 @@ name : Sharon Zhang
 email : zsharonx@gmail.com
 github : sxzhang25
 
+plugins:
+  - jekyll-paginate
+
 markdown: kramdown
+
+paginate: 3
+paginate_path: "/blog/page:num/"
+
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: "<!--excerpt-->"
