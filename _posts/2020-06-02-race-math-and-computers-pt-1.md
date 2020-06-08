@@ -38,7 +38,7 @@ Though my sample size is small, in comparing my Black peers' experiences with my
 
 <h3>a few places where I started</h3>
 <ul>
-  <li><a href="https://www.papermag.com/where-to-donate-protests-minneapolis-2646128317.html?rebelltitem=17#rebelltitem17">How to support BLM rotesters</a></li>
+  <li><a href="https://www.papermag.com/where-to-donate-protests-minneapolis-2646128317.html?rebelltitem=17#rebelltitem17">How to support BLM protesters</a></li>
   <li><a href="https://reformedmargins.com/asian-american-complicity-in-racism/?fbclid=IwAR086F7xaq7ca65lAqRuTC7-dmpK6ENw6pFd1TjCxstz-05Ld6qcojRrEYk">Asian American complicity in racism</a></li>
   <li><a href="https://lettersforblacklives.com/">Letters for Black Lives</a></li>
   <li><a href="https://www.cnn.com/2017/04/28/us/la-riots-korean-americans/index.html">The 1992 LA riots</a></li>
