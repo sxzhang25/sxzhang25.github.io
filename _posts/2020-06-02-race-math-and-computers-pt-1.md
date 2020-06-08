@@ -36,10 +36,10 @@ The other student was a sophomore who I tutored in MAT 215 Honors Single Variabl
 
 Though my sample size is small, in comparing my Black peers' experiences with my own I can sense that there is a difference in how they are welcomed by the department. While I also occasionally feel inadequate and discouraged by the math department, I have still been able to find numerous reasons to stay. Perhaps there are other pressures in my Asian identity that prevent me from having the courage to leave, but ultimately I attribute my persistence to the friends I've made in the math community, many of who look like me and have similar backgrounds as me. In terms of my ethnicity, there's no reason to "prove" that I belong, which is a phrase I've heard and read in a lot of stories about Black racial tokenization. To put it bluntly, the math community can do better in so many ways. Diversity of both race and gender has long been a problem in math, and there is absolutely no reason why these problems should continue. I myself have continued to buy into some of the stereotypes that perpetuate this inequality, and distancing myself from the math department this past year has given me time and space to address those biases. I definitely don't know everything about the origins and causes of these disparaties, but I think I can make a much better effort at doing so. Next year I will be a senior, and I want to use my remaining time in Princeton to get more involved in the math department's outreach to underclassmen.
 
-<h3>a few places where I started</h3>
+<h3>a few resources</h3>
 <ul>
   <li><a href="https://www.papermag.com/where-to-donate-protests-minneapolis-2646128317.html?rebelltitem=17#rebelltitem17">How to support BLM protesters</a></li>
-  <li><a href="https://reformedmargins.com/asian-american-complicity-in-racism/?fbclid=IwAR086F7xaq7ca65lAqRuTC7-dmpK6ENw6pFd1TjCxstz-05Ld6qcojRrEYk">Asian American complicity in racism</a></li>
+  <li><a href="https://reformedmargins.com/asian-american-complicity-in-racism/?fbclid=IwAR086F7xaq7ca65lAqRuTC7-dmpK6ENw6pFd1TjCxstz-05Ld6qcojRrEYk">Asian Americans and complicity in racism</a></li>
   <li><a href="https://lettersforblacklives.com/">Letters for Black Lives</a></li>
   <li><a href="https://www.cnn.com/2017/04/28/us/la-riots-korean-americans/index.html">The 1992 LA riots</a></li>
   <li><a href="https://www.npr.org/sections/codeswitch/2017/04/19/524571669/model-minority-myth-again-used-as-a-racial-wedge-between-asians-and-blacks">The model minority myth</a></li>
