@@ -33,7 +33,7 @@ Very quickly, I learned that I knew nothing that I needed to know for my project
 Fortunately, my host was extremely understanding and accommodating, and told me about his own struggles when he first joined (even though that was over eight years ago). He pointed me to a lot of great books to read up on, and took the time to walk me through unfamiliar concepts. The rest of the team was also extremely welcoming, and while I am by far the youngest of the group, I began to understand what it meant to be treated as an adult rather than a student.
 
 <h3>summary</h3>
-I know this wasn't a very intelligable or organized post. But I wanted to get some thoughts and feelings down at these moments of confusion. My biggest takeaways from the past two weeks have been:
+I know this wasn't a very intelligable or organized post. But I wanted to get some thoughts and feelings down at the height of my confusion. My biggest takeaways from the past two weeks have been:
 
 <ol>
 <li><b>Ask questions.</b> This is obvious, everyone tells you this. But it's a lot harder when you actually begin working. Anytime I hit a problem, I would go through the entire mental process of asking myself: <i>Did I put in enough effort trying to find the solution on my own yet? Would it be annoying for me to ping my manager right now? Have I already asked too many questions today? Did he already discuss this with me earlier?</i> In the end, it's usually safer to ask anyway.</li>
