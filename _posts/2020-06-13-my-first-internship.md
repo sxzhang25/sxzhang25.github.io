@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "my first internship"
-date: 2020-06-12
+date: 2020-06-13
 ---
 
 I just finished week two of my first internship. Between working remotely with a three-hour time difference from the rest of my team, receiving equipment nearly a week late, and dealing with the pandemic and social unrest and all the other things happening in this election year, it's been quite an experience. 
@@ -24,7 +24,7 @@ I was so excited throughout all of winter for the summer to come. I spent weeks 
 On June 1st, I officially began work. Everything got off to a very slow start--the sudden transition to a virtual internship model for 4,000+ interns required a lot of last-minute logistics, and my onboarding process was affected by multiple delays. Consequently, I ended up having my first <i>real</i> day of work on the Friday of that first week. I remember being so overwhelmed that day, between trying to set up my remote workstation, running into all sorts of remote connection problems, having my first meeting with my manager, finishing a week's worth of onboarding in a day, and exploring the vast virtual expanse of online Google.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-06-12-fig1.JPG" alt="my home office" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/blob/master/imgs/2020-06-13-fig1.JPG" alt="my home office" style="width:100%">
   <figcaption>Figure 1. My WFH setup. I've never worked with dual screens before this experience.</figcaption>
 </figure>
 
