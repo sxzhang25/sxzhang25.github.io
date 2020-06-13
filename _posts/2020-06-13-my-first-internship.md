@@ -42,7 +42,7 @@ I know this wasn't a very intelligable or organized post. But I wanted to get so
 
 <li><b>Learing how to learn is still important.</b> Most of my first two weeks have been spent with reading code, reading books, and writing toy code. Even learning how to navigate the environment of a big company presents its own learning curve.</li>
 
-<li><b>People have kids.</b> This is probably the best part of WFH. It doesn't matter how old someone is, if they have a kid in the video chat, that kid is less than ten. If anything makes up for the dehumanization of social interaction that online meetings create, single-digit age children have the uncanny ability to make up for that.</li>
+<li><b>People have kids.</b> This is probably the best part of WFH. It doesn't matter how old someone is, if they have a kid in the video chat, that kid is less than ten. If anything makes up for the dehumanization of social interaction that online meetings create, it's the unexpected interruption of a single-digit age child (or multiple children!).</li>
 
 <li><b>Keep a personal log.</b> I typically keep a weekly running checklist of tasks I want to accomplish, and also a daily log of questions I have, action items I've finished, and meetings I've attended. On the Monday of each new week, I create a new document. Keeping track of what I did every day helps combat the unsettling feeling that I just sit at my desk for eight hours a day and accomplish nothing. I've also heard that it helps with internal evaluations at the end of the internship.</li>
 </ol>
