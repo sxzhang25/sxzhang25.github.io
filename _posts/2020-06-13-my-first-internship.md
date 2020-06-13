@@ -47,7 +47,7 @@ I know this wasn't a very intelligable or organized post. But I wanted to get so
 <li><b>Keep a personal log.</b> I typically keep a weekly running checklist of tasks I want to accomplish, and also a daily log of questions I have, action items I've finished, and meetings I've attended. On the Monday of each new week, I create a new document. Keeping track of what I did every day helps combat the unsettling feeling that I just sit at my desk for eight hours a day and accomplish nothing. I've also heard that it helps with internal evaluations at the end of the internship.</li>
 </ol>
 
-Next week I'll be moving out of the prep stage and into the ideation stage of my project. I'll be learning about API design practices and meetign with some employees outside of my immediate team. Hopefully, I'll also have some more downtime to pick back up on reading weekly papers again, and also begin Dr. Ruha Benjamin's book.
+Next week I'll be moving out of the prep stage and into the ideation stage of my project. I'll be learning about API design practices and meeting with some employees outside of my immediate team. Hopefully, I'll also have some more downtime to pick back up on reading weekly papers again, and also begin Dr. Ruha Benjamin's book.
 
 <div class="footnotes">
 <hr align="left" size="1">
