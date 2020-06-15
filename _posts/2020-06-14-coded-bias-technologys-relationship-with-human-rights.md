@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title:
   - >
     <i>coded bias</i>: technology's relationship with human rights
 date: 2020-06-15
@@ -25,7 +25,7 @@ We also meet many ordinary people who have been affected by the introduction of 
 
 In the earlier portion of the film, we are given a brief overview of <a href="http://sitn.hms.harvard.edu/flash/2017/history-artificial-intelligence/">the origins of artificial intelligence,</a> a story that I feel is not often told in modern STEM curriculum. Basically, AI was started at a Dartmouth conference in 1956 by a group of mathematicians. This might seem like an insignificant bit of trivia, but the film highlights the fact that the people at this conference essentially "got to decide what the field was," and consequently define what the "intelligence" part of "artificial intelligence" meant. They settled on having a machine be able to beat a human in games, which is why strategic games such as Tic-Tac-Toe, chess, and Go have often taken center-stage in the media stories about AI. The definition of intelligence was thus created by a small, homogeneous group of people and continues to be defined by a similar group of people--namely, the white male CEOs of the largest tech companies in the world.
 
-This definition of intelligence in AI has largely persisted. Only very recently has the introduction of ethics into AI began to question the notion that in order to be smart, an AI should be able to navigate complex, logical situations which are usually very black and white. One of the main reasons why I don't hesitate to recommend this documentary is that it directly questions how we measure the "success" of these machine learning algorithms built into the core framework of AI systems. At the very end of the documentary, we are brought back to this definition when Zeynep Tufekci says, 
+This definition of intelligence in AI has largely persisted. Only very recently has the introduction of ethics into AI began to question the notion that in order to be smart, an AI should be able to navigate complex, logical situations which are usually very black and white. One of the main reasons why I don't hesitate to recommend this documentary is that it directly questions how we measure the "success" of these machine learning algorithms built into the core framework of AI systems. At the very end of the documentary, we are brought back to this definition when Zeynep Tufekci says,
 
 <blockquote>"Being fully efficient, always doing what you're told, always doing what you're progammed, is not always the most human thing. Sometime's it's disobeying, sometimes it's saying 'no, I'm not gonna do this.' And if you automate everything, so it always does what it's supposed to do, sometimes that can lead to very inhuman things."</blockquote>
 
@@ -88,6 +88,11 @@ There are a <i>lot</i> of resources mentioned in the documentary, so I thought I
 
 There are also some papers that I've left to the References section below. I know it's a lot, and I definitely haven't read all of the books and articles listed, but I think having too many resources beats having too little resources by far. I want to keep track of these things, even if it's just for myself.
 
+<h3>updates</h3>
+<ul>
+<li>6/15/2020: I just got recommended <a href="https://www.youtube.com/watch?v=jZjmlJPJgug">this John Oliver video</a> on Youtube, which happened to be uploaded 10 hours ago (as of this update). Very topical.</li>
+</ul>
+
 
 <div class="footnotes">
 <hr align="left" size="1">
@@ -97,4 +102,3 @@ There are also some papers that I've left to the References section below. I kno
 
 <section id="footnote3"><sup>3</sup>Apologies for the lack of diversity in resources here--I usually listen to The New York Times' 'The Daily' and NPR's 'Throughline' and these are the only episodes I really remember from both podcasts which touch specifically on this issue.</section>
 </div>
-
