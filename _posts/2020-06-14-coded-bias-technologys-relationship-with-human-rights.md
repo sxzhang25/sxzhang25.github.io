@@ -90,7 +90,7 @@ There are also some papers that I've left to the References section below. I kno
 
 <h3>updates</h3>
 <ul>
-<li>6/15/2020: I just got recommended <a href="https://www.youtube.com/watch?v=jZjmlJPJgug">this John Oliver video</a> on Youtube, which happened to be uploaded 10 hours ago (as of this update). Very topical.</li>
+<li>6/15/2020: I just got recommended <a href="https://www.youtube.com/watch?v=jZjmlJPJgug">this John Oliver video</a> on Youtube, which happened to be uploaded 10 hours ago (as of this update). Quite the coincidence.</li>
 </ul>
 
 
