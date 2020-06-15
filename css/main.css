@@ -29,6 +29,15 @@ h1, h2, h3 {
   font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
 }
 
+blockquote {
+  font-size: 20px;
+  font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
+  line-height: 28px;
+  text-indent: -0.45em;
+  text-decoration: italic;
+  color: red;
+}
+
 p, ol, ol li, ul, ul li {
   font-family: 'Helvetica Neue', 'Arial', 'Sans-Serif';
   font-size: 16px;
