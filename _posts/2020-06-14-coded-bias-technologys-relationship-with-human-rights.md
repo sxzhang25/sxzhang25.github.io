@@ -59,7 +59,7 @@ In addition to these moments, I also want to highlight how much I admire Joy Buo
 
 <h3>moving forward</h3>
 
-There are a <i>lot</i> of resources mentioned in the documentary, so I thought I would attempt to compile as many of them as I could. I also pulled a few additional ones collected by my friend Dora, who has read way more about this than I have. I've mentioned some of these links in previous posts, but it doesn't hurt to revisit them.
+There are a <i>lot</i> of resources mentioned in the documentary, so I thought I would attempt to compile as many of them as I could. I also pulled some additional ones collected by my friend Dora, who has read way more about this than I have. I've mentioned some of these links in previous posts, but it doesn't hurt to revisit them.
 
 <b>organizations</b>
 <ul>
@@ -77,6 +77,17 @@ There are a <i>lot</i> of resources mentioned in the documentary, so I thought I
 <li><a href="https://amywebb.io/books"><i>The Big Nine</i></a> by Amy Webb</li>
 <li><a href="https://www.ruhabenjamin.com/race-after-technology"><i>Race After Technology</i></a> by Ruha Benjamin</li>
 <li><a href="https://virginia-eubanks.com/books/"><i>Automating Inequality</i></a> by Virginia Eubanks</li>
+<li><a href="https://fairmlbook.org/"><i>Fairness and Machine Learning</i></a> by Solon Barocas, Moritz Hardt, and Arvind Narayanan (incomplete draft)</li>
+<li><a href="https://wwnorton.com/books/Technically-Wrong/"><i>Technically Wrong</i></a> by Sara Wachter-Boettcher</li>
+<li><a href="https://press.princeton.edu/books/hardcover/9780691182070/hacking-diversity"><i>Hacking Diversity</i></a> by Christina Dunbar-Hester</li>
+<li><a href="https://www.schneier.com/books/data_and_goliath/"><i>Data and Goliath</i></a> by Bruce Schneier</li>
+</ul>
+
+<b>media+</b>
+<ul>
+<li><a href="https://georgetownlawtechreview.org/">Georgetown Law Technology Review</a></li>
+<li><a href="https://www.technologyreview.com/">MIT Technology Review</a></li>
+<li><a href="https://www.nytimes.com/series/new-york-times-privacy-project"><i>The New York Times</i> Privacy Project</a></li>
 </ul>
 
 <b>podcasts</b><a href="#footenote3"><sup>3</sup></a>
@@ -84,6 +95,11 @@ There are a <i>lot</i> of resources mentioned in the documentary, so I thought I
 <li><a href="https://www.nytimes.com/2020/02/10/podcasts/the-daily/facial-recognition-surveillance.html">The Daily: The End of Privacy as We Know It?</a></li>
 <li><a href="https://www.nytimes.com/2019/05/06/podcasts/the-daily/china-surveillance-uighurs.html?action=click&module=RelatedLinks&pgtype=Article">The Daily: The Chinese Surveillance State, Part 1</a></li>
 <li><a href="https://www.nytimes.com/2019/05/07/podcasts/the-daily/china-uighurs-internment-camps-surveillance.html?action=click&module=RelatedLinks&pgtype=Article">The Daily: The Chinese Surveillance State, Part 2</a></li>
+</ul>
+
+<b>other</b>
+<ul>
+<li><a href="https://facctconference.org/">ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT)</a></li>
 </ul>
 
 There are also some papers that I've left to the References section below. I know it's a lot, and I definitely haven't read all of the books and articles listed, but I think having too many resources beats having too little resources by far. I want to keep track of these things, even if it's just for myself.
