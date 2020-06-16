@@ -117,7 +117,7 @@ There are also some papers that I've left to the References section below. I kno
 <hr align="left" size="1">
 <section id="footnote1"><sup>1</sup>I would just like to mention how excited I was seeing both Buolamwini and AOC in one room. It was so inspiring seeing the conversation being helmed and driven by two young women of color, and I want to remember those clips forever.</section>
 
-<section id="footnote2"><sup>2</sup>I also want to point out a really brief moment in the film when Buolamwini is having a discussion on stage with a group of women, one of whom is Janna Levin, an astrophysicist at Barnard College. I first discovered Levin in high school, when I read her piece <a href="https://www.brainpickings.org/2016/08/16/life-on-a-mobius-janna-levin-moth/">"Life on a M&ouml;bius Strip,"</a> in which she relates her work in astrophysics to her own persona life. It's an <i>amazing</i> read.</section>
+<section id="footnote2"><sup>2</sup>I also want to point out a really brief moment in the film when Buolamwini is having a discussion on stage with a group of women, one of whom is Janna Levin, an astrophysicist at Barnard College. I first found out about Levin in high school, when I read her piece <a href="https://www.brainpickings.org/2016/08/16/life-on-a-mobius-janna-levin-moth/">"Life on a M&ouml;bius Strip,"</a> in which she relates her work in astrophysics to her own personal life. It's an <i>amazing</i> read.</section>
 
 <section id="footnote3"><sup>3</sup>Apologies for the lack of diversity in resources here--I usually listen to The New York Times' 'The Daily' and NPR's 'Throughline' and these are the only episodes I really remember from both podcasts which touch specifically on this issue.</section>
 </div>
