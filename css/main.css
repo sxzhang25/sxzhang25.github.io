@@ -45,17 +45,10 @@ blockquote {
   color: #F05232;
 }
 
-p, ol, ol li {
+p, ol, ol li, ul, ul li {
   font-family: 'Rubik', 'Arial', 'Sans-Serif';
   font-size: 16px;
   line-height: 1.6em;
-  color: #45413A;
-}
-
-ul, ul li {
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
-  font-size: 16px;
-  line-height: 1.4em;
   color: #45413A;
 }
 
@@ -110,6 +103,7 @@ nav ul li {
   height: 100%;
   vertical-align: middle;
   display: table-cell;
+  font-family: 'Inter', 'Arial', 'Sans-Serif';
 }
 
 nav li {
