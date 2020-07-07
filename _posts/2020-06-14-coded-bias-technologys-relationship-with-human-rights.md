@@ -93,7 +93,7 @@ There are a <i>lot</i> of resources mentioned in the documentary, so I thought I
 <li><a href="https://freedom-to-tinker.com/">Freedom to Tinker</a></li>
 </ul>
 
-<b>podcasts</b><a href="#footenote3"><sup>3</sup></a>
+<b>podcasts</b><a href="#footnote3"><sup>3</sup></a>
 <ul>
 <li><a href="https://www.nytimes.com/2020/02/10/podcasts/the-daily/facial-recognition-surveillance.html">The Daily: The End of Privacy as We Know It?</a></li>
 <li><a href="https://www.nytimes.com/2019/05/06/podcasts/the-daily/china-surveillance-uighurs.html?action=click&module=RelatedLinks&pgtype=Article">The Daily: The Chinese Surveillance State, Part 1</a></li>
