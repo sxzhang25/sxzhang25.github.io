@@ -37,15 +37,6 @@ h1, h2, h3 {
   color: #F05232;
 }
 
-/* blockquote {
-  font-size: 24px;
-  font-family: 'EB Garamond', 'Times New Roman', 'Serif';
-  line-height: 36px;
-  text-indent: -0.45em;
-  text-decoration: italic;
-  color: #F05232;
-} */
-
 blockquote {
   border-left: 8px solid #F05232;
   margin-left: 1.5em 10px;
