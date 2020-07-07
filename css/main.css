@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
 
 body {
   margin: 60px auto;
@@ -36,13 +37,38 @@ h1, h2, h3 {
   color: #F05232;
 }
 
-blockquote {
-  font-size: 20px;
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
-  line-height: 28px;
+/* blockquote {
+  font-size: 24px;
+  font-family: 'EB Garamond', 'Times New Roman', 'Serif';
+  line-height: 36px;
   text-indent: -0.45em;
   text-decoration: italic;
   color: #F05232;
+} */
+
+blockquote {
+  border-left: 8px solid #F05232;
+  margin-left: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-size: 24px;
+  font-family: 'EB Garamond', 'Times New Roman', 'Serif';
+  line-height: 36px;
+  text-indent: -0.45em;
+  text-decoration: italic;
+  color: #F05232;
+  padding: 28px;
+}
+
+blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 p, ol, ol li, ul, ul li {
