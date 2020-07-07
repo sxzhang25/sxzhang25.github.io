@@ -3,7 +3,7 @@
 body {
   margin: 60px auto;
   width: 70%;
-  background-color: #F5ECD9;
+  background-color: #EDF3F3;
 }
 footer ul {
   font-family: 'Inter', 'Arial', 'Sans-Serif';
@@ -16,11 +16,11 @@ footer ul li {
   margin-right: 20px;
 }
 footer a {
-  color: #D8CCB3;
+  color: #C2CECE;
 }
 a {
   text-decoration: none;
-  color: #9B8C7A;
+  color: #86999B;
 }
 a:hover {
   text-decoration: none;
@@ -74,7 +74,7 @@ ol > li:before {
 }
 
 footer {
-  border-top: 1px solid #D8CCB3;
+  border-top: 1px solid #C2CECE;
   font-size: .8em;
   min-width: 900px;
 }
@@ -185,7 +185,7 @@ header h1 {
 .pagination a, .pagination span {
   font-family: 'Inter', 'Arial', 'Sans-Serif';
   font-size: 20px;
-  color: #45413A;
+  color: #C2CECE;
   text-decoration: none;
   display: inline-block;
   padding: 20px;
@@ -260,7 +260,7 @@ figcaption {
 }
 
 .pub h2 {
-  color: #9B8C7A;
+  color: #86999B;
 }
 
 .project {
@@ -313,7 +313,7 @@ figcaption {
 }
 
 .meta {
-  color: #9B8C7A;
+  color: #86999B;
   font-size: 20px;
 }
 
