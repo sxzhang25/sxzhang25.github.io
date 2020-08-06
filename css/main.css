@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto Sans JP:ital@0;1&family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 body {
   margin: 60px auto;
@@ -63,7 +64,7 @@ blockquote p {
 }
 
 p, ol, ol li, ul, ul li {
-  font-family: 'Rubik', 'Arial', 'Sans-Serif';
+  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
   font-size: 16px;
   line-height: 1.6em;
   color: #45413A;
@@ -181,7 +182,7 @@ header h1 {
 }
 
 .footnotes {
-  font-family: 'Rubik', 'Arial', 'Sans-Serif';
+  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
   font-size: 12px;
   color: #45413A;
   padding-top: 10px;
@@ -230,7 +231,7 @@ figure {
 
 figcaption {
   font-size: 14px;
-  font-family: 'Rubik', 'Arial', 'Sans-Serif';
+  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
   text-decoration: italic;
   color: #45413A;
   text-align: left;
