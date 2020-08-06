@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto Sans JP:ital@0;1&family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
   margin: 60px auto;
@@ -8,7 +8,7 @@ body {
   background-color: #F5ECD9;
 }
 footer ul {
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   padding: 0px;
   list-style: none;
   font-weight: bold;
@@ -34,7 +34,7 @@ h1 {
   font-weight: 700;
 }
 h1, h2, h3 {
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   color: #F05232;
 }
 
@@ -64,7 +64,7 @@ blockquote p {
 }
 
 p, ol, ol li, ul, ul li {
-  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
+  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   line-height: 1.6em;
   color: #45413A;
@@ -96,7 +96,7 @@ ul.posts {
 
 ul.posts li {
   list-style: none;
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 24px;
 }
 
@@ -113,7 +113,7 @@ nav ul {
   margin: 0;
   height: 100%;
   display: table;
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   list-style: none;
   font-weight: bold;
 }
@@ -121,7 +121,7 @@ nav ul li {
   height: 100%;
   vertical-align: middle;
   display: table-cell;
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
 }
 
 nav li {
@@ -158,7 +158,7 @@ header h1 {
   padding-bottom: 25px;
   height: 100%;
   display: block;
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   color: #45413A;
 }
@@ -182,7 +182,7 @@ header h1 {
 }
 
 .footnotes {
-  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
+  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
   color: #45413A;
   padding-top: 10px;
@@ -195,7 +195,7 @@ header h1 {
 }
 
 .pagination a, .pagination span {
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 20px;
   color: #D8CCB3;
   text-decoration: none;
@@ -209,7 +209,7 @@ header h1 {
  }
 
 .pagination {
-  font-family: 'Inter', 'Arial', 'Sans-Serif';
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 20px;
   color: #F05232;
   text-align: center;
@@ -231,7 +231,7 @@ figure {
 
 figcaption {
   font-size: 14px;
-  font-family: 'Noto Sans JP', 'Arial', 'Sans-Serif';
+  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   text-decoration: italic;
   color: #45413A;
   text-align: left;
