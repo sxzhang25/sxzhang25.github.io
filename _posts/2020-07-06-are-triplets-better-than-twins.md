@@ -33,6 +33,6 @@ I also want to do some experiments with transferring the knowledge that the resp
 
 <h3>where I still need to improve</h3>
 
-I've been doing most of my code in Keras in a function-centric setup as opposed to an object oriented approach. Given the mixing test that I want to perform on the two components in each network, I'm probably going to switch over to an object oriented organization of my code in the next iteration of this experiment. There's also some over-fitting issues that I need to deal with as well, but I'll be sure to update this when I get some nice visuals.
+I've been doing most of my code in Keras in a function-centric setup as opposed to an object oriented approach. Given the mixing test that I want to perform on the two components in each network, I'm probably going to switch over to an object oriented organization of my code in the next iteration of this experiment. There's also some over-fitting issues that I need to deal with as well, but I'll be sure to update this when I get some nice visuals. I guess what I'm saying is that my answer to the title of this blog post is: I don't know (for now).
 
 In the meantime, I've also been reading a <i>lot</i> of cool computational photography and creative technology papers, and I definitely want to dig into a few of those more as well. My internship has also been taking some exciting turns, and I've been enjoying work immensely. More to come!
