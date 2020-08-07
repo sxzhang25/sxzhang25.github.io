@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "constructing depth in 3d photos"
-date: 2020-08-06
+date: 2020-08-12
 refs:
   - >
     Shih, Meng-Li, et al. "3D Photography using Context-aware Layered Depth Inpainting." <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.</i> 2020.
