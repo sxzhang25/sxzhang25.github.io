@@ -6,9 +6,9 @@ refs:
   - >
     Shih, Meng-Li, et al. "3D Photography using Context-aware Layered Depth Inpainting." <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition.</i> 2020.
   - >
-    Shade, Jonathan, et al. "Layered depth images." <i>Proceedings of the 25th annual conference on Computer graphics and interactive techniques.</i> 1998.
+    Shade, Jonathan, et al. "Layered depth images." <i>Proceedings of the 25th annual Conference on Computer Graphics and Interactive Techniques.</i> 1998.
   - >
-    Xiong, Wei, et al. "Foreground-aware image inpainting." <i>Proceedings of the IEEE conference on computer vision and pattern recognition.</i> 2019.
+    Xiong, Wei, et al. "Foreground-aware image inpainting." <i>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition.</i> 2019.
 ---
 
 The first 3D photo I saw was on Facebook a few years back. I was swiping through my feed, when I suddenly noticing an extra, unfamiliar movement as I scrolled past an image of a cat (of course). It turns out that the motion was from the image itself, and there was a small icon overlaid on top of the image that had a moving mouse symbol. It only took a second of interacting with the photo for me to figure out that this was a 2D image with an additional dimension of depth integrated in some way. Moving the mouse around the photo allowed me to see the cat from a slightly different angle, as if the position of the mouse represented the position of my head in the space in which the cat lived.
