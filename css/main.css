@@ -63,6 +63,13 @@ blockquote p {
   display: inline;
 }
 
+blockquote .cite {
+  display: inline;
+  color: #D8CCB3;
+  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
+  font-size: 12px;
+}
+
 p, ol, ol li, ul, ul li {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
