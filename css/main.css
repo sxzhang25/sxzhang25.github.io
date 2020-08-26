@@ -193,12 +193,17 @@ header h1 {
   font-size: 12px;
   color: #45413A;
   padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .footnotes hr {
   width: 100px;
   background-color: #F05232;
   border-color: transparent;
+}
+
+.footnotes section {
+  padding-bottom: 10px;
 }
 
 .pagination a, .pagination span {
