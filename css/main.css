@@ -41,14 +41,14 @@ h1, h2, h3 {
 blockquote {
   border-left: 8px solid #F05232;
   margin-left: 1.5em 10px;
-  padding: 0.5em 10px;
+  /* padding: 0.5em 10px; */
   font-size: 24px;
   font-family: 'EB Garamond', 'Times New Roman', 'Serif';
   line-height: 36px;
   text-indent: -0.45em;
   text-decoration: italic;
   color: #F05232;
-  padding: 28px;
+  padding: 7px 0 7px 28px;
 }
 
 blockquote:before {
