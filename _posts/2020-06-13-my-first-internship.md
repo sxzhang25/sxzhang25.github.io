@@ -2,6 +2,8 @@
 layout: post
 title: "my first internship"
 date: 2020-06-13
+tags: programming internship
+refs:
 ---
 
 I just finished week two of my first internship! Between working remotely with a three-hour time difference from the rest of my team, receiving equipment nearly a week late, and taking in the daily news while confronting a pandemic in the months leading up to a presidential election, it's been quite an experience. 

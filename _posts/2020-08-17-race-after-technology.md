@@ -2,6 +2,7 @@
 layout: post
 title: "dr. ruha benjamin's <i>race after technology</i>"
 date: 2020-08-17
+tags: social-technology
 refs:
 ---
 

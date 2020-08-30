@@ -2,7 +2,14 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+<p class="tags">
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    [<a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>]&nbsp;
+  {% endfor %}
+</p>
 <p class="meta">{{ page.date | date_to_string | downcase }}</p>
+<hr><br>
 
 <div class="post">
   {{ content }}

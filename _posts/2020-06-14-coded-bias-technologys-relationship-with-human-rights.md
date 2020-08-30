@@ -4,6 +4,7 @@ title:
   - >
     <i>coded bias</i>: technology's relationship with human rights
 date: 2020-06-15
+tags: social-technology
 refs:
   - >
     Buolamwini, Joy, and Timnit Gebru. "Gender shades: Intersectional accuracy disparities in commercial gender classification." <i>Conference on fairness, accountability and transparency.</i> 2018.

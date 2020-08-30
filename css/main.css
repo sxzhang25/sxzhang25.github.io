@@ -350,6 +350,10 @@ figcaption {
   font-size: 20px;
 }
 
+.tags {
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+}
+
 .post {
   min-width: 900px;
 }

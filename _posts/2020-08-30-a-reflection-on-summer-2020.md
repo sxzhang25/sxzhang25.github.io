@@ -2,6 +2,7 @@
 layout: post
 title: "a reflection on summer 2020"
 date: 2020-08-30
+tags: programming internship
 refs:
 ---
 

@@ -2,6 +2,8 @@
 layout: post
 title: "race, math, and computers (part 1)"
 date: 2020-06-02
+tags: social-technology math
+refs:
 ---
 
 Originally, I had planned on continuing a survey of graphical networks this week, but instead I'm going to take some time to write down and organize all the racing thoughts I've had in the last few days. This weekend has been a painful, eye-opening, devastating week for many--some more than others. The deaths of <a href="https://www.nytimes.com/article/ahmaud-arbery-shooting-georgia.html">Ahmaud Arbery,</a> <a href="https://www.nytimes.com/article/breonna-taylor-police.html">Breonna Taylor,</a> <a href="https://www.nytimes.com/2020/05/31/us/george-floyd-investigation.html">George Floyd,</a> and <a href="https://www.cnn.com/2020/06/01/us/louisville-protests-man-shot-dead/index.html">David McAtee</a> are only a few identified people amongst a mass of unnamed victims of institutionalized violence in America. As an POC, woman, and first-generation American I am going to use this time to assess, reflect on, and move towards changing my internal biases, as well as figure out what I can do to actively engage in anti-racism.

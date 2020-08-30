@@ -2,6 +2,7 @@
 layout: post
 title: "race, math, and computers (part 2)"
 date: 2020-06-02
+tags: social-technology
 refs:
   - >
     Buolamwini, Joy, and Timnit Gebru. "Gender shades: Intersectional accuracy disparities in commercial gender classification." <i>Conference on fairness, accountability and transparency.</i> 2018.
