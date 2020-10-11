@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "text-to-image synthesis, part 1: learning to draw"
-date: 2020-08-30
+date: 2020-10-10
 tags: papers text-to-image computer-vision machine-learning
 refs:
   - >
