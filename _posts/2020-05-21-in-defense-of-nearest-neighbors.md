@@ -2,7 +2,7 @@
 layout: post
 title: "in defense of nearest neighbors"
 date: 2020-05-21
-tags: papers machine-learning
+tags: papers nearest-neighbors
 refs:
   - >
     LeCun, Yann, et al. "Gradient-based learning applied to document recognition." <i>Proceedings of the IEEE</i> 86.11 (1998): 2278-2324.

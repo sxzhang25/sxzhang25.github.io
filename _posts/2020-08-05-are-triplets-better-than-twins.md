@@ -2,7 +2,7 @@
 layout: post
 title: "are triplets better than twins?"
 date: 2020-08-05
-tags: papers neural-networks machine-learning experiments
+tags: papers neural-networks experiments
 refs:
   - >
     Hoffer, Elad, and Nir Ailon. "Deep metric learning using triplet network." <i>International Workshop on Similarity-Based Pattern Recognition.</i> Springer, Cham, 2015.

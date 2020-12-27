@@ -2,7 +2,7 @@
 layout: post
 title: "text-to-image synthesis, part 0: a shallow dive into GANs"
 date: 2020-08-26
-tags: papers text-to-image gans autoencoders machine-learning
+tags: papers text-to-image gans autoencoders
 refs:
   - >
     Goodfellow, Ian, et al. "Generative adversarial nets." <i>Advances in Neural Information Processing Systems.</i> 2014.

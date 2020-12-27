@@ -2,7 +2,7 @@
 layout: post
 title: "graph attention networks"
 date: 2020-05-27
-tags: papers machine-learning
+tags: papers graph-networks
 refs:
   - >
     C. Zhang, G. Lin, F. Liu, J. Guo, Q. Wu and R. Yao, "Pyramid Graph Networks With Connection Attentions for Region-Based One-Shot Semantic Segmentation," <i>2019 IEEE/CVF International Conference on Computer Vision (ICCV)</i>, Seoul, Korea (South), 2019, pp. 9586-9594, doi: 10.1109/ICCV.2019.00968.
