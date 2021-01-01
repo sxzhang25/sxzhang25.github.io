@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+
+@media screen and (max-width: 875px) {
+  .project-img {
+    display: none;
+  }
+}
 
 body {
   margin: 60px auto;
   width: 70%;
-  background-color: #F5ECD9;
+  max-width: 900px;
+  background-color: #f7f1e5;
 }
 footer ul {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
@@ -43,7 +50,7 @@ blockquote {
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 24px;
-  font-family: 'EB Garamond', 'Times New Roman', 'Serif';
+  font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
   line-height: 36px;
   text-indent: -0.45em;
   text-decoration: italic;
@@ -68,6 +75,7 @@ blockquote .cite {
   color: #D8CCB3;
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
+  line-height: 12px;
 }
 
 p, ol, ol li, ul, ul li {
@@ -94,7 +102,7 @@ ol > li:before {
 footer {
   border-top: 1px solid #D8CCB3;
   font-size: .8em;
-  min-width: 900px;
+  /* min-width: 900px; */
 }
 
 ul.posts {
@@ -107,13 +115,14 @@ ul.posts li {
   font-size: 24px;
 }
 
-header, nav {
+nav {
   height: 120px;
 }
 
 header {
   vertical-align: middle;
-  min-width: 900px;
+  padding-bottom: 100px;
+  /* min-width: 900px; */
 }
 
 nav ul {
@@ -234,11 +243,10 @@ hr {
 
 figure {
   padding: 20px;
-  align: center;
   text-align: center;
   margin: auto;
   width: 80%;
-  min-width: 400px;
+  /* min-width: 200px; */
 }
 
 figcaption {
@@ -252,9 +260,7 @@ figcaption {
 
 .title {
   float: left;
-  margin: 0;
   display: table;
-  width: 300px;
   padding-top: 10px;
 }
 
@@ -268,22 +274,23 @@ figcaption {
 
 .about {
   padding-top: 50px;
-  height: 500px;
-  width: 90%;
-  min-width: 900px;
+  padding-bottom: 100px;
+  /* height: 500px; */
+  /* width: 90%; */
+  /* min-width: 900px; */
 }
 
 .about img {
-  padding: 25px 100px 50px 0;
+  padding: 75px 25px 50px 75px;
   width: 250px;
-  float: left;
+  float: right;
   margin-left: auto;
   margin-right: auto;
 }
 
 .pub {
   padding-bottom: 20px;
-  min-width: 600px;
+  /* min-width: 600px; */
   max-width: 900px;
 }
 
@@ -294,9 +301,9 @@ figcaption {
 .project {
   display: flex;
   position: relative;
-  padding-bottom: 100px;
-  min-width: 800px;
-  height: 200px;
+  padding-bottom: 50px;
+  /* min-width: 800px; */
+  /* height: 200px; */
 }
 
 .project p a:hover {
@@ -304,7 +311,6 @@ figcaption {
 }
 
 .project-img {
-  flex: 25%;
   position: relative;
   float: left;
   margin-top: auto;
@@ -313,16 +319,16 @@ figcaption {
 
 .project-img img {
   width: 80%;
-  min-width: 170px;
+  min-width: 50px;
+  max-width: 250px;
   padding-top: 5px;
+  padding-right: 25px;
 }
 
 .project-desc {
   flex: 75%;
   float: right;
-  min-width: 600px;
-  max-width: 1000px;
-  padding-left: 25px;
+  /* min-width: 600px; */
 }
 
 .prev {
@@ -355,7 +361,7 @@ figcaption {
 }
 
 .post {
-  min-width: 900px;
+  width: 100%;
 }
 
 /*** Works on common browsers ***/
