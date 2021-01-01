@@ -9,7 +9,7 @@ layout: default
   {% endfor %}
 </p>
 <p class="meta">{{ page.date | date_to_string | downcase }}</p>
-<hr><br>
+<hr style="margin-bottom:50px;">
 
 <div class="post">
   {{ content }}
@@ -17,7 +17,7 @@ layout: default
 
 {% if page.refs %}
 <div class="refs">
-  <h2>references</h2>
+  <h2>main references</h2>
   <ol>
   {% for ref in page.refs %}
     <li>{{ ref }}</li>
