@@ -118,7 +118,6 @@ nav {
 
 header {
   vertical-align: middle;
-  padding-bottom: 100px;
 }
 
 nav ul {
@@ -139,13 +138,22 @@ nav ul li {
 }
 
 nav li {
-  display:inline;
+  display: inline;
   padding: 10px;
+}
+
+.nav-wide {
+  display: block;
+  float: right;
+  padding-bottom: 10px;
+}
+.nav-thin {
+  display: block;
+  float: center;
 }
 
 header nav {
   list-style: center;
-  float: right;
   vertical-align: middle;
 }
 
@@ -255,16 +263,24 @@ figcaption {
   padding-top: 20px;
 }
 
-.title {
+.title-wide {
   float: left;
   display: table;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.title a {
+.title-thin {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+.title-wide a, .title-thin a {
   color: #000;
 }
-.title a:hover {
+.title-wide a:hover, .title-thin a:hover {
   text-decoration: none;
   color: #F05232;
 }
@@ -377,7 +393,9 @@ figcaption {
 }
 
 .symbol {
-  /* font-size: 18px; */
+  font-size: 14px;
+  font-weight: 100;
+  float: right;
   color: transparent;
   text-shadow: 0 0 0 #D8CCB3;
 }
@@ -420,9 +438,21 @@ figcaption {
   .about-wide {
     display: none;
   }
+  .title-wide {
+    display: none;
+  }
+  .nav-wide {
+    display: none;
+  }
 }
 @media screen and (min-width: 775px) {
   .about-thin {
+    display: none;
+  }
+  .title-thin {
+    display: none;
+  }
+  .nav-thin {
     display: none;
   }
 }
