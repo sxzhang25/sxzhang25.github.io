@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "can neurons be object detectors?"
-date: 2021-01-01
+date: 2021-01-02
 tags: papers computer-vision interpretability gans
 refs:
   - >
