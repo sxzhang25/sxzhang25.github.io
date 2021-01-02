@@ -11,7 +11,7 @@
 body {
   margin: 60px auto;
   width: 70%;
-  max-width: 900px;
+  max-width: 650px;
   background-color: #f7f1e5;
 }
 footer ul {
@@ -29,7 +29,7 @@ footer a {
 }
 a {
   text-decoration: none;
-  color: #9B8C7A;
+  color: #b39980;
 }
 a:hover {
   text-decoration: none;
@@ -37,7 +37,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 32px;
   font-weight: 700;
 }
 h1, h2, h3 {
@@ -45,13 +45,13 @@ h1, h2, h3 {
   color: #F05232;
 }
 
-blockquote {
+blockquote .quote {
   border-left: 8px solid #F05232;
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
-  line-height: 36px;
+  line-height: 30px;
   text-indent: -0.45em;
   text-decoration: italic;
   color: #F05232;
@@ -80,7 +80,7 @@ blockquote .cite {
 
 p, ol, ol li, ul, ul li {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6em;
   color: #45413A;
 }
@@ -100,9 +100,9 @@ ol > li:before {
 }
 
 footer {
+  margin-top: 50px;
   border-top: 1px solid #D8CCB3;
   font-size: .8em;
-  /* min-width: 900px; */
 }
 
 ul.posts {
@@ -112,7 +112,7 @@ ul.posts {
 ul.posts li {
   list-style: none;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 24px;
+  font-size: 20px;
 }
 
 nav {
@@ -122,7 +122,6 @@ nav {
 header {
   vertical-align: middle;
   padding-bottom: 100px;
-  /* min-width: 900px; */
 }
 
 nav ul {
@@ -132,17 +131,19 @@ nav ul {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   list-style: none;
   font-weight: bold;
+  padding-bottom: 20px;
 }
 nav ul li {
   height: 100%;
   vertical-align: middle;
   display: table-cell;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-size: 16px;
 }
 
 nav li {
   display:inline;
-  padding:10px;
+  padding: 10px;
 }
 
 header nav {
@@ -152,7 +153,7 @@ header nav {
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .excerpt {
@@ -175,7 +176,7 @@ header h1 {
   height: 100%;
   display: block;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 16px;
+  font-size: 14px;
   color: #45413A;
 }
 
@@ -217,7 +218,7 @@ header h1 {
 
 .pagination a, .pagination span {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 20px;
+  font-size: 16px;
   color: #D8CCB3;
   text-decoration: none;
   display: inline-block;
@@ -246,7 +247,6 @@ figure {
   text-align: center;
   margin: auto;
   width: 80%;
-  /* min-width: 200px; */
 }
 
 figcaption {
@@ -272,26 +272,35 @@ figcaption {
   color: #F05232;
 }
 
-.about {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  /* height: 500px; */
-  /* width: 90%; */
-  /* min-width: 900px; */
+.about-row {
+  width: 100%;
 }
 
-.about img {
-  padding: 75px 25px 50px 75px;
-  width: 250px;
+.about-cols {
+  display: flex;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.about-img {
+  padding: 15px 50px 15px 25px;
+  width: 25%;
+  float: left;
+  min-width: 100px;
+}
+
+.about-desc {
+  width: 75%;
+  padding-right: 20px;
   float: right;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .pub {
-  padding-bottom: 20px;
-  /* min-width: 600px; */
-  max-width: 900px;
+  padding-bottom: 5px;
+}
+
+.pub p {
+  line-height: 18px;
 }
 
 .pub h2 {
@@ -302,8 +311,6 @@ figcaption {
   display: flex;
   position: relative;
   padding-bottom: 50px;
-  /* min-width: 800px; */
-  /* height: 200px; */
 }
 
 .project p a:hover {
@@ -320,7 +327,7 @@ figcaption {
 .project-img img {
   width: 80%;
   min-width: 50px;
-  max-width: 250px;
+  max-width: 200px;
   padding-top: 5px;
   padding-right: 25px;
 }
@@ -328,7 +335,6 @@ figcaption {
 .project-desc {
   flex: 75%;
   float: right;
-  /* min-width: 600px; */
 }
 
 .prev {
@@ -347,13 +353,13 @@ figcaption {
   left: 0;
 }
 
-.desc {
+.pub-desc {
   font-style: italic;
 }
 
 .meta {
   color: #9B8C7A;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .tags {
