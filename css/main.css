@@ -376,6 +376,12 @@ figcaption {
   width: 100%;
 }
 
+.symbol {
+  /* font-size: 18px; */
+  color: transparent;
+  text-shadow: 0 0 0 #D8CCB3;
+}
+
 /*** Works on common browsers ***/
 ::selection {
   background-color: #F05232;
