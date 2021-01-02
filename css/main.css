@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
 
-@media screen and (max-width: 875px) {
-  .project-img {
-    display: none;
-  }
-}
-
 body {
   margin: 60px auto;
   width: 70%;
@@ -275,8 +269,16 @@ figcaption {
   color: #F05232;
 }
 
+.about-wide {
+  display: block;
+}
+.about-thin {
+  display: block;
+}
+
 .about-row {
   width: 100%;
+  text-align: left;
 }
 
 .about-cols {
@@ -286,14 +288,15 @@ figcaption {
 }
 
 .about-img {
-  padding: 15px 50px 15px 25px;
-  width: 25%;
+  padding: 0px 50px 15px 0px;
+  width: 35%;
   float: left;
-  min-width: 100px;
+  min-width: 120px;
+  text-align: center;
 }
 
 .about-desc {
-  width: 75%;
+  width: 70%;
   padding-right: 20px;
   float: right;
 }
@@ -400,4 +403,20 @@ figcaption {
 ::-webkit-selection {
   background-color: #F05232;
   color: #fff;
+}
+
+@media screen and (max-width: 875px) {
+  .project-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 775px) {
+  .about-wide {
+    display: none;
+  }
+}
+@media screen and (min-width: 775px) {
+  .about-thin {
+    display: none;
+  }
 }
