@@ -146,6 +146,7 @@ nav li {
   display: block;
   float: right;
   padding-bottom: 10px;
+  width: 60%;
 }
 .nav-thin {
   display: block;
@@ -268,6 +269,7 @@ figcaption {
   display: table;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 40%;
 }
 
 .title-thin {
