@@ -13,7 +13,9 @@ About a month ago, I finished reading <i>Race After Technology: Abolitionist Too
 One of the biggest problems in technology today is that, rather than being an equalizer of sorts, it often enhances existing social disparaties. Growing up, I had always been taught to view technology as a harbinger of social progress and an improved quality of life. I never really felt the need to explicitly question this perspective, even when stories of privacy breaches or digital warfare took center stage in the news cycle. Usually, my instinct would be to blame the user for not knowing how to properly use a supposedly neutral technological tool, or to blame the villain of the story for purposefully using technology with malicious intent. However, Dr. Benjamin immediately questions this notion with the her definition of "a new Jim Code," that is,
 
 <blockquote>
-“the employment of new technologies that reflect and reproduce existing inequities but that are promoted and perceived as more objective or progressive than the discriminatory systems of a previous era.”
+<div class="quote">
+    “the employment of new technologies that reflect and reproduce existing inequities but that are promoted and perceived as more objective or progressive than the discriminatory systems of a previous era.”
+</div>
 <br>
 <div class="cite">Excerpt From: Ruha Benjamin. “Race After Technology.” Apple Books. <a href="https://books.apple.com/us/book/race-after-technology/id1472434033">https://books.apple.com/us/book/race-after-technology/id1472434033</a></div>
 </blockquote>
@@ -24,7 +26,10 @@ As I continued to read, my instinct to immediately react to new technologies pos
 
 The ubiquity of technology is often used as a marker of how developed or advanced a society is. I think there is some merit to this; some of the main benefits of technology are increased efficiency and interconnectivity. However, as our lifestyles become increasingly dependent on technology, those who have not gained access to or have been implicitly barred access from these systems have a harder time participating. Even more concerning is the power of tech distributors or oversight commitees to impose conditional participation in this society. For example, Chinese journalists who have written critically about the government <a href="https://www.wired.co.uk/article/china-social-credit-system-explained">have been blacklisted</a> from transportation and financial services because their work is in conflict with the rules of the social credit system. In many ways, the US credit system also <a href="https://www.vox.com/the-goods/2018/11/2/18057450/china-social-credit-score-spend-frivolously-video-games">operates in a similar manner.</a> I think the following quote from the book captures this concisely:
 
-<blockquote>“In theory, you are supposed to have the freedom to choose but in reality, the choice will only be whether to be left out or left behind.”
+<blockquote>
+<div class="quote">
+    “In theory, you are supposed to have the freedom to choose but in reality, the choice will only be whether to be left out or left behind.”
+</div>
 <br>
 <div class="cite">Excerpt From: Ruha Benjamin. “Race After Technology.” Apple Books. <a href="https://books.apple.com/us/book/race-after-technology/id1472434033">https://books.apple.com/us/book/race-after-technology/id1472434033</a></div>
 </blockquote>

@@ -28,7 +28,11 @@ In the earlier portion of the film, we are given a brief overview of <a href="ht
 
 This definition of intelligence in AI has largely persisted. Only very recently has the introduction of ethics into AI began to question the notion that in order to be smart, an AI should be able to navigate complex, logical situations which are usually very black and white. One of the main reasons why I don't hesitate to recommend this documentary is that it directly questions how we measure the "success" of these machine learning algorithms built into the core framework of AI systems. At the very end of the documentary, we are brought back to this definition when Zeynep Tufekci says,
 
-<blockquote>"Being fully efficient, always doing what you're told, always doing what you're progammed, is not always the most human thing. Sometime's it's disobeying, sometimes it's saying 'no, I'm not gonna do this.' And if you automate everything, so it always does what it's supposed to do, sometimes that can lead to very inhuman things."</blockquote>
+<blockquote>
+<div class="quote">
+  "Being fully efficient, always doing what you're told, always doing what you're progammed, is not always the most human thing. Sometime's it's disobeying, sometimes it's saying 'no, I'm not gonna do this.' And if you automate everything, so it always does what it's supposed to do, sometimes that can lead to very inhuman things."
+</div?>
+</blockquote>
 
 This is easily one of my favorite quotes from the entire film. The idea that in order for technology to be truly intelligent, it has to know when to disobey, is something I never thought about. Simply having a machine be 100% successful is not ethically enough, because when humans reason through ethics we often question the authorities. Without the ability to do this, machines simply regurgitate and reproduce the status quo.
 
@@ -44,7 +48,11 @@ When Buolamwini published a paper that criticised IBM's facial recognition techn
 
 At this point, Buolamwini is now also fully involved in a government hearing that examines the need for oversight on facial recognition technology useage on civilians. We see clips of her testifying in front of Congress and being questioned by Senator Alexandria Ocasio-Cortez and others.<a href="#footnote1"><sup>1</sup></a> Changes begin to take place--cities such as San Francisco, Houston, Oakland, and others begin banning the use of facial recognition technology. Coupled with <a href="https://www.forbes.com/sites/larrymagid/2020/06/12/ibm-microsoft-and-amazon-not-letting-police-use-their-facial-recognition-technology/#67611afe1887">the recent statements by IBM, Amazon and Microsoft</a> refusing to let police use their facial recognition technology, it's impossible to not feel hopeful. It was really amazing to see all their hard work transform into actual change. That being said, there is still very little federal regulation of these AI systems, and there is a lot more to be done in the scientific space as well. The intersection of ethics and technology is not fully emulsified yet, and their marriage may never be a perfect one. I would like to think, though, that we can actively reimagine and repurpose our technology in ways that can effect more changes in the direction that Buolamwini and her colleagues have gone. In a post on the Princeton University Center for Information Technology Policy's blog, Freedom to Tinker, Angelina Wang <a href="https://freedom-to-tinker.com/author/angelina-wang/">expresses this in a way</a> that has really stuck with me:
 
-<blockquote>"Supervised machine learning has traditionally been focused on predicting based on historical and existing data, but maybe we can structure our data in a way that is a model not of the society we actually live in, but of the one we hope to live in."</blockquote>
+<blockquote>
+<div class="quote">
+  "Supervised machine learning has traditionally been focused on predicting based on historical and existing data, but maybe we can structure our data in a way that is a model not of the society we actually live in, but of the one we hope to live in."
+</div>
+</blockquote>
 
 <h3>some of my other favorite moments</h3>
 
