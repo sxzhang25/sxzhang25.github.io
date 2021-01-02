@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "neurons and networks"
-date: 2021-01-02
+title: "can neurons be object detectors?"
+date: 2021-01-01
 tags: papers computer-vision interpretability gans
 refs:
   - >
@@ -10,7 +10,7 @@ refs:
     David Bau, Jun-Yan Zhu, Hendrik Strobelt, Bolei Zhou, Joshua B. Tenenbaum, William T. Freeman, and Antonio Torralba. "GAN Dissection: Visualizing and Understanding Generative Adversarial Networks." In <i>ICLR 2019</i>.
 ---
 
-It's the new year! The last two months have been pretty busy and frankly exhausting, so I haven't been able to write quite as much as I would have liked to. Nevertheless, I've still been reading tons of cool papers. In the past semester, I messed around quite a bit with GANs and in the process, I came across a really fascinating set of papers on interpretability in visual classifiers and generative models. These papers describe a framework of interpretability dubbed "network dissection," which examines the role of individual neurons within deep networks.
+It's the new year! 🎊 The last two months have been pretty busy and frankly exhausting, so I haven't been able to write quite as much as I would have liked to. Nevertheless, I've still been reading tons of cool papers. In the past semester, I messed around quite a bit with GANs and in the process, I came across a really fascinating set of papers on interpretability in visual classifiers and generative models. These papers describe a framework of interpretability dubbed "network dissection," which examines the role of individual neurons within deep networks.
 
 <!--excerpt-->
 
