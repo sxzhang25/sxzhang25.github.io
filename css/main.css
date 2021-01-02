@@ -37,12 +37,15 @@ a:hover {
 }
 
 h1 {
+  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  color: #F05232;
   font-size: 32px;
   font-weight: 700;
 }
-h1, h2, h3 {
+h2, h3 {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   color: #F05232;
+  font-size: 20px;
 }
 
 blockquote .quote {
