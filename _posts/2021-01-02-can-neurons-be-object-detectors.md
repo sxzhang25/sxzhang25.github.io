@@ -2,7 +2,7 @@
 layout: post
 title: "can neurons be object detectors?"
 date: 2021-01-02
-tags: papers computer-vision interpretability gans
+tags: papers interpretable-ml
 refs:
   - >
     David Bau*, Bolei Zhou*, Aditya Khosla, Aude Oliva, and Antonio Torralba. "Network Dissection: Quantifying Interpretability of Deep Visual Representations." In <i>CVPR</i> 2017.
