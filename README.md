@@ -4,4 +4,4 @@
 
 Built using Jekyll and Github Pages.
 
-There are many commits because I like to change every little thing.
+I try and keep things as simple as possible. There are many commits because I like to change every little thing.
