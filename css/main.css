@@ -5,7 +5,7 @@
 body {
   margin: 60px auto;
   width: 70%;
-  max-width: 650px;
+  max-width: 750px;
   background-color: #f7f1e5;
 }
 footer ul {
@@ -33,7 +33,7 @@ a:hover {
 h1 {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   color: #F05232;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
 }
 h2, h3 {
@@ -46,7 +46,7 @@ blockquote .quote {
   border-left: 8px solid #F05232;
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
-  font-size: 20px;
+  font-size: 24px;
   font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
   line-height: 30px;
   text-indent: -0.45em;
@@ -77,7 +77,7 @@ blockquote .cite {
 
 p, ol, ol li, ul, ul li {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6em;
   color: #45413A;
 }
@@ -109,32 +109,28 @@ ul.posts {
 ul.posts li {
   list-style: none;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 20px;
-}
-
-nav {
-  height: 120px;
+  font-size: 24px;
 }
 
 header {
   vertical-align: middle;
+  padding-bottom: 100px;
 }
 
 nav ul {
-  margin: 0;
-  height: 100%;
+  height: 50px;
   display: table;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   list-style: none;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 nav ul li {
-  height: 100%;
+  /* height: 100%; */
   vertical-align: middle;
   display: table-cell;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 16px;
+  font-size: 18px;
 }
 
 nav li {
@@ -145,12 +141,11 @@ nav li {
 .nav-wide {
   display: block;
   float: right;
-  /* padding-bottom: 10px; */
-  width: 60%;
+  padding-top: 5px;
 }
 .nav-thin {
   display: block;
-  float: center;
+  width: 100%;
 }
 
 header nav {
@@ -159,7 +154,7 @@ header nav {
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .excerpt {
@@ -182,7 +177,7 @@ header h1 {
   height: 100%;
   display: block;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  font-size: 14px;
+  font-size: 16px;
   color: #45413A;
 }
 
@@ -207,6 +202,7 @@ header h1 {
 .footnotes {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
+  line-height: 16px;
   color: #45413A;
   padding-top: 10px;
   padding-bottom: 25px;
@@ -268,15 +264,15 @@ figcaption {
   float: left;
   display: table;
   padding-top: 10px;
-  padding-bottom: 10px;
-  width: 40%;
+  /* padding-bottom: 50px; */
 }
 
 .title-thin {
+  width: 100%;
   text-align: center;
   margin: auto;
   display: block;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .title-wide a, .title-thin a {
@@ -309,7 +305,7 @@ figcaption {
   padding: 0px 50px 15px 0px;
   width: 35%;
   float: left;
-  min-width: 120px;
+  min-width: 200px;
   text-align: center;
 }
 
@@ -320,11 +316,11 @@ figcaption {
 }
 
 .pub {
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 .pub p {
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .pub h2 {
@@ -334,7 +330,11 @@ figcaption {
 .project {
   display: flex;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.project p {
+  line-height: auto;
 }
 
 .project p a:hover {
@@ -395,11 +395,10 @@ figcaption {
 }
 .post-padding {
   width: 100%;
-  height: 105px;
+  height: 50px;
 }
 
 .symbol {
-  font-size: 14px;
   font-weight: 100;
   float: right;
   color: transparent;
@@ -439,8 +438,6 @@ figcaption {
   .project-img {
     display: none;
   }
-}
-@media screen and (max-width: 775px) {
   .about-wide {
     display: none;
   }
@@ -453,8 +450,11 @@ figcaption {
   .post-padding {
     display: none;
   }
+  header {
+    padding-bottom: 25px;
+  }
 }
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 875px) {
   .about-thin {
     display: none;
   }
