@@ -29,6 +29,13 @@ a:hover {
   text-decoration: none;
   color: #F05232;
 }
+footer img {
+  opacity: 1.0;
+}
+footer img:hover {
+  opacity: 1.0;
+  filter: hue-rotate(-45deg) saturate(15) brightness(95%);
+}
 
 h1 {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
