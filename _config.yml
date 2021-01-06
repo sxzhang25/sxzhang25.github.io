@@ -1,11 +1,21 @@
-title : Sharon Zhang
-author :
-name : Sharon Zhang
-email : zsharonx@gmail.com
-github : sxzhang25
+title: Sharon Zhang
+name: Sharon Zhang
+email: zsharonx@gmail.com
+url: https://sxzhang25.github.io/
+tagline: cs research, tech + society and miscellaneous.
+github: sxzhang25
+twitter: 
+  username: sxzhang25
+social:
+  name: Sharon Zhang
+  links:
+    - https://twitter.com/sxzhang25
+    - https://www.linkedin.com/in/sharon-z-517795129/
+    - https://github.com/sxzhang25
 
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 markdown: kramdown
 
