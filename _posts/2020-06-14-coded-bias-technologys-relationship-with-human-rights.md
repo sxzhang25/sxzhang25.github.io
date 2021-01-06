@@ -31,7 +31,7 @@ This definition of intelligence in AI has largely persisted. Only very recently 
 <blockquote>
 <div class="quote">
   "Being fully efficient, always doing what you're told, always doing what you're progammed, is not always the most human thing. Sometime's it's disobeying, sometimes it's saying 'no, I'm not gonna do this.' And if you automate everything, so it always does what it's supposed to do, sometimes that can lead to very inhuman things."
-</div?>
+</div>
 </blockquote>
 
 This is easily one of my favorite quotes from the entire film. The idea that in order for technology to be truly intelligent, it has to know when to disobey, is something I never thought about. Simply having a machine be 100% successful is not ethically enough, because when humans reason through ethics we often question the authorities. Without the ability to do this, machines simply regurgitate and reproduce the status quo.
