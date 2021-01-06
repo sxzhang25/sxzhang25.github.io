@@ -2,7 +2,7 @@
 layout: post
 title: "a brief account of cvpr 2020"
 date: 2020-06-22
-tags: conferences papers
+tags: conferences papers computer-vision
 refs:
   - >
     Carion, Nicolas, et al. "End-to-End Object Detection with Transformers." <i>arXiv preprint arXiv:2005.12872</i> (2020).
