@@ -25,9 +25,9 @@ To answer this question, we have to start with a discussion on perspective. Pers
 An extremely basic and somewhat successful way of simulating 3D motion is to simply warp parts of the image. An example of this is the <a href="">Motion Portrait app</a>, which has been around for a while now. The app basically takes a portrait of someone's face, places anchors on their eyes and mouth, and warps those anchors and the entire head so that the person looks like they are moving their head around and blinking. It's pretty crude, but it works well enough to produce a very shallow depth of field effect.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1a.JPG" alt="Original image" style="width:33%">
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1b.PNG" alt="Image with anchored facial features" style="width:33%">
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1c.gif" alt="Motion portrait" style="width:33%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1a.JPG" alt="Original image" style="width:30%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1b.PNG" alt="Image with anchored facial features" style="width:30%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig1c.gif" alt="Motion portrait" style="width:30%">
   <figcaption>Figure 1. How a Motion Potrait works. (Left) The original image. (Middle) First, we identify the eyes and the mouth. (Right) Then, we simply drag groups of pixels around to create the illusion of new views. I used an artificially generated photo of a person!</figcaption>
 </figure>
 
@@ -62,9 +62,9 @@ Inpainting actually occurs in three different components: color, depth, and dept
 It turns out that the current iteration of 3D photos that Facebook has on their app is mostly based on depth estimation, and doesn't really do much inpainting. Depth estimation is a problem that one of my professors has studied extensively, and I had the chance to learn a lot about last semester. I'm guessing that this inpainting pipeline either takes too long to run on a mobile device, or the simpler blurring method produces more consistent results, or maybe a version of the feature that integrates this algorithm just hasn't been implemented yet. In any case, I thought I might still share some of my own 3D photo results.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3a.gif" alt="Amsterdam 2019" style="width:33%">
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3b.gif" alt="Key West Florida 2019" style="width:33%">
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3c.gif" alt="A tea kettle" style="width:33%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3a.gif" alt="Amsterdam 2019" style="width:30%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3b.gif" alt="Key West Florida 2019" style="width:30%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-12-fig3c.gif" alt="A tea kettle" style="width:30%">
   <figcaption>Figure 3. Examples of 3D photos made in the Facebook app. </figcaption>
 </figure>
 
