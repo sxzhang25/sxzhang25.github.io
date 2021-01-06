@@ -62,6 +62,19 @@ blockquote .quote {
   padding: 7px 0 7px 28px;
 }
 
+blockquote .long-quote {
+  border-left: 8px solid #F05232;
+  margin-left: 1.5em 10px;
+  /* padding: 0.5em 10px; */
+  font-size: 18px;
+  font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
+  line-height: 24px;
+  text-indent: -0.45em;
+  text-decoration: italic;
+  color: #F05232;
+  padding: 7px 0 7px 28px;
+}
+
 blockquote:before {
   color: #ccc;
   font-size: 4em;
