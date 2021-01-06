@@ -2,7 +2,7 @@
 layout: post
 title: "hello world"
 date: 2020-05-20
-tags: personal
+tags: misc
 refs:
 ---
 
