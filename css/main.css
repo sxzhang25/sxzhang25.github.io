@@ -6,7 +6,12 @@ body {
   margin: 60px auto;
   width: 70%;
   max-width: 750px;
-  background-color: #f7f1e5;
+  background-color: #fffdfa;
+}
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #cab7a5;
+  font-size: .8em;
 }
 footer ul {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
@@ -19,7 +24,7 @@ footer ul li {
   margin-right: 10px;
 }
 footer a {
-  color: #D8CCB3;
+  color: #cab7a5;
 }
 a {
   text-decoration: none;
@@ -30,11 +35,11 @@ a:hover {
   color: #F05232;
 }
 footer img {
-  opacity: 1.0;
+  opacity: 0.75;
 }
 footer img:hover {
   opacity: 1.0;
-  filter: hue-rotate(-45deg) saturate(15) brightness(95%);
+  filter: hue-rotate(-35deg) saturate(15) brightness(90%);
 }
 
 h1 {
@@ -114,12 +119,6 @@ ol > li:before {
   content: "(" counter(list) ") ";
   position: absolute;
   left: -1.6em;
-}
-
-footer {
-  margin-top: 50px;
-  border-top: 1px solid #D8CCB3;
-  font-size: .8em;
 }
 
 ul.post-list {
@@ -340,15 +339,23 @@ figcaption {
 }
 
 .pub {
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pub p {
-  line-height: 18px;
+  font-size: 14px;
+  margin: 2px;
+  margin-left: 1.6em;
 }
 
+.pub a {
+  font-size: 14px;
+}
 .pub h2 {
-  color: #9B8C7A;
+  margin-bottom: 6px;
+  font-family: Inter;
+  font-size: 16px;
 }
 
 .project {
@@ -399,10 +406,6 @@ figcaption {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.pub-desc {
-  font-style: italic;
 }
 
 .meta {
