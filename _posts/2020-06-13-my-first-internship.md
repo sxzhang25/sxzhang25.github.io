@@ -26,7 +26,7 @@ I spent the majority of my winter waiting for summer to come. There was so much 
 On June 1st, I officially began work. Everything got off to a very slow start--the sudden transition to a virtual internship model for 4,000+ interns required a lot of last-minute logistics, and my onboarding process was affected by multiple delays. Consequently, I ended up having my first <i>real</i> day of work on the Friday of that first week. I remember being so overwhelmed that day, splitting my time between trying to set up my remote workstation, troubleshooting all sorts of remote connection problems, having my first meeting with my manager, finishing a week's worth of onboarding in a day, and exploring the vast virtual expanse of online Google.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-06-13-fig1.JPG" alt="my home office" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2020-06-13-fig1.JPG" alt="my home office" style="width:100%">
   <figcaption>Figure 1. My WFH setup. I've never worked with dual screens before this experience.</figcaption>
 </figure>
 

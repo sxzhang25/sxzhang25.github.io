@@ -20,7 +20,7 @@ I started writing this over a month ago, but work and life got in the way and so
 The paper is called <a href="https://arxiv.org/pdf/1412.6622.pdf"><i>Deep Metric Learning Using Triplet Network</i></a> by Elad Hoffer and Nir Ailon, and it essentially extends the concept of a twin (Siamese) neural network. I investigated twin neural networks in a project this past spring semester, so I really wanted to see how a triplet network took the ideas of twin networks further.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-08-05-fig1.png" alt="Triplet network architecture" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2020-08-05-fig1.png" alt="Triplet network architecture" style="width:100%">
   <figcaption>Figure 1. The architecture of a triplet network.</figcaption>
 </figure>
 

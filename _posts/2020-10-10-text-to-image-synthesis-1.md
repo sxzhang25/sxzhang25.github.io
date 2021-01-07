@@ -35,7 +35,7 @@ These days, attention is a widely used concept in computer vision and natural la
 In the paper, the authors propose a completely differentiable two-dimensional attention mechanism in the form of a grid of 2D Gaussian filters. The overall structure is similar to a kernel of Gaussian kernels: each $$N \times N$$ grid is specified by the coordinates $(g_X, g_Y)$ of the center of the grid (the center pixel of the center filter in the grid), the stride distance $\delta$ between the centers of filters in the grid, the shared isotropic variance $\sigma^2$ of the Gaussian filters and an intensity parameter $\gamma$ which scales the filter responses. A single filter in the filterbank actually spans the entire image (though the response can be computed in linear time by using separated 1D Gaussian filters), so the resulting response is an $N \times N$ pixel image patch.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/master/imgs/2020-10-10-fig1.gif" alt="Two-dimensional attention via a grid of Gaussian filters" style="width:30%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2020-10-10-fig1.gif" alt="Two-dimensional attention via a grid of Gaussian filters" style="width:30%">
   <figcaption>Figure 1. A $3 \times 3$ grid of Gaussian filters applied to an image and their center positions. Each of the nine filters actually covers the whole image, but here $\sigma$ is small enough so that most of the weights are effectively zero.</figcaption>
 </figure>
 
