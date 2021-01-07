@@ -103,7 +103,6 @@ There isn't really any criteria for what makes it onto the list other than the f
 <h3>december</h3>
 - Finished all my exams for the fall semester.
 - Submitted all my graduate school applications.
-- Binge-watched <i>The Queen's Gambit,</i> <i>Peaky Blinders</i> and <i>Schitt's Creek</i>. Also watched <i>If Beale Street Could Talk</i> and Pixar's <i>Soul</i>. I loved them all.
 - Computer scientist and AI ethicist Timnit Gebru is <a href="https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/">fired from Google Research.</a> The process is hugely controversial and sparks a lot of backlash.
 - <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/pfizer-biontech-covid-19-vaccine">Pfizer</a> and <a href="https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/moderna-covid-19-vaccine">Moderna</a> both announce FDA emergency approval for their Covid-19 vaccines. Distribution <a href="https://www.bloomberg.com/graphics/covid-vaccine-tracker-global-distribution/">begins.</a>
 
