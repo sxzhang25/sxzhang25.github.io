@@ -13,7 +13,7 @@ As the new year approached and passed, I didn't feel in the mood to write a prop
 There isn't really any criteria for what makes it onto the list other than the fact that I still remember it. Certain things will surely get left out just by that virtue, which I unfortunately can't amend too much at this point. There's <a href="https://www.livescience.com/24836-mystery-memory-recall.html">a theory in neuroscience</a> that memories are vulnerable to being overwritten every time we recall them, and this phenomenon occurs more often as we grow older. Perhaps my motivation for recording these things is simply to preserve some degree of consistency and integrity to my life. Or maybe I'm just procrastinating (more likely the case).
 
 <h3>january</h3>
-- US-Iran tensions almost boil over after <a href="https://www.nytimes.com/2020/01/11/us/politics/iran-trump.html">an air strike on a top Iranian general.</a>
+- US-Iran tensions almost boil over after an <a href="https://www.nytimes.com/2020/01/11/us/politics/iran-trump.html">air strike kills a top Iranian general.</a>
 - Turned in the exams and projects that would conclude my best semester of college, and also the last normal one.
 - A friend messages a group chat about news of a novel coronavirus discovered in Wuhan, China. Princeton establishes quarantine restrictions on students returning to campus from China.
 - My post-finals trip to Puerto Rico falls through due to a <a href="https://www.usgs.gov/news/magnitude-64-earthquake-puerto-rico">magnitude 6.4 earthquake</a> that struck the southwest portion of the island. Instead I visited a high school friend in NYC.
@@ -22,16 +22,14 @@ There isn't really any criteria for what makes it onto the list other than the f
 - Watched <i>Knives Out</i>, and was pleasantly surprised. This is the last movie I saw in theatres.
 - I turned 21!
 - Kobe Bryant and his daughter die in a <a href="https://www.espn.com/nba/story/_/id/28569438/sources-kobe-bryant-daughter-gianna-die-helicopter-crash">helicopter crash.</a>
-- <a href="https://www.nytimes.com/2020/01/15/us/politics/impeachment.html?searchResultPosition=20">President Trump's impeachment trial</a> begins and ultimately ends with his acquittal.
+- President Trump's <a href="https://www.nytimes.com/2020/01/15/us/politics/impeachment.html?searchResultPosition=20">impeachment trial</a> begins and ultimately ends with his acquittal.
 - Began my junior independent work--the start of a wonderful collaboration and mentorship.
-- <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2001191">The first case of the Covid-19</a> is detected in the US.
-- Ran 8 miles on 8'00'' pace--one of my best runs ever. I definitely miss my white New Balance 1080v9s.
+- The <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2001191">first case</a> of Covid-19 is detected in the US.
+- Ran 8 miles on 8'00'' pace--one of my best runs ever. I definitely miss my white New Balance 1080 v9s.
 - Had a string of great weekends with close friends, doing all the college things that college kids do.
-- Suffered through (but successfully completed) my first advanced computer vision assignment on belief propagation and message passing.
 - Made an impulsive decision to enter a Cardboard Canoe contest (build a canoe out of limited supplied of cardboard, duct tape and trash bags, and then race other teams down a pool lane). Our boat actually made it to the end without capsizing!
 - Won a Patagonia at a college Bingo night.
-- Stayed up late with friends cracking a bunch of encoded messages for a cryptography project.
-- Planned a roadtrip with some friends to a bunch of national parks out West, since we all had internships in the Bay Area.
+- Planned a roadtrip with some friends to a bunch of national parks out West before our internships in the Bay Area began.
 - The US reports its <a href="https://www.cdc.gov/media/releases/2020/s0229-COVID-19-first-death.html">first Covid-19 death.</a>
 
 <h3>march</h3>
@@ -45,12 +43,12 @@ There isn't really any criteria for what makes it onto the list other than the f
 
 <h3>april</h3>
 - There's a call on my calendar that I don't remember having with someone I can't recall... is my memory that bad? Or did I just miss it? Or did it never even happen?
-- Covid-19 cases top one million in the US, and the global death toll surpasses 200,000.
+- US Covid-19 cases <a href="https://www.washingtonpost.com/politics/covid-19-cases-top-1-million-in-the-united-states-about-a-third-of-known-cases-worldwide/2020/04/28/e5fafd4e-8944-11ea-9dfd-990f9dcc71fc_story.html">top one million</a> and the global death toll surpasses 200,000.
 
 <h3>may</h3>
 - Turned in my <strike>baby</strike> junior paper, the culmination of a semeter's worth of dedication and stress.
 - Google announces that summer internships will be held virtually.
-- Cancelled our national parks trip.
+- We cancelled our national parks trip.
 - Finished my junior year.
 - Completed three more scenes of <a href="https://vimeo.com/339041902">my animated short</a> on a 2018 trip to Yellowstone National Park. 
 - Read about Ahmaud Arbery, a black man who was murdered back in February while jogging in Georgia.
