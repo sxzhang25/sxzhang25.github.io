@@ -17,20 +17,20 @@ There isn't really any criteria for what makes it onto the list other than the f
 - Submitted the exams and projects that would conclude my best semester of college, and also the last normal one.
 - A friend messages a group chat about news of a novel coronavirus discovered in Wuhan, China. Princeton establishes quarantine restrictions on students returning to campus from China.
 - My post-finals trip to Puerto Rico falls through due to a <a href="https://www.usgs.gov/news/magnitude-64-earthquake-puerto-rico">magnitude 6.4 earthquake</a> that struck the southwest portion of the island. Instead I visited a high school friend in NYC.
+- The <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2001191">first case</a> of Covid-19 is detected in the US, in Washington state.
 
 <h3>february</h3>
 - Watched <i>Knives Out</i>, and was pleasantly surprised. This is the last movie I saw in theatres.
 - I turned 21!
 - Kobe Bryant and his daughter die in a <a href="https://www.espn.com/nba/story/_/id/28569438/sources-kobe-bryant-daughter-gianna-die-helicopter-crash">helicopter crash.</a>
-- Ran 8 miles on 8'00'' pace--one of my best runs ever. I definitely miss my white New Balance 1080 v9s.
+- Ran 8 miles on 8'00'' pace--one of my best runs ever. I definitely miss my rainbow-bottomed New Balance 1080 v9s.
 - President Trump's <a href="https://www.nytimes.com/2020/01/15/us/politics/impeachment.html?searchResultPosition=20">impeachment trial</a> begins and ultimately ends with his acquittal.
 - Began my junior independent work--the start of a wonderful collaboration and mentorship.
-- The <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2001191">first case</a> of Covid-19 is detected in the US.
 - Had a string of great weekends with close friends, doing all the college things that college kids do.
 - Made an impulsive decision to enter a Cardboard Canoe contest (build a canoe out of limited supplied of cardboard, duct tape and trash bags, and then race other teams down a pool lane). Our boat actually made it to the end without capsizing!
 - Won a Patagonia at a college Bingo night.
 - Planned a roadtrip with some friends to a bunch of national parks out West before our internships in the Bay Area began.
-- The US reports its <a href="https://www.cdc.gov/media/releases/2020/s0229-COVID-19-first-death.html">first Covid-19 death.</a>
+- The CDC reports the <a href="https://www.cdc.gov/media/releases/2020/s0229-COVID-19-first-death.html">first Covid-19 death</a> in the US.
 
 <h3>march</h3>
 - Celebrated two 21st birthdays with sushi. We went to a local bar afterwards and talked about life.
