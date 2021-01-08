@@ -19,7 +19,7 @@ As I mentioned in <a href="https://sxzhang25.github.io/blog/2020/08/26/text-to-i
 Before I became interested in the T2I task, I had originally set out to find papers that might help me understand what it would take to train a model to produce drawings of a word or phrase (like you would do in a game of Pictionary). As I was looking through the references in few different T2I papers, I noticed that many of them cited this paper called <a href="https://arxiv.org/pdf/1502.04623.pdf">DRAW: A Recurrent Neural Network for Image Generation</a> by researchers at Google DeepMind. The first few sentences of the paper read,
 
 <blockquote>
-<div class="quote">
+<div class="long-quote">
   "A person asked to draw, paint or otherwise recreate a visual scene will naturally do so in a sequential, iterative fashion, reassessing their handiwork after each modification. Rough outlines are gradually replaced by precise forms, lines are sharpened, darkened or erased, shapes are altered, and the final picture emerges. Most approaches to automatic image generation, however, aim to generate entire scenes at once."
 </div>
 </blockquote>
