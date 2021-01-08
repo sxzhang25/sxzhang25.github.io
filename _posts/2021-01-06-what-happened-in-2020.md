@@ -6,7 +6,7 @@ tags: misc
 refs:
 ---
 
-As the new year approached and passed, I didn't feel in the mood to write a proper reflection on the old year. But recently, I realized that I tend to forget a lot of events that happen in my life, like what I did last week or even what I had for breakfast yesterday. Many of the things that gradually slip out of my mind are actually things I would really like to remember. So instead of a reflection, I've decided to make a timeline of the past year--a mix of personal, national and global events that I remember most clearly. Besides verifying some of the more high-profile events were verified against news sources, the rest are all pulled from calendars, emails and photos.
+As the new year approached and passed, I didn't feel in the mood to write a proper reflection on the old year. But recently, I realized that I tend to forget a lot of events that happen in my life, like what I did last week or even what I had for breakfast yesterday. Many of the things that gradually slip out of my mind are actually things I would really like to remember. So instead of a reflection, I've decided to make a timeline of the past year--a mix of personal, national and global events that I remember most clearly. Besides verifying some of the more high-profile events against news sources, the rest are all pulled from calendars, emails and photos.
 
 <!--excerpt-->
 
