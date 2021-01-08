@@ -6,7 +6,7 @@
   --light: #e9e7e5;
   --dark: #3a3a45;
   --accent: #5964fc;
-  --highlight:#f77700;
+  --highlight:#2d00f7;
   --link:#6dafd4;
   --footer: #c0b9cf;
   --link-hover: #cbe0ec;
@@ -265,13 +265,9 @@ header h1 {
   color: var(--link);
   text-decoration: none;
   display: inline-block;
-  padding: 20px;
-  margin-bottom: 20px;
+  /* padding: 20px; */
+  margin: 20px;
   }
-
-.pagination a:hover {
-  color: var(--link-hover);
- }
 
 .pagination {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
@@ -450,6 +446,10 @@ figcaption {
   float: right;
   color: transparent;
   text-shadow: 0 0 0 --var(symbol);
+}
+.symbol a:hover {
+  color: var(--link);
+  background-color: var(--link-hover);
 }
 
 /*** Works on common browsers ***/
