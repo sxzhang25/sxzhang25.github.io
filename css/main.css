@@ -39,7 +39,7 @@ footer img {
 }
 footer img:hover {
   opacity: 1.0;
-  filter: hue-rotate(-35deg) saturate(15) brightness(90%);
+  filter: hue-rotate(-35deg) saturate(10) brightness(90%);
 }
 
 h1 {
