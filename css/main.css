@@ -2,15 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
 
+:root {
+  --light: #e9e7e5;
+  --dark: #3a3a45;
+  --accent: #5964fc;
+  --highlight:#ff75c1;
+  --link:#6dafd4;
+  --footer: #c0b9cf;
+  --link-hover: #cbe0ec;
+  --blockquote: #494f9b;
+  --cite: #b69bb2;
+  --meta: #b69bb2;
+  --symbol: #a597c0;
+}
+
 body {
   margin: 60px auto;
   width: 70%;
   max-width: 750px;
-  background-color: #f1ede7;
+  background-color: var(--light);
 }
 footer {
   margin-top: 50px;
-  border-top: 1px solid #cab7a5;
+  border-top: 1px solid var(--footer);
   font-size: .8em;
 }
 footer ul {
@@ -24,38 +38,43 @@ footer ul li {
   margin-right: 10px;
 }
 footer a {
-  color: #cab7a5;
+  color: var(--footer);
 }
 a {
   text-decoration: none;
-  color: #b39980;
+  color: var(--link);
 }
 a:hover {
   text-decoration: none;
-  color: #F05232;
+  background-color: var(--link-hover);
+}
+footer a:hover {
+  color: var(--link-hover);
+  background-color:rgb(0, 0, 0, 0);
 }
 footer img {
   opacity: 0.75;
 }
 footer img:hover {
   opacity: 1.0;
-  filter: hue-rotate(-35deg) saturate(10) brightness(90%);
+  filter: hue-rotate(-30deg) saturate(15) brightness(85%);
+  color: none;
 }
 
 h1 {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  color: #F05232;
+  color: var(--accent);
   font-size: 32px;
   font-weight: 700;
 }
 h2, h3 {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
-  color: #F05232;
+  color: var(--accent);
   font-size: 20px;
 }
 
 blockquote .quote {
-  border-left: 8px solid #F05232;
+  border-left: 8px solid var(--blockquote);
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 24px;
@@ -63,12 +82,12 @@ blockquote .quote {
   line-height: 30px;
   text-indent: -0.45em;
   text-decoration: italic;
-  color: #F05232;
+  color:var(--blockquote);
   padding: 7px 0 7px 28px;
 }
 
 blockquote .long-quote {
-  border-left: 8px solid #F05232;
+  border-left: 8px solid var(--blockquote);
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 18px;
@@ -76,12 +95,11 @@ blockquote .long-quote {
   line-height: 24px;
   text-indent: -0.45em;
   text-decoration: italic;
-  color: #F05232;
+  color: var(--blockquote);
   padding: 7px 0 7px 28px;
 }
 
 blockquote:before {
-  color: #ccc;
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
@@ -94,7 +112,7 @@ blockquote p {
 
 blockquote .cite {
   display: inline;
-  color: #D8CCB3;
+  color: var(--cite);
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
   line-height: 12px;
@@ -104,7 +122,7 @@ p, ol, ol li, ul, ul li {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   line-height: 1.6em;
-  color: #45413A;
+  color: var(--dark);
 }
 
 ol {
@@ -185,7 +203,7 @@ header h1 {
 }
 
 .excerpt, .excerpt a, .excerpt a:hover {
-  color: #45413A;
+  color: var(--dark);
 }
 
 .read-more {
@@ -201,7 +219,7 @@ header h1 {
   display: block;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
-  color: #45413A;
+  color: var(--dark);
 }
 
 .refs ol li {
@@ -226,14 +244,14 @@ header h1 {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
   line-height: 16px;
-  color: #45413A;
+  color: var(--dark);
   padding-top: 10px;
   padding-bottom: 25px;
 }
 
 .footnotes hr {
   width: 100px;
-  background-color: #F05232;
+  background-color: var(--accent);
   border-color: transparent;
 }
 
@@ -244,7 +262,7 @@ header h1 {
 .pagination a, .pagination span {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
-  color: #D8CCB3;
+  color: var(--link);
   text-decoration: none;
   display: inline-block;
   padding: 20px;
@@ -252,18 +270,18 @@ header h1 {
   }
 
 .pagination a:hover {
-  color: #F05232;
+  color: var(--link-hover);
  }
 
 .pagination {
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 20px;
-  color: #F05232;
+  color: var(--accent);
   text-align: center;
  }
 
 hr {
-  background-color: #F05232;
+  background-color: var(--accent);
   border-color: transparent;
 }
 
@@ -278,7 +296,7 @@ figcaption {
   font-size: 14px;
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   text-decoration: italic;
-  color: #45413A;
+  color: var(--dark);
   text-align: left;
   padding-top: 20px;
 }
@@ -287,7 +305,6 @@ figcaption {
   float: left;
   display: table;
   padding-top: 10px;
-  /* padding-bottom: 50px; */
 }
 
 .title-thin {
@@ -295,7 +312,6 @@ figcaption {
   text-align: center;
   margin: auto;
   display: block;
-  /* padding-top: 10px; */
 }
 
 .title-wide a, .title-thin a {
@@ -303,7 +319,7 @@ figcaption {
 }
 .title-wide a:hover, .title-thin a:hover {
   text-decoration: none;
-  color: #F05232;
+  background-color: var(--link-hover);
 }
 
 .about-wide {
@@ -369,7 +385,7 @@ figcaption {
 }
 
 .project p a:hover {
-  color: #F05232;
+  color: var(--link-hover);
 }
 
 .project-img {
@@ -409,7 +425,7 @@ figcaption {
 }
 
 .meta {
-  color: #9B8C7A;
+  color: --var(meta);
   font-size: 16px;
 }
 
@@ -433,35 +449,35 @@ figcaption {
   font-weight: 100;
   float: right;
   color: transparent;
-  text-shadow: 0 0 0 #D8CCB3;
+  text-shadow: 0 0 0 --var(symbol);
 }
 
 /*** Works on common browsers ***/
 ::selection {
-  background-color: #F05232;
+  background-color: var(--highlight);
   color: #fff;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-  background-color: #F05232;
+  background-color: var(--highlight);
   color: #fff;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-  background-color: #F05232;
+  background-color: var(--highlight);
   color: #fff;
 }
 
 ::-ms-selection {
-  background-color: #F05232;
+  background-color: var(--highlight);
   color: #fff;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-  background-color: #F05232;
+  background-color: var(--highlight);
   color: #fff;
 }
 
