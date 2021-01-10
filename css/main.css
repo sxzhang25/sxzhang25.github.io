@@ -389,7 +389,7 @@ figcaption {
 }
 
 .project h3 {
-  color: var(--symbol);
+  color: var(--meta);
   margin: 0px;
 }
 
