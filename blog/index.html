@@ -24,7 +24,7 @@ title: blog
 
 <ul class="post-list">
 {% for post in paginator.posts %}
-<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+<li><span>{{ post.date | date_to_string | downcase }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 <div class="excerpt">
 <p>{{ post.excerpt }}</p>
 </div>
