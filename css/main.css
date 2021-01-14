@@ -88,9 +88,9 @@ blockquote .quote {
   /* padding: 0.5em 10px; */
   font-size: 24px;
   font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
-  line-height: 30px;
+  line-height: 36px;
   text-indent: -0.45em;
-  font-display: italic;
+  font-style: italic;
   color:var(--blockquote);
   padding: 7px 0 7px 28px;
 }
@@ -99,11 +99,11 @@ blockquote .long-quote {
   border-left: 8px solid var(--blockquote);
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
-  line-height: 24px;
+  line-height: 28px;
   text-indent: -0.45em;
-  font-display: italic;
+  font-style: italic;
   color: var(--blockquote);
   padding: 7px 0 7px 28px;
 }
@@ -156,10 +156,6 @@ ul.post-list li {
   list-style: none;
   font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
   font-size: 24px;
-}
-
-.post ul li, ol li {
-  line-height: 28px;
 }
 
 header {
@@ -447,6 +443,9 @@ figcaption {
 }
 .post p {
   font-size: 16px;
+  line-height: 28px;
+}
+.post ul li, ol li {
   line-height: 28px;
 }
 .post-padding {
