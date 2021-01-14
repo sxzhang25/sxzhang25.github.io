@@ -401,8 +401,8 @@ figcaption {
 
 .project-img img {
   width: 200px;
-  padding-top: 15px;
-  padding-right: 50px;
+  margin-top: 15px;
+  margin-right: 50px;
 }
 
 .project-desc {
