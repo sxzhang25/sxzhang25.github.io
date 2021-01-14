@@ -18,7 +18,7 @@
 
 body {
   margin: 60px auto;
-  width: 70%;
+  width: 85%;
   max-width: 750px;
   background-color: var(--light);
 }
@@ -130,7 +130,7 @@ blockquote .cite {
 p, ol, ol li, ul, ul li {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
-  line-height: 1.6em;
+  line-height: 1.8em;
   color: var(--dark);
 }
 
@@ -187,7 +187,6 @@ nav li {
 .nav-wide {
   display: block;
   float: right;
-  padding-top: 5px;
 }
 .nav-thin {
   display: block;
@@ -401,11 +400,9 @@ figcaption {
 }
 
 .project-img img {
-  width: 80%;
-  min-width: 50px;
-  max-width: 200px;
-  padding-top: 5px;
-  padding-right: 25px;
+  width: 200px;
+  padding-top: 15px;
+  padding-right: 50px;
 }
 
 .project-desc {
@@ -443,10 +440,12 @@ figcaption {
 }
 .post p {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.8em;
 }
 .post ul li, ol li {
-  line-height: 28px;
+  line-height: 1.8em;
+  margin-top: 10px;
+  width: 95%;
 }
 .post-padding {
   width: 100%;
