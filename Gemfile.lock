@@ -261,6 +261,7 @@ DEPENDENCIES
   github-pages (~> 207)
   jekyll-paginate
   jekyll-seo-tag
+  jekyll-sitemap
   kramdown (>= 2.3.0)
   nokogiri (>= 1.11.0.rc4)
 
