@@ -15,7 +15,7 @@ I came across a <a href="http://davidbau.com/archives/2010/10/22/tic_toe_tac.htm
 The <a href="https://playtictactoe.org/">classic tic-tac-toe game</a> is pretty simple, and there's a general consensus on how to play optimally. It's nontrivial but still pretty straightforward to figure out who has what advantage and where each player should move. Intuitively, the player going first has an advantage because they get to stake a claim to the most valuable positions. The tried-and-true strategy for the first player (say, X) is to take a corner square. No matter how the second player (then, O) moves, X is guaranteed to <i>not</i> lose. This is different from winning! Importantly, if O plays well on their first turn (takes the center square) then following optimal play on either side, the game ends in a draw.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig1.gif" alt="Classic tic-tac-toe strategies" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig1.gif" alt="Classic tic-tac-toe strategies" title="tic-tac-toe strategy" style="width:100%">
   <figcaption>Figure 1. The classic tic-tac-toe strategy for Player 1 guarantees that Player 1 will not lose. It can, however, end in a draw.</figcaption>
 </figure>
 
@@ -34,14 +34,14 @@ Due to the symmetry of the board, there are other arrangments which can be deriv
 Now, what about case (2)? Can we get a draw without placing an O in the center square? Let's take the corner subcases approach again. If we have all or none of the O's in corners, then X wins via a diagonal. If we have exactly one O in a corner, then we can't block X from winning on the other diagonal not covered by this O. The only remaining possibility is having two O's in the corner, and by the same logic in the previous statement these two O's cannot belong to the same diagonal. The remaining two non-corner O's only have one possible configuration, giving us our final template. 
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig2.png" alt="Templates representing a draw" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig2.png" alt="Templates representing a draw" title="tic-tac-toe draw template" style="width:100%">
   <figcaption>Figure 2. We have three possible templates which represent a draw.</figcaption>
 </figure>
 
 So, modulo any reflections and rotations, we have three unique templates that produce a draw. Now we need to add these reflections and rotations back into consideration to get the final total count. The first two templates each have one line of reflective symmetry, so we only need to count the number of unique rotated configurations, of which there are $4$. The third template has no symmetry, so it has a total of $8$ transformed configurations (it can be rotated four ways or reflected--but be careful, although we can perform a vertical or horizontal reflection, one of these can be formed by reflecting and then rotating).<a href="#footnote1"><sup>1</sup></a> So we get $4 + 4 + 8 = 16$ total draw configurations!
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig3.gif" alt="Generating all configurations of a draw from the three templates" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig3.gif" alt="Generating all configurations of a draw from the three templates" title="generating tic-tac-toe draw configurations" style="width:100%">
   <figcaption>Figure 3. Templates 1 and 2 can be rotated to generate $4$ different configurations. Template 3 can be rotated and reflected along one axis of symmetry, resulting in $8$ different configurations. Blue circles represent O's and red circles represent X's.</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ Since this is only a $3 \times 3$ board, we <i>could</i> check every possible ga
 <b>You are Player O (go second).</b> Since Player O already has a disadvantage in winning, it's probably easier to start here. Actually, it's really easy--X can simply use the optimal strategy for classic tic-tac-toe discussed above, which is making the first move on a corner square. Unless O takes the center square next, X is guaranteed to win (per the classical strategy). After this point, X pretty much controls where O makes their next move, and can eventually force an O win.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig4.png" alt="Optimal gameplay when you are Player O" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig4.png" alt="Optimal gameplay when you are Player O" title="optimal tic-tac-toe O gameplay" style="width:100%">
   <figcaption>Figure 4. Player O can never successfully force a draw if Player X uses the optimal strategy for the classical game. </figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Since this is only a $3 \times 3$ board, we <i>could</i> check every possible ga
 - Now, suppose X doesn't play the middle square first, hence pursuing template 1 or template 2. In this case, O again has a simple goal: they only need to form an O \| O \| ? pattern along any of the outside rows/columns or make an O-sandwich in the middle row or middle column. This is easy if O plays an open middle square on the border of the board. Verdict: no draw again!
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig5.png" alt="Optimal gameplay when you are Player X" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig5.png" alt="Optimal gameplay when you are Player X" title="optimal tic-tac-toe X gameplay" style="width:100%">
   <figcaption>Figure 5. <b>Top.</b> If Player X plays the center square first, then either O wins or X extends gameplay to board completion (and X wins). <b>Bottom.</b> If Player X doesn't play the center square, then O can form an O-sandwich or force X to win. In this example, X plays a middle square on the border; the case where X plays a corner square is equivalent to this game rotated by 45 degrees.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ To verify the templates for a draw, we'll just count the number of configuration
 - <b>X wins along two directions.</b> There are ${8 \choose 2} = 28$ pairs of directions, but $6$ of them require six X's to achieve (two rows or two columns). So we get $22$ configurations this way.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig6.png" alt="Winning board configurations for X" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig6.png" alt="Winning board configurations for X" title="tic-tac-toe X wins" style="width:100%">
   <figcaption>Figure 6. <b>Top.</b> X wins along exactly one direction, a row or column. Note the disallowed placement of the remaining two X's. <b>Middle.</b> X wins along exactly one direction, a diagonal. Note the disallowed placement of the remaining two X's. <b>Bottom.</b> X wins along two directions.</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ Thus, our total number of configurations where X wins is $60 + 16 + 22 = 98$ pos
 At this point, if we add everything up we get $16 + 48 + 98 = 162$ total configurations. This is $36$ more than our target $126$, which is some cause for concern. Fortunately, this is only because we overcounted every configuration where <i>both</i> X <i>and</i> O win by one, so we just need to subtract the number of possible ways that can happen. The only way this occurs is if X and O both win along one row or column. There are $12$ possible row or column pairs, and $3$ remaining squares to put the last O.
 
 <figure>
-  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig7.png" alt="Examples of configurations where both O and X win" style="width:100%">
+  <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig7.png" alt="Examples of configurations where both O and X win" title="tic-tac-toe O and X win" style="width:100%">
   <figcaption>Figure 7. Some examples of configurations where both X and O win (this would be quite the disaster for our game variant).</figcaption>
 </figure>
 
