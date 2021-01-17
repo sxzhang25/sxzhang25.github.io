@@ -8,7 +8,7 @@ layout: default
     [<a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>]&nbsp;
   {% endfor %}
 </p>
-<p class="meta">{{ page.date | date_to_string | downcase }}</p>
+<p class="meta">{{ page.date | date_to_string | downcase }} | <i>{% include readtime.html %}</i></p>
 <hr style="margin-bottom:50px;">
 
 <div class="post">
