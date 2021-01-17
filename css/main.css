@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@0;1&display=swap');
 
 :root {
-  --light: #eeeceb;
-  --dark: #3a3a45;
+  --light: #faf9f9;
+  --dark: #1d1d22;
   --accent: #3340f3;
-  --highlight:#f2ff42;
+  --highlight:#fbff24;
   --link:#3340f3;
   --footer: #c0b9cf;
   --link-hover: #cbe0ec;
