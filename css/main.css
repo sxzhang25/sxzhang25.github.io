@@ -438,6 +438,9 @@ figcaption {
 .post {
   width: 100%;
 }
+.post h3 {
+  line-height: 32px;
+}
 .post p {
   font-size: 16px;
   line-height: 1.8em;
