@@ -50,7 +50,7 @@ The arrival of a new year is always an exciting and refreshing time. I have many
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote2"><sup>1</sup>This is how many sensory systems in our bodies work, and it's known as "population encoding" in neuroscience. Basically, we can detect a much larger number of object by using the neurons as a basis rather than having each neuron correspond to an individual object. The response vector of a basis of neurons uniquely encodes a particular smell, taste, or object.</section>
+<section id="footnote1"><sup>1</sup>This is how many sensory systems in our bodies work, and it's known as "population encoding" in neuroscience. Basically, we can detect a much larger number of object by using the neurons as a basis rather than having each neuron correspond to an individual object. The response vector of a basis of neurons uniquely encodes a particular smell, taste, or object.</section>
 
 <section id="footnote2"><sup>2</sup>Depending on how intepretability is defined, optimizing for interpretability could mean sacrificing accuracy. For instance, some methods of explaining black box models add a regularizer to the objective function to penalize non-interpretable solutions. However, this generally means that the best solution to a purely performance-based objective is no longer optimal.</section>
 </div>

@@ -63,5 +63,5 @@ I'm really interested in seeing if network dissection and neuron Shapley identif
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote2"><sup>1</sup>This idea is also supported strongly by empirical results in pruned models, which can retain high performance even when more than half of the weights have been pruned.</section>
+<section id="footnote1"><sup>1</sup>This idea is also supported strongly by empirical results in pruned models, which can retain high performance even when more than half of the weights have been pruned.</section>
 </div>

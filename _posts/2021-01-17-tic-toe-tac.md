@@ -125,7 +125,7 @@ This gives us $36$ different configurations, and so our total turns out to be $1
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote2"><sup>1</sup>Actually, the first two templates can also be considered as coming from one template--one is just on a diagonal line of symmetry whereas the other is on an orthogonal line of symmetry. This gives us $8$ total rotated configurations of this single template, yielding the same result as the discussion above. But I think looking at them as two separate templates is a little more natural to the square.</section>
+<section id="footnote1"><sup>1</sup>Actually, the first two templates can also be considered as coming from one template--one is just on a diagonal line of symmetry whereas the other is on an orthogonal line of symmetry. This gives us $8$ total rotated configurations of this single template, yielding the same result as the discussion above. But I think looking at them as two separate templates is a little more natural to the square.</section>
 
 <section id="footnote2"><sup>2</sup>On an $m \times n$ board, the first player to get $k$ squares in a row, column or diagonal wins. Along with tic-tac-toe, Connect 4 is another example of such a game.</section>
 </div>

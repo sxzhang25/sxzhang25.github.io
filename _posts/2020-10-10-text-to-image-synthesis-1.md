@@ -61,7 +61,7 @@ Despite the shortcomings of this model on more complicated image datasets, this 
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote2"><sup>1</sup>An "X is All You Need" paper was written <a href="https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf">about attention.</a> It's been cited over 12,500 times.</section>
+<section id="footnote1"><sup>1</sup>An "X is All You Need" paper was written <a href="https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf">about attention.</a> It's been cited over 12,500 times.</section>
 
 <section id="footnote2"><sup>2</sup>I wrote a <a href="https://sxzhang25.github.io/blog/2020/05/27/graph-attention-networks">previous blog post</a> on a paper which also generalized this idea to graph convolutions.</section>
 </div>
