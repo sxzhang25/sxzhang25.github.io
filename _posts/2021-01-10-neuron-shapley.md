@@ -25,14 +25,14 @@ $$
 $$
 
 Here, $n = |N|$. The characteristic function is kind of like a game strategy for all possible scenarios of who shows up to play. There are a few key properties of the Shapley value which makes it nice to work with:
-- <b>Symmetry (a.k.a. "equal treatment of equals"):</b> If $V(S \cup \{i\}) = V(S \cup \{j\})$ for all $S \subseteq N$, then $\varphi_i(V) = \varphi_j(V)$. So if you contributed equally as another player, you should receive an equal share of the final reward as they do.
+- <b>Symmetry (a.k.a. "equal treatment of equals"):</b> If $$V(S \cup \{i\}) = V(S \cup \{j\})$$ for all $S \subseteq N$, then $\varphi_i(V) = \varphi_j(V)$. So if you contributed equally as another player, you should receive an equal share of the final reward as they do.
 - <b>Linearity:</b> If the players play multiple coalition games with characteristic functions $V_1, \ldots, V_m$, then the Shapley values satisfy 
 
 $$
 \varphi_i(V_1 + \cdots + V_m) = \varphi_i(V_1) + \cdots + \varphi_i(V_m).
 $$ 
 
-- <b>Null players:</b> Players who don't contribute anything to the game receive a reward share of zero. That is, if $V(S \cup \{i}) = V(S)$ for all $S \subseteq N \backslash \{i\}$, then $\varphi_i(V) = 0$. This is pretty straightforward from the definition.
+- <b>Null players:</b> Players who don't contribute anything to the game receive a reward share of zero. That is, if $$V(S \cup \{i\}) = V(S)$$ for all $$S \subseteq N \backslash \{i\}$$, then $\varphi_i(V) = 0$. This is pretty straightforward from the definition.
 
 The use of Shapley values as an indicator of importance in interpretability is not new. Work by <a href="https://arxiv.org/pdf/1908.08474.pdf">Sundararajan and Najmi</a> and the <a href="https://github.com/slundberg/shap">SHAP</a> package are other examples of how Shapley values are used to interpret model decisions.
 
