@@ -2,7 +2,7 @@
 layout: post
 title: "<i>Data and Goliath</i> and other january reads"
 date: 2021-01-31
-tags: books
+tags: books misc
 refs:
 ---
 
