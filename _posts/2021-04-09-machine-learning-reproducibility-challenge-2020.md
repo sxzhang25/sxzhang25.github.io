@@ -62,7 +62,7 @@ Another thing that I'm hoping to do moving forward (inspired by this experience)
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote2"><sup>1</sup>Examples of some details we asked for additional clarifications on: model selection (which epoch to use in evaluation?), training schedules, hyperparameters.</section>
+<section id="footnote1"><sup>1</sup>Examples of some details we asked for additional clarifications on: model selection (which epoch to use in evaluation?), training schedules, hyperparameters.</section>
 
 <section id="footnote2"><sup>2</sup>I also finally learned how to use <code>argparse</code> properly (instead of <code>sys.argv</code>) so that I could test different versions of things quickly and easily.</section>
 </div>
