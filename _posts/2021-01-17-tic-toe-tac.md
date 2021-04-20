@@ -38,7 +38,7 @@ Now, what about case (2)? Can we get a draw without placing an O in the center s
   <figcaption>Figure 2. We have three possible templates which represent a draw.</figcaption>
 </figure>
 
-So, modulo any reflections and rotations, we have three unique templates that produce a draw. Now we need to add these reflections and rotations back into consideration to get the final total count. The first two templates each have one line of reflective symmetry, so we only need to count the number of unique rotated configurations, of which there are $4$. The third template has no symmetry, so it has a total of $8$ transformed configurations (it can be rotated four ways or reflected--but be careful, although we can perform a vertical or horizontal reflection, one of these can be formed by reflecting and then rotating).<a href="#footnote1"><sup>1</sup></a> So we get $4 + 4 + 8 = 16$ total draw configurations!
+So, modulo any reflections and rotations, we have three unique templates that produce a draw. Now we need to add these reflections and rotations back into consideration to get the final total count. The first two templates each have one line of reflective symmetry, so we only need to count the number of unique rotated configurations, of which there are $4$. The third template has no symmetry, so it has a total of $8$ transformed configurations (it can be rotated four ways or reflected---but be careful, although we can perform a vertical or horizontal reflection, one of these can be formed by reflecting and then rotating).<a href="#footnote1"><sup>1</sup></a> So we get $4 + 4 + 8 = 16$ total draw configurations!
 
 <figure>
   <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig3.gif" alt="Generating all configurations of a draw from the three templates" title="generating tic-tac-toe draw configurations" style="width:100%">
@@ -51,7 +51,7 @@ To double-check that these are the only possibilities, I've included a breakdown
 
 Since this is only a $3 \times 3$ board, we <i>could</i> check every possible gameplay. In fact, this is essentially what I'm going to do, but with a few optimizations to speed everything up. I'll also assume that Player X always goes first and Player O second. So without further ado, let's begin the casework.
 
-<b>You are Player O (go second).</b> Since Player O already has a disadvantage in winning, it's probably easier to start here. Actually, it's really easy--X can simply use the optimal strategy for classic tic-tac-toe discussed above, which is making the first move on a corner square. Unless O takes the center square next, X is guaranteed to win (per the classical strategy). After this point, X pretty much controls where O makes their next move, and can eventually force an O win.
+<b>You are Player O (go second).</b> Since Player O already has a disadvantage in winning, it's probably easier to start here. Actually, it's really easy---X can simply use the optimal strategy for classic tic-tac-toe discussed above, which is making the first move on a corner square. Unless O takes the center square next, X is guaranteed to win (per the classical strategy). After this point, X pretty much controls where O makes their next move, and can eventually force an O win.
 
 <figure>
   <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-01-17-fig4.png" alt="Optimal gameplay when you are Player O" title="optimal tic-tac-toe O gameplay" style="width:100%">
@@ -60,7 +60,7 @@ Since this is only a $3 \times 3$ board, we <i>could</i> check every possible ga
 
 <b>You are Player X (start first).</b> This is where it gets a little harder. It's not entirely clear whether Player X can or can't accomplish a draw. Let's break it down (see Figure 5 for a visualization):
 
-- Suppose Player X makes their first move in the center square. Recall our templates from the analysis above. In this case, X has to pursue template 3. But notice that O simply needs to form an O \| ? \| O pattern along any diagonal, middle row or middle column (an O-sandwich, if you will) to foil X's plan. So O essentially controls where X makes their next move from here on out--no matter what square O plays, X has to play the square opposite of it on the board. Then for O's second turn, they can simply play a square adjacent to the one they just played. This gives O two possible subsequent moves: (1) completing the row/column to win, or (2) make an O-sandwich. X can't possibly cover both these options in its next move. Verdict: no draw!
+- Suppose Player X makes their first move in the center square. Recall our templates from the analysis above. In this case, X has to pursue template 3. But notice that O simply needs to form an O \| ? \| O pattern along any diagonal, middle row or middle column (an O-sandwich, if you will) to foil X's plan. So O essentially controls where X makes their next move from here on out---no matter what square O plays, X has to play the square opposite of it on the board. Then for O's second turn, they can simply play a square adjacent to the one they just played. This gives O two possible subsequent moves: (1) completing the row/column to win, or (2) make an O-sandwich. X can't possibly cover both these options in its next move. Verdict: no draw!
 - Now, suppose X doesn't play the middle square first, hence pursuing template 1 or template 2. In this case, O again has a simple goal: they only need to form an O \| O \| ? pattern along any of the outside rows/columns or make an O-sandwich in the middle row or middle column. This is easy if O plays an open middle square on the border of the board. Verdict: no draw again!
 
 <figure>
@@ -68,7 +68,7 @@ Since this is only a $3 \times 3$ board, we <i>could</i> check every possible ga
   <figcaption>Figure 5. <b>Top.</b> If Player X plays the center square first, then either O wins or X extends gameplay to board completion (and X wins). <b>Bottom.</b> If Player X doesn't play the center square, then O can form an O-sandwich or force X to win. In this example, X plays a middle square on the border; the case where X plays a corner square is equivalent to this game rotated by 45 degrees.</figcaption>
 </figure>
 
-So it seems like a rational Player X won't try to go after template 3, because that's a dead end. Moreover, going after template 1 or template 2 still leaves open the option of pursuing template 3 down the road. For O, the name of the game is the O-sandwich--that's the configuration that invalidates all three templates. So the game starts out with X playing anywhere but the center square, and O playing a middle border square on the opposite half of the board. From there on out, X must prevent O from making any O-sandwiches, and the game is pretty much fixed at that point. There is a slight difference between eventual gameplay depending on whether X plays a middle square or corner square, but ultimately someone will win. In the case that X plays a corner square, the game might follow like so:
+So it seems like a rational Player X won't try to go after template 3, because that's a dead end. Moreover, going after template 1 or template 2 still leaves open the option of pursuing template 3 down the road. For O, the name of the game is the O-sandwich---that's the configuration that invalidates all three templates. So the game starts out with X playing anywhere but the center square, and O playing a middle border square on the opposite half of the board. From there on out, X must prevent O from making any O-sandwiches, and the game is pretty much fixed at that point. There is a slight difference between eventual gameplay depending on whether X plays a middle square or corner square, but ultimately someone will win. In the case that X plays a corner square, the game might follow like so:
 
 1. X plays the top-right corner.
 2. O plays the leftmost column, middle row.
@@ -78,7 +78,7 @@ So it seems like a rational Player X won't try to go after template 3, because t
 4. O plays the bottom-right corner.
 5. Either X prevents O from winning and wins themselves, or O wins on the next turn.
 
-I'll leave the other case as a short exercise. Hence, it seems like our little game is rigged--winning is, quite literally, mandatory (but in this case, winning = losing). Perhaps that doesn't make for such a great game, but certainly an interesting mental exercise!
+I'll leave the other case as a short exercise. Hence, it seems like our little game is rigged---winning is, quite literally, mandatory (but in this case, winning = losing). Perhaps that doesn't make for such a great game, but certainly an interesting mental exercise!
 
 <h3>extensions</h3>
 
@@ -125,7 +125,7 @@ This gives us $36$ different configurations, and so our total turns out to be $1
 
 <div class="footnotes">
 <hr align="left" size="1">
-<section id="footnote1"><sup>1</sup>Actually, the first two templates can also be considered as coming from one template--one is just on a diagonal line of symmetry whereas the other is on an orthogonal line of symmetry. This gives us $8$ total rotated configurations of this single template, yielding the same result as the discussion above. But I think looking at them as two separate templates is a little more natural to the square.</section>
+<section id="footnote1"><sup>1</sup>Actually, the first two templates can also be considered as coming from one template---one is just on a diagonal line of symmetry whereas the other is on an orthogonal line of symmetry. This gives us $8$ total rotated configurations of this single template, yielding the same result as the discussion above. But I think looking at them as two separate templates is a little more natural to the square.</section>
 
 <section id="footnote2"><sup>2</sup>On an $m \times n$ board, the first player to get $k$ squares in a row, column or diagonal wins. Along with tic-tac-toe, Connect 4 is another example of such a game.</section>
 </div>

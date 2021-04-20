@@ -6,7 +6,7 @@ tags: misc
 refs:
 ---
 
-As the new year approached and passed, I didn't feel in the mood to write a proper reflection on the old year. But recently, I realized that I tend to forget a lot of events that happen in my life, like what I did last week or even what I had for breakfast yesterday. Many of the things that gradually slip out of my mind are actually things I would really like to remember. So instead of a reflection, I've decided to make a timeline of the past year--a mix of personal, national and global events that I remember most clearly. Besides verifying some of the more high-profile events against news sources, the rest are all pulled from calendars, emails and photos.
+As the new year approached and passed, I didn't feel in the mood to write a proper reflection on the old year. But recently, I realized that I tend to forget a lot of events that happen in my life, like what I did last week or even what I had for breakfast yesterday. Many of the things that gradually slip out of my mind are actually things I would really like to remember. So instead of a reflection, I've decided to make a timeline of the past year---a mix of personal, national and global events that I remember most clearly. Besides verifying some of the more high-profile events against news sources, the rest are all pulled from calendars, emails and photos.
 
 <!--excerpt-->
 
@@ -23,9 +23,9 @@ There isn't really any criteria for what makes it onto the list other than the f
 - Watched <i>Knives Out</i>, and was pleasantly surprised. This is the last movie I saw in theatres.
 - I turned 21!
 - Kobe Bryant and his daughter die in a <a href="https://www.espn.com/nba/story/_/id/28569438/sources-kobe-bryant-daughter-gianna-die-helicopter-crash">helicopter crash.</a>
-- Ran 8 miles on 8'00'' pace--one of my best runs ever. I definitely miss my rainbow-bottomed New Balance 1080 v9s.
+- Ran 8 miles on 8'00'' pace---one of my best runs ever. I definitely miss my rainbow-bottomed New Balance 1080 v9s.
 - President Trump's <a href="https://www.nytimes.com/2020/01/15/us/politics/impeachment.html?searchResultPosition=20">impeachment trial</a> begins and ultimately ends with his acquittal.
-- Began my junior independent work--the start of a wonderful collaboration and mentorship.
+- Began my junior independent work---the start of a wonderful collaboration and mentorship.
 - Had a string of great weekends with close friends, doing all the college things that college kids do.
 - Made an impulsive decision to enter a Cardboard Canoe contest (build a canoe out of limited supplied of cardboard, duct tape and trash bags, and then race other teams down a pool lane). Our boat actually made it to the end without capsizing!
 - Won a Patagonia at a college Bingo night.

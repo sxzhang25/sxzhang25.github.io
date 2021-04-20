@@ -49,7 +49,7 @@ Looking through the citations of the [2], I managed to find an incredibly divers
 <h3>other thoughts</h3>
 Despite being more technical in background than some other papers I've read, the GAT paper was actually a relatively straightforward read. The authors gave a really good balance of mathematical notation and verbal description, and the writing was concise enough that nothing looked dense, while also detailing the perfect amount of information for me to get a solid understanding. I think I want to keep this paper in mind as a reference for writing future technical reports.
 
-Originally, I planned on reading more papers related to object recognition and few-shot recognition this week--GATs came up only because they were an unfamiliar term in a paper on one-shot recognition using image segmentation [1]. But in the process of working through [2], I realized that the space of graphical models is actually way deeper than I thought, and I sort of want to explore it more in depth. So, in the coming weeks I'm going to shift focus a little and dive more into other graphical models and their applications.
+Originally, I planned on reading more papers related to object recognition and few-shot recognition this week---GATs came up only because they were an unfamiliar term in a paper on one-shot recognition using image segmentation [1]. But in the process of working through [2], I realized that the space of graphical models is actually way deeper than I thought, and I sort of want to explore it more in depth. So, in the coming weeks I'm going to shift focus a little and dive more into other graphical models and their applications.
 
 <h3>updates</h3>
 <ul>
@@ -60,5 +60,5 @@ Originally, I planned on reading more papers related to object recognition and f
 <hr align="left" size="1">
 <section id="footnote1"><sup>1</sup>I wasn't taught from the linked slides, but I found them to be a nice quick reference and refresher. Sometimes slides can be sparse and unhelpful without the lecturer, but these were pretty thorough.</section>
 
-<section id="footnote2"><sup>2</sup>I haven't read all of the paper on using GATs for TSP in depth, but I am definitely going to put it on a future reads list--not only does it seem like such a happy intersection of deep learning and math, but the style of writing in the paper is also really unique and refreshing.</section>
+<section id="footnote2"><sup>2</sup>I haven't read all of the paper on using GATs for TSP in depth, but I am definitely going to put it on a future reads list---not only does it seem like such a happy intersection of deep learning and math, but the style of writing in the paper is also really unique and refreshing.</section>
 </div>
