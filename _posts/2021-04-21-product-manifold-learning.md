@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "learning to factorize a manifold"
-date: 2021-04-20
+date: 2021-04-21
 tags: papers data-analysis statistics conferences
 refs:
   - >
