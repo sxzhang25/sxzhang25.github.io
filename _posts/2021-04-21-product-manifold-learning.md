@@ -108,7 +108,7 @@ An interesting application of this method is in structural biology---specificall
 
 <figure>
   <img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/2021-04-21-fig4.png" alt="Real and synthetic cryo-EM data" style="width:100%">
-  <figcaption>Figure 4. Real Cryo-EM images (left) and our synthetic cryo-EM data (right).<a href="#footnote3"><sup>3</sup></a></figcaption>
+  <figcaption>Figure 4. Real Cryo-EM images (left) and our synthetic cryo-EM data (right). The molecule used to generate the data is soured from <a href="https://github.com/amithalevi/ASPIRE-Python/blob/master/src/aspire/volume/fakekv.py">here</a>.<a href="#footnote3"><sup>3</sup></a></figcaption>
 </figure>
 
 The main problem in cryo-EM is a reconstruction problem: given all these images, can we recover information about the 3D structure of the molecule being imaged? In particular, a macromolecule may be composed of several different independently moving subunits. If each of these subunits moves continuously, then the shape space of the entire molecule can be modeled as a product manifold!
