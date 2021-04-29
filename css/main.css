@@ -127,11 +127,20 @@ blockquote .cite {
   line-height: 12px;
 }
 
-p, ol, ol li, ul, ul li {
+p, ol, ol li, ul, ul li, table {
   font-family: 'Inter', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   line-height: 1.8em;
   color: var(--dark);
+}
+
+th, td {
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+
+.table-date {
+  padding-right: 20px;
 }
 
 ol {
