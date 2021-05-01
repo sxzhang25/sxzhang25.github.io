@@ -344,16 +344,16 @@ figcaption {
 .about-row {
   width: 100%;
   text-align: left;
+  padding-top: 15px;
 }
 
 .about-cols {
   display: flex;
-  padding-bottom: 25px;
   width: 100%;
 }
 
 .about-img {
-  padding: 0px 50px 15px 0px;
+  padding: 0px 50px 15px 25px;
   width: 35%;
   float: left;
   min-width: 200px;
