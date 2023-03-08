@@ -10,3 +10,5 @@ gem "jekyll-seo-tag"
 gem "jekyll-paginate"
 gem "github-pages", "~> 214", group: :jekyll_plugins
 gem "jekyll-sitemap"
+
+gem "webrick", "~> 1.8"
