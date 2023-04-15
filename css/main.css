@@ -345,6 +345,7 @@ figcaption {
   width: 100%;
   text-align: left;
   padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .about-cols {
