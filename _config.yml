@@ -25,3 +25,7 @@ paginate_path: "/blog/page:num/"
 
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: "<!--excerpt-->"
+
+author:
+  - institution
+  - number
