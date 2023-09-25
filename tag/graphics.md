@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "tag: gans"
-tag: gans
+title: "tag: graphics"
+tag: graphics
 robots: noindex
 ---
