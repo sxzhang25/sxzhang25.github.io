@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>{{ page.title }}</title>
+		<link rel="shortcut icon" type="image/png" href="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/favicon.png?"/>
+		<!-- link to main stylesheet -->
+	  <link rel="stylesheet" type="text/css" href="/css/publication.css">
+		<script>
+			MathJax = {
+			  tex: {
+			    inlineMath: [['$', '$'], ['\\(', '\\)']]
+			  }
+			};
+		</script>
+		<script id="MathJax-script" async
+  		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175004480-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-175004480-1');
+		</script>
+	{% seo %}
+  </head>
+	<header>
+		<div class="title-wide"><h1>{{ page.title }}</h1></div>
+		<div class="title-thin"><center><h1>{{ page.title }}</h1></center></div>
+	</header>
+
+  <center><h2>{% if page.conference %}{{ page.conference }}{% endif %}</h2></center>
+
+  <div class="authors">
+    {% for author in page.authors %}
+      <!-- {% capture author_name institution_name %}{{ author }}{% endcapture %} -->
+      <div class="author">
+        <p id="author-name">{{ author.name }}</p>
+        <br>
+        <p id="author-institution">{{ author.institution }}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <p class="meta">
+    {% if page.paper %}
+    <a href={{ page.paper }}><b>[paper]</b></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.arxiv %}
+    <a href={{ page.arxiv }}><b>[arxiv]</b></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.code %}
+    <a href={{ page.code }}><b>[code]</b></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.video %}
+    <a href={{ page.video }}><b>[video]</b></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.supplemental %}
+    <a href={{ page.supplemental }}><b>[supplemental]</b></a>
+    {% endif %}
+  </p>
+
+  <div class="abstract">
+    {% if page.image %}
+    <center><img src="{{ page.image | prepend: site.url }}"></img></center>
+    {% endif %}
+    <center><h3>Abstract</h3></center>
+    <p>
+      {{ page.abstract }}
+    </p>
+  </div>
+
+  <hr style="margin-bottom:50px;">
+
+  <body>
+      {{ content }}
+
+<footer>
+	<!-- <ul>
+		<li><a href="https://twitter.com/sxzhang25"><img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/twitter.png" height="25px" alt="twitter"></a></li>
+		<li><a href="https://github.com/sxzhang25"><img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/github.png" height="25px" alt="github"></a></li>
+		<li><a href="/"><img src="https://github.com/sxzhang25/sxzhang25.github.io/raw/main/imgs/email.png" height="25px" alt="email"></a></li>
+		<li><span class="symbol"><a href="/">✎ Apr 2023</a></span></li>
+	</ul> -->
+</footer>
+</body>
+</html>
