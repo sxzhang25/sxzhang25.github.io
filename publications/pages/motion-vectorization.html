@@ -1,0 +1,109 @@
+---
+layout: publication
+title: Editing Motion Graphics Video via Motion Vectorization and Transformation
+authors:
+    - name: Sharon Zhang
+      institution: Stanford University
+    - name: Jiaju Ma
+      institution: Stanford University
+    - name: Daniel Ritchie
+      institution: Brown University
+    - name: Jiajun Wu
+      institution: Stanford University
+    - name: Maneesh Agrawala
+      institution: Stanford University, Roblox
+paper: /publications/pages/motion-vectorization.html
+arxiv: /publications/pages/motion-vectorization.html
+video: https://youtu.be/eejjuwZEUyk?si=DvB_AnTGXeUlL3qs
+supplemental: /publications/zip/motion-vectorization-supp.zip
+conference: SIGGRAPH Asia 2023
+image: /publications/imgs/motion-vectorization-teaser.png
+abstract:
+    Motion graphics videos are widely used in Web design, digital
+    advertising, animated logos and film title sequences, to capture a
+    viewer's attention.
+    But editing such video is challenging because the video provides a
+    low-level sequence of pixels and frames rather than higher-level
+    structure such as the objects in the video with their corresponding
+    motions and occlusions. We present a <i>motion vectorization</i> pipeline 
+    for converting motion graphics video into an SVG motion program that provides such
+    structure.
+    The resulting SVG program can be rendered using any SVG renderer
+    (e.g. most Web browsers) and edited using any SVG editor.
+    We also introduce a <i>program transformation</i> API
+    that facilitates editing of a SVG motion program to create variations
+    that adjust the timing, motions and/or appearances of objects.
+    We show how the API can be used to create a variety of effects
+    including retiming object motion to match a music beat, adding motion
+    textures to objects, and collision preserving appearance changes.
+---
+
+<script>
+  {% include js/svg_vis.js %}
+</script>
+
+<center><h3>Video Overview</h3></center>
+<iframe width="1000" height="563" src="https://www.youtube.com/embed/eejjuwZEUyk?si=T79aH89tU7a1X8sR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br><br>
+<center><h3>Motion Vectorization</h3></center>
+
+<p>Our <i>motion vectorization</i> pipeline converts a motion graphics video into an SVG motion program. 
+  The SVG motion program represents the motion graphics video as a collection of <i>objects</i>, where each object has an <i>appearance</i> and <i>motion</i>,
+both of which are independent of one another. To see examples of the SVG motion program code, you can right click on any embedded SVG and click <i>Inspect</i>, or 
+refer to our <a href="/">supplemental materials</a>.</p>
+
+<p><b>Note: We strongly recommend using Google Chrome to view SVGs, as they may not be supported
+  on other browsers.</b></p>
+
+<br>
+
+<div class="svgs">
+  <div class="svg">
+    <p>Input video</p>
+    <p></p>
+    <video controls width="450">
+      <source src="/publications/vids/face.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="svg">
+    <p>SVG motion program</p>
+    <p></p>
+    <object id="svg0" data="/publications/svgs/face.svg" type="image/svg+xml"></object>
+    <br>
+    <button type="button" onclick="playSVG('svg0')">Play</button>
+  </div>
+</div>
+
+<br>
+<center><h3>Program Transformation</h3></center>
+
+<p>Using our program transformation API, we can programmatically generate new variations of an SVG motion program.
+  Here, we've written a program transformer that generates a Chinese New Years motion graphic from the resulting SVG motion program above. 
+  By changing a few parameters of the program, such as the year and animal, we can easily create many different complex variations.</p>
+<p>For more examples, we encourage you to check out our <a href="/">supplemental materials</a>.</p>
+
+<div class="svgs">
+  <div class="svg">
+    <object id="svg1" data="/publications/svgs/cny1_1.svg" type="image/svg+xml"></object>
+    <br>
+    <button id="button1" type="button" onclick="playSVG('svg1')">Play</button>
+  </div>
+  <div class="svg">
+    <object id="svg2" data="/publications/svgs/cny1_2.svg" type="image/svg+xml"></object>
+    <br>
+    <button id="button1" type="button" onclick="playSVG('svg2')">Play</button>
+  </div>
+  <div class="svg">
+    <object id="svg3" data="/publications/svgs/cny1_3.svg" type="image/svg+xml"></object>
+    <br>
+    <button id="button1" type="button" onclick="playSVG('svg3')">Play</button>
+  </div>
+</div>
+
+
+<br><br>
+<h3>Bibtex</h3>
+<div class="bibtex">
+  BIBTEX CITATION
+</div>
