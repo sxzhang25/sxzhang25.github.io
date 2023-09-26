@@ -60,7 +60,10 @@
     <a href={{ page.video }}><b>[video]</b></a>&nbsp;&nbsp;
     {% endif %}
     {% if page.supplemental %}
-    <a href={{ page.supplemental }}><b>[supplemental]</b></a>
+    <a href={{ page.supplemental }}><b>[supplemental]</b></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if page.results %}
+    <a href={{ page.results }}><b>[results]</b></a>
     {% endif %}
   </p>
 
@@ -68,13 +71,23 @@
     {% if page.image %}
     <center><img src="{{ page.image | prepend: site.url }}"></img></center>
     {% endif %}
-    <center><h3>Abstract</h3></center>
+    {% if page.image-caption %}
+    <div style="margin-bottom: 25px;">
+    <figcaption>
+      <b>Figure 1.</b> {{ page.image-caption }}
+    </figcaption>
+    </div>
+    {% endif %}
+  </div>
+
+  <hr style="margin-bottom:75px;">
+
+  <center><h3>Abstract</h3></center>
     <p>
       {{ page.abstract }}
     </p>
-  </div>
 
-  <hr style="margin-bottom:50px;">
+    <br><br>
 
   <body>
       {{ content }}

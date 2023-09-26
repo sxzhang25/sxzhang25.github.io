@@ -2,40 +2,54 @@
 layout: publication
 title: Editing Motion Graphics Video via Motion Vectorization and Transformation
 authors:
-    - name: Sharon Zhang
-      institution: Stanford University
-    - name: Jiaju Ma
-      institution: Stanford University
-    - name: Daniel Ritchie
-      institution: Brown University
-    - name: Jiajun Wu
-      institution: Stanford University
-    - name: Maneesh Agrawala
-      institution: Stanford University, Roblox
+  - name: Sharon Zhang
+    institution: Stanford University
+  - name: Jiaju Ma
+    institution: Stanford University
+  - name: Daniel Ritchie
+    institution: Brown University
+  - name: Jiajun Wu
+    institution: Stanford University
+  - name: Maneesh Agrawala
+    institution: Stanford University, Roblox
 paper: /publications/motion-vectorization.html
 arxiv: /publications/motion-vectorization.html
 video: https://youtu.be/eejjuwZEUyk?si=DvB_AnTGXeUlL3qs
-supplemental: https://drive.google.com/file/d/186xO0cZK834MnynpwvcSc9hEIFGAR1hv/view?usp=sharing
+supplemental: /publications/pdfs/motion-vectorization-supp.pdf
+results: https://drive.google.com/file/d/186xO0cZK834MnynpwvcSc9hEIFGAR1hv/view?usp=sharing
 conference: SIGGRAPH Asia 2023
 image: /publications/imgs/motion-vectorization-teaser.png
+image-caption: 
+  To edit an input motion graphics video (top left) we
+  provide a pair of tools. Our <i>motion vectorization</i> pipeline
+  converts the video into an SVG motion program that represents
+  objects, their per-frame motions (scale, translate, rotate,
+  skew) and their occlusion relationships (z-index). Our <i>
+  program transformation</i> API enables programmatic creation of
+  variations of the SVG motion program. Here the program
+  transformer creates variations for the Chinese new year,
+  selecting objects in the input video based on their color and then
+  changing their appearance, matching the animal to the year and
+  adding a pulsing motion texture to the Chinese characters above
+  the animal icon. 
 abstract:
-    Motion graphics videos are widely used in Web design, digital
-    advertising, animated logos and film title sequences, to capture a
-    viewer's attention.
-    But editing such video is challenging because the video provides a
-    low-level sequence of pixels and frames rather than higher-level
-    structure such as the objects in the video with their corresponding
-    motions and occlusions. We present a <i>motion vectorization</i> pipeline 
-    for converting motion graphics video into an SVG motion program that provides such
-    structure.
-    The resulting SVG program can be rendered using any SVG renderer
-    (e.g. most Web browsers) and edited using any SVG editor.
-    We also introduce a <i>program transformation</i> API
-    that facilitates editing of a SVG motion program to create variations
-    that adjust the timing, motions and/or appearances of objects.
-    We show how the API can be used to create a variety of effects
-    including retiming object motion to match a music beat, adding motion
-    textures to objects, and collision preserving appearance changes.
+  Motion graphics videos are widely used in Web design, digital
+  advertising, animated logos and film title sequences, to capture a
+  viewer's attention.
+  But editing such video is challenging because the video provides a
+  low-level sequence of pixels and frames rather than higher-level
+  structure such as the objects in the video with their corresponding
+  motions and occlusions. We present a <i>motion vectorization</i> pipeline 
+  for converting motion graphics video into an SVG motion program that provides such
+  structure.
+  The resulting SVG program can be rendered using any SVG renderer
+  (e.g. most Web browsers) and edited using any SVG editor.
+  We also introduce a <i>program transformation</i> API
+  that facilitates editing of a SVG motion program to create variations
+  that adjust the timing, motions and/or appearances of objects.
+  We show how the API can be used to create a variety of effects
+  including retiming object motion to match a music beat, adding motion
+  textures to objects, and collision preserving appearance changes.
 ---
 
 <script>
@@ -45,7 +59,7 @@ abstract:
 <center><h3>Video Overview</h3></center>
 <iframe width="1000" height="563" src="https://www.youtube.com/embed/eejjuwZEUyk?si=T79aH89tU7a1X8sR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<br><br>
+<br><br><br>
 <center><h3>Motion Vectorization</h3></center>
 
 <p>Our <i>motion vectorization</i> pipeline converts a motion graphics video into an SVG motion program. 
@@ -75,7 +89,7 @@ refer to our <a href="https://drive.google.com/file/d/186xO0cZK834MnynpwvcSc9hEI
   </div>
 </div>
 
-<br>
+<br><br>
 <center><h3>Program Transformation</h3></center>
 
 <p>Using our program transformation API, we can programmatically generate new variations of an SVG motion program.

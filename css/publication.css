@@ -389,11 +389,12 @@ figure {
 
 figcaption {
   font-size: 14px;
-font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   text-decoration: italic;
   color: var(--dark);
-  text-align: left;
-  padding-top: 20px;
+  text-align: justify;
+  padding-top: 0px;
+  width: 100%;
 }
 
 .title-wide {
