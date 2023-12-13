@@ -613,4 +613,5 @@ img {
   font-family: 'Source Code Pro', monospace;
   font-size: 12px;
   padding: 25px;
+  line-height: normal;
 }
