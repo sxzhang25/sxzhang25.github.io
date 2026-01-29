@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --light: #faf9f9;
@@ -9,7 +9,7 @@
   --highlight:#fbff24;
   --link:#3340f3;
   --footer: #c0b9cf;
-  --link-hover: #cbe0ec;
+  --link-hover: #e6e5de;
   --blockquote: #3340f3;
   --cite: #a19da1;
   --meta: #a19da1;
@@ -23,19 +23,27 @@ body {
   background-color: var(--light);
 }
 footer {
-  margin-top: 50px;
-  border-top: 1px solid var(--footer);
+  margin-top: 10px;
+  /* border-top: 2px solid var(--accent); */
   font-size: .8em;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
+  font-weight: 400;
+  color: var(--footer);
 }
 footer ul {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  float: right;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
+  font-weight: 400;
+  color: var(--footer);
   padding: 0px;
   list-style: none;
-  font-weight: bold;
 }
 footer ul li {
   display: inline;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
+  font-weight: 400;
+  color: var(--footer);
 }
 footer a {
   color: var(--footer);
@@ -65,21 +73,23 @@ footer img:hover {
 }
 
 h1 {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   color: var(--accent);
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 h2 {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   color: var(--accent);
   font-size: 28px;
+  font-weight: 500;
 }
 h3 {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   color: var(--accent);
   font-size: 20px;
   padding-top: 15px;
+  font-weight: 500;
 }
 
 blockquote .quote {
@@ -87,7 +97,7 @@ blockquote .quote {
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 24px;
-  font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   line-height: 36px;
   text-indent: -0.45em;
   font-style: italic;
@@ -100,7 +110,7 @@ blockquote .long-quote {
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 20px;
-  font-family: 'Source Serif Pro', 'Times New Roman', 'Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   line-height: 28px;
   text-indent: -0.45em;
   font-style: italic;
@@ -122,15 +132,15 @@ blockquote p {
 blockquote .cite {
   display: inline;
   color: var(--cite);
-  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
   line-height: 12px;
 }
 
 p, ol, ol li, ul, ul li, table {
-  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
-  line-height: 1.8em;
+  line-height: 1.65em;
   color: var(--dark);
 }
 
@@ -163,28 +173,28 @@ ul.post-list {
 
 ul.post-list li {
   list-style: none;
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   font-size: 24px;
 }
 
 header {
   vertical-align: middle;
   padding-bottom: 100px;
+  font-weight: 500;
 }
 
 nav ul {
   height: 50px;
   display: table;
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   list-style: none;
-  font-weight: bold;
   padding: 10px;
 }
 nav ul li {
   /* height: 100%; */
   vertical-align: middle;
   display: table-cell;
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   font-size: 18px;
 }
 
@@ -209,6 +219,8 @@ header nav {
 
 header h1 {
   font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .excerpt {
@@ -231,7 +243,7 @@ header h1 {
   padding-bottom: 25px;
   height: 100%;
   display: block;
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   color: var(--dark);
 }
@@ -255,7 +267,7 @@ header h1 {
 }
 
 .footnotes {
-  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 12px;
   line-height: 16px;
   color: var(--dark);
@@ -274,7 +286,7 @@ header h1 {
 }
 
 .pagination a, .pagination span {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   color: var(--link);
   text-decoration: none;
@@ -284,7 +296,7 @@ header h1 {
   }
 
 .pagination {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 20px;
   color: var(--accent);
   text-align: center;
@@ -305,7 +317,7 @@ figure {
 
 figcaption {
   font-size: 14px;
-  font-family: 'Inter', 'Helvetica', 'Sans-Serif';
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   text-decoration: italic;
   color: var(--dark);
   text-align: left;
@@ -383,7 +395,7 @@ figcaption {
 }
 .pub h2 {
   margin-bottom: 6px;
-  font-family: Inter;
+  font-family: Zalando Sans;
   font-size: 16px;
   color: var(--dark)
 }
@@ -443,7 +455,7 @@ figcaption {
 }
 
 .tags {
-  font-family: 'Recursive', 'Helvetica', 'Sans-Serif';
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
 }
 
 .post {
@@ -466,7 +478,7 @@ figcaption {
   height: 50px;
 }
 .post a, .about-cols a, .about-row a, .random a {
-  text-decoration: underline dotted var(--blockquote) 2px;
+  /* text-decoration: underline dotted var(--blockquote) 2px; */
   text-underline-offset: 4px;
 }
 .post a:hover, .about-cols a:hover, .about-row a:hover, .random a:hover {
@@ -475,7 +487,7 @@ figcaption {
 }
 
 .symbol {
-  font-weight: 100;
+  /* font-weight: 100; */
   float: right;
   color: transparent;
   text-shadow: 0 0 0 --var(symbol);

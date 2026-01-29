@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --light: #ffffff;
@@ -15,12 +17,13 @@
 }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
-  text-align: justify;
-  line-height: 1.4em;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
+  /* text-align: justify; */
+  /* line-height: 1.4em; */
   margin: 60px auto;
   width: 85%;
   max-width: 1000px;
+  min-width: 800px;
   background-color: var(--light);
 }
 footer {
@@ -29,10 +32,10 @@ footer {
   font-size: .8em;
 }
 footer ul {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   padding: 0px;
   list-style: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 footer ul li {
   display: inline;
@@ -65,7 +68,7 @@ footer img:hover {
   transition: .2s;
 }
 button {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   background-color: #6a6a6a;
   border: none;
   color: white;
@@ -80,19 +83,21 @@ button {
 }
 
 h1 {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   color: var(--dark);
   font-size: 36px;
 }
 h2 {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   color: var(--accent);
   font-size: 28px;
+  font-weight: 500;
 }
 h3 {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   color: var(--accent);
   font-size: 20px;
+  font-weight: 500;
 }
 
 blockquote .quote {
@@ -100,7 +105,7 @@ blockquote .quote {
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 24px;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   line-height: 36px;
   text-indent: -0.45em;
   font-style: italic;
@@ -113,7 +118,7 @@ blockquote .long-quote {
   margin-left: 1.5em 10px;
   /* padding: 0.5em 10px; */
   font-size: 20px;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   line-height: 28px;
   text-indent: -0.45em;
   font-style: italic;
@@ -135,20 +140,27 @@ blockquote p {
 blockquote .cite {
   display: inline;
   color: var(--cite);
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   font-size: 12px;
   line-height: 12px;
 }
 
 p, ol, ol li, ul, ul li, table {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.65em;
   color: var(--dark);
 }
 
+p {
+  max-width: 800px;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* .post {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Newsreader', sans-serif;
   line-height: 1.4em;
 } */
 
@@ -181,7 +193,7 @@ ul.post-list {
 
 ul.post-list li {
   list-style: none;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 24px;
 }
 
@@ -193,16 +205,16 @@ header {
 nav ul {
   height: 50px;
   display: table;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   list-style: none;
-  font-weight: bold;
+  font-weight: 600;
   padding: 10px;
 }
 nav ul li {
   /* height: 100%; */
   vertical-align: middle;
   display: table-cell;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 18px;
 }
 
@@ -226,7 +238,7 @@ header nav {
 }
 
 header h1 {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   font-size: 36px;
   line-height: 1.2em;
   text-align: center;
@@ -237,18 +249,23 @@ video {
 }
 
 .svgs {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
   width: 100%;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  vertical-align: top;
+  margin-top: 50px;
 }
 .svg {
-  font-family: 'Source Sans 3', sans-serif;
-  /* display: inline; */
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   text-align: center;
-  margin: 10px 10px 10px 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.svg video,
+.svg object,
+.svg img {
+  max-width: 100%;
+  height: auto;
 }
 
 .authors {
@@ -260,14 +277,14 @@ video {
 }
 
 .author {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Newsreader', 'Times New Roman', 'Serif';
   /* display: inline; */
   text-align: center;
   margin: 10px 10px 10px 10px;
 }
 #author-name{
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 0em;
   display: inline;
 }
@@ -281,6 +298,8 @@ video {
 .meta {
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
+  font-weight: 600;
 }
 
 .excerpt {
@@ -294,7 +313,7 @@ video {
 
 .abstract {
   width: 100%;
-  text-align: justify;
+  /* text-align: justify; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -315,7 +334,7 @@ video {
   padding-bottom: 25px;
   height: 100%;
   display: block;
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   color: var(--dark);
 }
@@ -339,7 +358,7 @@ video {
 }
 
 .footnotes {
-font-family: 'Source Sans 3', sans-serif;
+font-family: 'Newsreader', sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: var(--dark);
@@ -358,7 +377,7 @@ font-family: 'Source Sans 3', sans-serif;
 }
 
 .pagination a, .pagination span {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 16px;
   color: var(--link);
   text-decoration: none;
@@ -368,7 +387,7 @@ font-family: 'Source Sans 3', sans-serif;
   }
 
 .pagination {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   font-size: 20px;
   color: var(--accent);
   text-align: center;
@@ -389,10 +408,10 @@ figure {
 
 figcaption {
   font-size: 14px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
   text-decoration: italic;
   color: var(--dark);
-  text-align: justify;
+  /* text-align: justify; */
   padding-top: 0px;
   width: 100%;
 }
@@ -478,7 +497,7 @@ img {
 }
 .pub h2 {
   margin-bottom: 6px;
-  font-family: Inter;
+  font-family: 'Newsreader';
   font-size: 16px;
 }
 
@@ -504,7 +523,7 @@ img {
 }
 
 .tags {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
 }
 
 .post {
@@ -515,7 +534,8 @@ img {
 }
 .post p {
   font-size: 16px;
-  line-height: 1.8em;
+  /* line-height: 1.8em; */
+  line-height: auto;
 }
 .post ul li, ol li {
   line-height: 1.8em;
