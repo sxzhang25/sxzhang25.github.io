@@ -2,6 +2,9 @@
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <title>{{ include.title }}</title>
 <link rel="icon" type="image/png" href="{{ '/imgs/favicon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap">
 <link rel="stylesheet" type="text/css" href="{{ include.stylesheet | relative_url }}">
 {% if page.math %}{% include mathjax.html %}{% endif %}
 {% include analytics.html %}

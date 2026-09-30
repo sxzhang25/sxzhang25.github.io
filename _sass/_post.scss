@@ -1,0 +1,134 @@
+// Blog posts, post lists, and tag pages.
+
+blockquote .quote,
+blockquote .long-quote {
+  border-left: 8px solid var(--blockquote);
+  font-family: var(--font-serif);
+  text-indent: -0.45em;
+  font-style: italic;
+  color: var(--blockquote);
+  padding: 7px 0 7px 28px;
+}
+blockquote .quote {
+  font-size: 24px;
+  line-height: 36px;
+}
+blockquote .long-quote {
+  font-size: 20px;
+  line-height: 28px;
+}
+blockquote:before {
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+blockquote .cite {
+  display: inline;
+  color: var(--cite);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 12px;
+}
+
+ul.post-list {
+  margin: 20px auto 40px;
+}
+ul.post-list li {
+  list-style: none;
+  font-family: var(--font-serif);
+  font-size: 24px;
+}
+
+.excerpt {
+  margin-left: 20px;
+}
+.excerpt, .excerpt a, .excerpt a:hover {
+  color: var(--dark);
+  transition: .2s;
+}
+
+.read-more {
+  margin-left: 20px;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.refs ol {
+  margin: 0px;
+  padding-bottom: 25px;
+  height: 100%;
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--dark);
+  counter-reset: list;
+}
+.refs ol li {
+  padding-bottom: 10px;
+}
+.refs ol > li {
+  list-style: none;
+  position: relative;
+}
+.refs ol > li:before {
+  counter-increment: list;
+  content: counter(list) ". ";
+  position: absolute;
+  left: -1.4em;
+}
+
+.footnotes {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--dark);
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.footnotes hr {
+  width: 100px;
+  background-color: var(--accent);
+  border-color: transparent;
+}
+.footnotes section {
+  padding-bottom: 10px;
+}
+
+.pagination {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  color: var(--accent);
+  text-align: center;
+}
+.pagination a, .pagination span {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--link);
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+.tags {
+  font-family: var(--font-serif);
+}
+
+.post {
+  width: 100%;
+}
+.post h3 {
+  line-height: 32px;
+}
+.post p {
+  font-size: 16px;
+  line-height: 1.8em;
+}
+.post ul li, ol li {
+  line-height: 1.8em;
+  margin-top: 10px;
+  width: 95%;
+}

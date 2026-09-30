@@ -1,0 +1,186 @@
+// Standalone paper project pages (_layouts/publication.html).
+
+:root {
+  --light: #ffffff;
+  --link-hover: #cbe0ec;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 60px auto;
+  width: 85%;
+  max-width: 1000px;
+  background-color: var(--light);
+}
+
+footer {
+  margin-top: 50px;
+  border-top: 1px solid var(--footer);
+  font-size: .8em;
+}
+
+button {
+  font-family: var(--font-sans);
+  background-color: #6a6a6a;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  color: var(--dark);
+  font-size: 36px;
+}
+h2, h3 {
+  font-family: var(--font-sans);
+  color: var(--accent);
+  font-weight: 500;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  vertical-align: middle;
+  padding-bottom: 100px;
+}
+header h1 {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 14px;
+  font-family: var(--font-sans);
+  font-style: italic;
+  color: var(--dark);
+  padding-top: 0px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+video {
+  vertical-align: top;
+}
+
+.video-embed {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.svgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+}
+.svg {
+  font-family: var(--font-serif);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.svg video,
+.svg object,
+.svg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.author {
+  font-family: var(--font-serif);
+  text-align: center;
+  margin: 10px;
+}
+.author-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 0em;
+  display: inline;
+}
+.author-institution {
+  font-size: 16px;
+  color: var(--accent);
+  font-style: italic;
+  display: inline;
+}
+
+.meta {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.abstract {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.abstract h3 {
+  line-height: 0em;
+}
+.abstract img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.bibtex {
+  background-color: #e7e7e7;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 25px;
+  line-height: normal;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: $breakpoint-project) {
+  header {
+    padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: $breakpoint-project + 1) {
+  header {
+    display: flow-root;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  header h1 {
+    margin-bottom: 0;
+  }
+}

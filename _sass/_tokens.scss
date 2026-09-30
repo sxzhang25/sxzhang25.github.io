@@ -1,0 +1,22 @@
+// Design tokens shared by every stylesheet. Page stylesheets may override
+// individual colors in their own :root block.
+
+$breakpoint-site: 1050px;
+$breakpoint-project: 875px;
+
+:root {
+  --light: #faf9f9;
+  --dark: #1d1d22;
+  --accent: #3340f3;
+  --highlight: #fbff24;
+  --link: #3340f3;
+  --footer: #c0b9cf;
+  --link-hover: #e6e5de;
+  --blockquote: #3340f3;
+  --cite: #a19da1;
+  --meta: #a19da1;
+
+  --font-serif: 'Newsreader', 'Times New Roman', serif;
+  --font-sans: 'Zalando Sans', 'Helvetica', sans-serif;
+  --font-mono: 'Source Code Pro', monospace;
+}
