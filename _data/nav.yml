@@ -1,0 +1,7 @@
+# Header navigation, in display order.
+- title: cv
+  url: /cv.pdf
+- title: publications
+  url: /publications
+- title: github
+  url: https://github.com/sxzhang25

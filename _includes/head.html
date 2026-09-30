@@ -1,3 +1,8 @@
-{% if site.tags != "" %}
-  {% include collecttags.html %}
-{% endif %}
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>{{ include.title }}</title>
+<link rel="icon" type="image/png" href="{{ '/imgs/favicon.png' | relative_url }}">
+<link rel="stylesheet" type="text/css" href="{{ include.stylesheet | relative_url }}">
+{% if page.math %}{% include mathjax.html %}{% endif %}
+{% include analytics.html %}
+{% seo title=false %}

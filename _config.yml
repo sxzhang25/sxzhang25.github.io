@@ -1,7 +1,10 @@
 title: Sharon Zhang
 name: Sharon Zhang
 email: zsharonx@gmail.com
-url: https://sxzhang25.github.io/
+url: https://sxzhang25.github.io
+baseurl: ""
+repository: sxzhang25/sxzhang25.github.io
+description: Sharon Zhang is a PhD student at Stanford working on tools for creating and editing visual content.
 tagline: cs research, tech + society and miscellaneous.
 github: sxzhang25
 twitter: 
@@ -26,6 +29,19 @@ paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: "<!--excerpt-->"
 
-author:
-  - institution
-  - number
+author: Sharon Zhang
+
+# Set to a GA4 measurement ID (e.g. G-XXXXXXXXXX) to enable analytics.
+google_analytics:
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - tag_generator.py
+  - tests.ipynb
+  - archive/
+  - imgs/script.py
+  - imgs/profile.png
+  - imgs/profile.riv
+  - vendor/

@@ -1,0 +1,60 @@
+# Publications, newest first. Rendered by _includes/publication.html.
+#
+# authors: a trailing "*" marks equal contribution. Links come from _data/people.yml;
+#          site.author is underlined.
+# venue:   may contain inline HTML (e.g. <i>...</i>).
+# links:   label -> url, rendered in order as [label].
+
+- title: "[preprint] Aggregating LLM-Based Weak Verifiers for Spatial Layout Generation"
+  authors: [Sharon Zhang, R. Kenny Jones, Jiajun Wu, Maneesh Agrawala]
+  venue: preprint (2026).
+  links:
+    - arxiv: https://arxiv.org/abs/2606.05268
+
+- title: Providing Rapid Design Feedback for 3D Obstacle Course Games Using Constrained Solvability Queries
+  authors: [Zander Majercik, Sharon Zhang, William Wang, Tejan Karmali, Fangjun Zhou, Yucheng Yuan, Jean-Peïc Chou, Maneesh Agrawala, Kayvon Fatahalian]
+  venue: SIGGRAPH Asia 2026.
+
+- title: Editing Motion Graphics Video via Motion Vectorization and Transformation
+  authors: [Sharon Zhang, Jiaju Ma, Jiajun Wu, Daniel Ritchie, Maneesh Agrawala]
+  venue: SIGGRAPH Asia 2023.
+  links:
+    - paper: https://dl.acm.org/doi/pdf/10.1145/3618316
+    - arxiv: https://arxiv.org/abs/2309.14642
+    - project: /publications/motion-vectorization.html
+    - code: https://github.com/sxzhang25/MotionVectorization-ProgramTransformation
+
+- title: Tree-Structured Shading Decomposition
+  authors: [Chen Geng*, Hong-Xing Yu*, Sharon Zhang, Maneesh Agrawala, Jiajun Wu]
+  venue: ICCV 2023.
+  links:
+    - paper: https://chen-geng.com/files/inv-shade-trees.pdf
+    - project: https://chen-geng.com/inv-shade-trees/index.html
+    - code: https://github.com/gcgeng/inv-shade-trees
+
+- title: "[Re] Don't Judge an Object By It's Context: Learning to Overcome Contextual Bias"
+  authors: [Sunnie S. Y. Kim, Sharon Zhang, Nicole Meister, Olga Russakovsky]
+  venue: 2020 ML Reproducibility Challenge (selected for publication in ReScience C journal).
+  links:
+    - paper: https://openreview.net/pdf?id=PRXM8-O9PKd
+    - code: https://github.com/sunniesuhyoung/ContextualBias
+
+- title: Product Manifold Learning
+  authors: [Sharon Zhang, Amit Moscovich, Amit Singer]
+  venue: AISTATS 2021.
+  links:
+    - paper: https://arxiv.org/abs/2010.09908
+    - code: https://github.com/sxzhang25/product-manifold-learning
+
+- title: Cardinalities of Prime Spectra of Precompletions
+  authors: [Erica Barrett*, Emil Graf*, Kimball Strong*, Sharon Zhang*, S. Loepp]
+  venue: The <i>AMS Contemporary Mathematics</i> book series.
+  links:
+    - paper: https://arxiv.org/abs/1911.06648
+
+- title: Structure of Spectra of Precompletions
+  authors: [Erica Barrett*, Emil Graf*, Kimball Strong*, Sharon Zhang*, S. Loepp]
+  venue: The <i>Rocky Mountain Journal of Mathematics</i>.
+  links:
+    - article: https://projecteuclid.org/euclid.rmjm/1609815800
+    - arXiv: https://arxiv.org/abs/1911.01394

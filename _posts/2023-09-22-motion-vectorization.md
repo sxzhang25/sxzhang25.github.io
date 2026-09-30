@@ -1,5 +1,6 @@
 ---
 layout: post
+math: true
 title: "editing motion graphics video via motion vectorization and transformation"
 date: 2023-09-22
 tags: papers motion-graphics vector-graphics graphics conferences

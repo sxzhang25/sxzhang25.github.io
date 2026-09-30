@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --light: #faf9f9;
@@ -179,7 +177,6 @@ ul.post-list li {
 
 header {
   vertical-align: middle;
-  padding-bottom: 100px;
   font-weight: 500;
 }
 
@@ -203,19 +200,6 @@ nav li {
   padding: 10px;
 }
 
-.nav-wide {
-  display: block;
-  float: right;
-}
-.nav-thin {
-  display: block;
-  width: 100%;
-}
-
-header nav {
-  list-style: center;
-  vertical-align: middle;
-}
 
 header h1 {
   font-size: 32px;
@@ -234,7 +218,7 @@ header h1 {
 
 .read-more {
   margin-left: 20px;
-  text-decoration: italic;
+  font-style: italic;
   margin-bottom: 40px;
 }
 
@@ -318,39 +302,25 @@ figure {
 figcaption {
   font-size: 14px;
   font-family: 'Zalando Sans', 'Helvetica', 'Sans-Serif';
-  text-decoration: italic;
+  font-style: italic;
   color: var(--dark);
   text-align: left;
   padding-top: 20px;
 }
 
-.title-wide {
-  float: left;
-  display: table;
-  padding-top: 10px;
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.title-thin {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  display: block;
-}
-
-.title-wide a, .title-thin a {
+.site-title a {
   color: #000;
 }
-.title-wide a:hover, .title-thin a:hover {
+.site-title a:hover {
   text-decoration: none;
   background-color: var(--link-hover);
   transition: .2s;
-}
-
-.about-wide {
-  display: block;
-}
-.about-thin {
-  display: block;
 }
 
 .about-row {
@@ -368,15 +338,17 @@ figcaption {
 .about-img {
   padding: 25px 50px 10px 5px;
   width: 55%;
-  float: left;
   min-width: 200px;
   text-align: center;
+}
+
+.about-img img {
+  width: 100%;
 }
 
 .about-desc {
   width: 100%;
   padding-right: 0px;
-  float: right;
 }
 
 .pub {
@@ -395,7 +367,7 @@ figcaption {
 }
 .pub h2 {
   margin-bottom: 6px;
-  font-family: Zalando Sans;
+  font-family: 'Zalando Sans', 'Helvetica', sans-serif;
   font-size: 16px;
   color: var(--dark)
 }
@@ -457,7 +429,7 @@ figcaption {
 }
 
 .meta p {
-  color: --var(meta);
+  color: var(--meta);
   font-size: 16px;
 }
 
@@ -497,7 +469,7 @@ figcaption {
   /* font-weight: 100; */
   float: right;
   color: transparent;
-  text-shadow: 0 0 0 --var(symbol);
+  text-shadow: 0 0 0 var(--symbol);
 }
 .symbol a:hover {
   color: var(--link);
@@ -538,30 +510,39 @@ figcaption {
   .project-img {
     display: none;
   }
-  .about-wide {
-    display: none;
-  }
-  .title-wide {
-    display: none;
-  }
-  .nav-wide {
-    display: none;
-  }
   .post-padding {
     display: none;
   }
   header {
     padding-bottom: 25px;
   }
-}
-@media screen and (min-width: 1050px) {
-  .about-thin {
-    display: none;
+  .site-header {
+    display: block;
+    text-align: center;
   }
-  .title-thin {
-    display: none;
+  .site-header nav ul {
+    margin-left: auto;
+    margin-right: auto;
   }
-  .nav-thin {
-    display: none;
+  .about-cols {
+    flex-direction: column;
+  }
+  .about-img {
+    width: auto;
+    padding: 0;
+  }
+  .about-img img {
+    width: 35%;
+    min-width: 400px;
+    max-width: 100%;
+  }
+  .about {
+    padding-top: 15px;
+  }
+  .about .about-row {
+    padding-top: 0;
+  }
+  .about-desc p:last-child {
+    margin-bottom: 0;
   }
 }

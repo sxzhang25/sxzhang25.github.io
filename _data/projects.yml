@@ -1,0 +1,33 @@
+# Projects, in display order. `image` is the base name of imgs/<image>.png (static) and imgs/<image>.gif (hover).
+- title: Driver's Ed 101
+  url: https://karenying.github.io/drivers-ed/
+  course: COS 426 Computer Graphics, Spring 2020
+  description: An infinite runner game in which a student driver must navigate down Princeton University's Washington Road.
+  image: drivers-ed
+  links:
+    - code: https://github.com/karenying/drivers-ed
+    - demo: https://karenying.github.io/drivers-ed/
+
+- title: Video stabilizer
+  url: https://github.com/sxzhang25/cos429-finalproj
+  course: COS 429 Computer Vision, Fall 2019
+  description: Based on work by Matthias Grundmann, Vivek Kwatra and Irfan Essa for Google AI.
+  image: video-stabilizer
+  links:
+    - code: https://github.com/sxzhang25/cos429-finalproj
+
+- title: Voronoi diagrams
+  url: https://github.com/sxzhang25/cos451-finalproj
+  course: COS 451 Computational Geometry, Fall 2019
+  description: An implementation of Fortune's Sweepline Algorithm for computing Voronoi diagrams.
+  image: voronoi-diagrams
+  links:
+    - code: https://github.com/sxzhang25/cos451-finalproj
+
+- title: tendo.tech
+  url: http://www.tendo.tech/
+  course: Princeton University eLab Summer Accelerator
+  description: Website and media created for Tendo Technologies, a startup in the Princeton University eLab summer incubator.
+  image: tendo-tech
+  links:
+    - site: http://www.tendo.tech/
