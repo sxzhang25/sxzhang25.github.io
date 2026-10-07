@@ -241,10 +241,10 @@ body:has(> .site-corner) {
   margin: 0 0 35px;
 }
 // Visuals gallery: four equal columns spanning the page width. Every image is
-// scaled to the same height and sits at the left of its cell, with its label
-// below, left-aligned with the image (and wrapping within the image's width).
-// Images wider than the cell shrink to fit it and are vertically centered
-// within the row.
+// scaled to the same height and sits at the left of its cell, with its label a
+// fixed distance below it, left-aligned with the image (and wrapping within the
+// image's width). Images wider than the cell shrink to fit it and are
+// vertically centered on the row's middle line.
 
 // Optional text above a gallery (the page's `intro`), kept to the body text
 // width; the gallery starts below it.
@@ -279,13 +279,32 @@ body:has(> .site-corner) {
   margin: 0;
   background-color: transparent;
 }
+.gallery-frame {
+  // A band of the gallery's image height; the image is centered in it.
+  display: flex;
+  align-items: center;
+  height: var(--gallery-image-height);
+}
+.gallery-piece {
+  // Exactly the image's size; its label hangs a fixed distance below it.
+  position: relative;
+  display: block;
+}
+.gallery-piece .artwork-label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.gallery-label-space {
+  visibility: hidden;
+}
 .gallery-cell img {
   display: block;
-  height: var(--gallery-image-height);
   width: auto;
+  height: auto;
+  max-height: var(--gallery-image-height);
   max-width: 100cqw;  // the width of its column (the cell is a size container)
-  object-fit: contain;
-  object-position: left center;  // left-aligned; shorter (wide) images sit on the row's middle line
 }
 .artwork-label {
   margin: 10px 0 0;
@@ -297,6 +316,7 @@ body:has(> .site-corner) {
   color: var(--accent);  // the title
 }
 .gallery .artwork-label {
+  display: block;
   // Takes the image's width without widening the cell content.
   width: 0;
   min-width: 100%;

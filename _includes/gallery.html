@@ -19,8 +19,13 @@
 	{%- assign shown = shown | plus: 1 %}
 	<li class="gallery-cell" id="{{ piece.slug }}">
 		<a href="{{ piece.url | relative_url }}">
-			<img src="{{ piece.image | relative_url }}" alt="{{ piece.title }}" loading="lazy">
-			<p class="artwork-label"><i>{{ piece.title }}</i>{% if piece.medium %}<br>{{ piece.medium }}{% endif %}{% if piece.size %}<br>{{ piece.size }}{% endif %}</p>
+			{%- capture label -%}<i>{{ piece.title }}</i>{% if piece.medium %}<br>{{ piece.medium }}{% endif %}{% if piece.size %}<br>{{ piece.size }}{% endif %}{%- endcapture %}
+			<span class="gallery-frame"><span class="gallery-piece">
+				<img src="{{ piece.image | relative_url }}" alt="{{ piece.title }}" loading="lazy">
+				<span class="artwork-label">{{ label }}</span>
+			</span></span>
+			{%- comment -%} Invisible copy: reserves the label's height below the row so a label under a full-height image never runs into the next row. {%- endcomment %}
+			<span class="artwork-label gallery-label-space" aria-hidden="true">{{ label }}</span>
 		</a>
 	</li>
 	{%- endif %}
