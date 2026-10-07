@@ -9,3 +9,8 @@ display_date: Aug 12-15, 2025   # optional; shown above the title (leave "" to h
 ---
 
 The entry text goes here, in Markdown.
+
+To add a figure, put the image in assets/logs/some-title/ and add a line like
+this where it should appear (it shows to the right of the text that follows):
+
+{% include figure.html src="photo.jpg" caption="An optional caption." %}
