@@ -1,11 +1,18 @@
 ---
-layout: default
-title: publications
+layout: null
+permalink: /publications/
+sitemap: false
 ---
-
-<h1>{{ page.title }}</h1>
-<p style="margin-bottom:35px;">An asterisk (*) denotes equal contribution.</p>
-
-{% for pub in site.data.publications %}
-{% include publication-entry.html pub=pub %}
-{% endfor %}
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to research…</title>
+  <link rel="canonical" href="{{ '/research/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/research/' | relative_url }}">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <p>This page has moved to <a href="{{ '/research/' | relative_url }}">research</a>…</p>
+</body>
+</html>

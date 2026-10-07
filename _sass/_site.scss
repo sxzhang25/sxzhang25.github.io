@@ -1,16 +1,30 @@
 // Main site: page shell, header/nav, home page, publication and project lists.
 
+// The page spans the window with equal left and right margins (which shrink on
+// narrow screens): the header uses the full width, while page content stays a
+// readable width anchored to the left margin.
 body {
-  margin: 60px auto;
-  width: 85%;
-  max-width: 900px;
+  margin: 60px var(--page-margin);
   background-color: var(--light);
+}
+main {
+  max-width: 500px;
+  // Makes main a selection boundary: when a text selection spans several
+  // paragraphs, Safari fills the gaps between them out to the nearest such
+  // boundary (otherwise <body>, i.e. the full page width). This keeps selection
+  // highlights within the content column. No visual effect otherwise.
+  position: relative;
+}
+// Pages with `wide: true` in their front matter (the visuals gallery) span the
+// full page width, from the left of the header to the right of the nav.
+main.wide {
+  max-width: none;
 }
 
 footer {
   margin-top: 10px;
   font-size: .8em;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-weight: 400;
   color: var(--footer);
 }
@@ -33,7 +47,7 @@ h3 {
 
 figcaption {
   font-size: 14px;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-style: italic;
   color: var(--dark);
   text-align: left;
@@ -54,11 +68,16 @@ header h1 {
 
 .site-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  column-gap: 40px;
+}
+.site-title {
+  margin: 0;
 }
 .site-title a {
-  color: #000;
+  color: var(--accent);
 }
 .site-title a:hover {
   text-decoration: none;
@@ -67,29 +86,128 @@ header h1 {
 }
 
 nav ul {
-  height: 50px;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
   font-family: var(--font-serif);
   list-style: none;
-  padding: 10px;
 }
 nav ul li {
-  vertical-align: middle;
-  display: table-cell;
   font-family: var(--font-serif);
   font-size: 18px;
 }
-nav li {
-  display: inline;
-  padding: 10px;
+// Submenus (e.g. the visuals sections). Each nav item with sub-pages gets a
+// dropdown underneath it, listing sub-pages indented one step per level below
+// their parent. Hovering (or keyboard focus) shows the whole menu; otherwise,
+// on a sub-page, only the trail of parents down to the current page is shown,
+// in a lighter blue.
+
+.nav-item {
+  position: relative;
+}
+nav ul.nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0 12px 8px 0;
+  background-color: var(--light);
+  white-space: nowrap;
+}
+nav ul.nav-menu.has-trail,
+.has-menu:hover ul.nav-menu,
+.has-menu:focus-within ul.nav-menu {
+  display: flex;
+}
+.nav-menu .nav-menu-item {
+  display: none;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.nav-menu .nav-menu-item.in-trail,
+.has-menu:hover .nav-menu-item,
+.has-menu:focus-within .nav-menu-item {
+  display: block;
+}
+// Each level is indented one step further than its parent.
+.nav-menu-item {
+  padding-left: calc(var(--depth) * 1em);
+}
+// Levels alternate upright and italic (top-level nav upright, its sub-pages
+// italic, theirs upright, ...).
+.nav-menu-item.italic {
+  font-style: italic;
+}
+.nav-menu .nav-menu-item.in-trail a {
+  color: var(--accent-ghost);
+}
+.has-menu:hover .nav-menu-item a,
+.has-menu:focus-within .nav-menu-item a {
+  color: var(--link);
 }
 
-.post-padding {
-  width: 100%;
-  height: 50px;
+// The visuals landing page lists its sections the same way (indented by level).
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+// The page currently being viewed is marked with an asterisk. It is positioned
+// outside the link's box (in the gap between items) so that it does not shift
+// the other nav items.
+nav a.current {
+  position: relative;
+}
+nav a.current::after {
+  content: "*";
+  position: absolute;
+  left: 100%;
+}
+
+
+// Home page corner menu (email), bottom-left, in the header font (italic, blue)
+// at the body text size. The page is a column at least as tall as the window,
+// and the email is pushed to its bottom: it sits at the bottom of the window
+// when the content is short enough, and otherwise just after the content (at
+// least 60px below it), so it never overlaps the text.
+
+body:has(> .site-corner) {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 120px);  // the body's 60px top and bottom margins
+}
+.site-corner {
+  margin-top: auto;
+  padding-top: 60px;
+}
+.site-corner p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
 
 // Home page
+
+// Pages without a heading (home, and the pages linked from the nav) start their
+// content the same distance below the header.
+.about, .page-content {
+  padding-top: var(--content-top);
+}
+// The first thing on a page starts exactly at --content-top: no extra top margin
+// from whichever element happens to come first (a paragraph, a list, ...).
+.about > :first-child,
+.page-content > :first-child {
+  margin-top: 0;
+}
 
 .about-row {
   width: 100%;
@@ -97,34 +215,187 @@ nav li {
   padding-top: 15px;
   padding-bottom: 25px;
 }
-.about-cols {
-  display: flex;
-  width: 100%;
-}
-.about-img {
-  padding: 25px 50px 10px 5px;
-  width: 55%;
-  min-width: 200px;
-  text-align: center;
-}
-.about-img img {
-  width: 100%;
-}
-.about-desc {
-  width: 100%;
-  padding-right: 0px;
-}
 
-.post a, .about-cols a, .about-row a {
+.post a, .about a, .about-row a {
   text-underline-offset: 4px;
 }
-.post a:hover, .about-cols a:hover, .about-row a:hover {
+.post a:hover, .about a:hover, .about-row a:hover {
   text-decoration: none;
   transition: .2s;
 }
 
 .table-date {
   padding-right: 20px;
+}
+
+// Short one-line notes at the top of a page. `fit-content` makes the box as wide
+// as its text (rather than the whole column), so text selection highlights stop
+// at the end of the sentence.
+.gallery-intro, .page-note {
+  width: fit-content;
+}
+.gallery-intro {
+  margin: 0 0 40px;
+}
+.page-note {
+  margin: 0 0 35px;
+}
+// Visuals gallery: four equal columns spanning the page width. Every image is
+// scaled to the same height and sits at the left of its cell, with its label
+// below, left-aligned with the image (and wrapping within the image's width).
+// Images wider than the cell shrink to fit it and are vertically centered
+// within the row.
+
+// Optional text above a gallery (the page's `intro`), kept to the body text
+// width; the gallery starts below it.
+.gallery-header {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.gallery-header p {
+  margin: 0 0 1em;
+}
+.gallery-header p:last-child {
+  margin-bottom: 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(var(--gallery-cols), 1fr);
+  gap: 40px var(--gallery-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery-cell {
+  container-type: inline-size;
+}
+.gallery-cell a,
+.gallery-cell a:hover {
+  // Shrinks to the image's width and sits at the left of the cell, so the
+  // label below starts at the image's left edge.
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0;
+  background-color: transparent;
+}
+.gallery-cell img {
+  display: block;
+  height: var(--gallery-image-height);
+  width: auto;
+  max-width: 100cqw;  // the width of its column (the cell is a size container)
+  object-fit: contain;
+  object-position: left center;  // left-aligned; shorter (wide) images sit on the row's middle line
+}
+.artwork-label {
+  margin: 10px 0 0;
+  color: var(--dark);
+  font-size: 13px;    // slightly smaller than the 14px body text
+  line-height: 1.4;   // tighter than the body's 1.65
+}
+.artwork-label i {
+  color: var(--accent);  // the title
+}
+.gallery .artwork-label {
+  // Takes the image's width without widening the cell content.
+  width: 0;
+  min-width: 100%;
+}
+// A single piece on its own page (no header): the painting is centered in the
+// window with its label below, left-aligned to the painting, and a link back to
+// the gallery in the top-left corner at the page margin.
+
+.artwork-back {
+  position: absolute;
+  top: 60px;
+  left: var(--page-margin);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+.artwork-page {
+  max-width: none;
+  min-height: calc(100vh - 120px);  // the body's 60px top and bottom margins
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.artwork {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  text-align: left;
+}
+.artwork img {
+  display: block;
+  max-width: calc(100vw - 2 * var(--page-margin));
+  // Leaves room for the back link above and the label below, so the painting
+  // never overlaps either.
+  max-height: calc(100vh - 320px);
+}
+
+// 404 page: small code-style text centered in the window (the header and nav
+// stay in place so visitors can find their way).
+.not-found {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: var(--font-mono);
+  font-weight: var(--font-mono-weight);
+  font-size: 13px;
+  color: var(--dark);
+}
+
+// Text split into sections (e.g. the materials page): a bold heading, then its
+// paragraphs close beneath it, with a full paragraph gap between sections.
+.text-section {
+  margin-bottom: 1em;
+}
+.text-section p {
+  margin: 0 0 6px;
+}
+.text-section p:first-child {
+  margin-bottom: 2px;
+}
+.text-section p:last-child {
+  margin-bottom: 0;  // the section's own margin sets the gap to the next one
+}
+
+// Logs: a list of entries (title, with a short subtitle beneath it), and the
+// same title + subtitle at the top of each entry.
+
+.log-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.log-list li {
+  margin-bottom: 28px;
+}
+.log-title {
+  margin: 0;
+  color: var(--accent);
+}
+.log-subtitle {
+  margin: 2px 0 0;
+  color: var(--meta);
+}
+.log-pages {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+  font-family: var(--font-body);
+}
+.log-pages a[aria-current="page"] {
+  color: var(--dark);
+}
+.log-body {
+  margin-top: 30px;
+}
+.log-back {
+  margin-top: 40px;
 }
 
 // Publication list
@@ -143,7 +414,7 @@ nav li {
 }
 .pub h2 {
   margin-bottom: 6px;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 16px;
   color: var(--dark);
 }
@@ -189,45 +460,27 @@ nav li {
   left: 0;
 }
 
-// Narrow screens
+// Narrow screens: the header wraps on its own (nav drops below the name), so
+// only spacing needs to change here.
 
 @media screen and (max-width: $breakpoint-site) {
+  :root {
+    --gallery-cols: 2;
+  }
+  body {
+    margin-top: 40px;
+  }
   .project-img {
     display: none;
   }
-  .post-padding {
-    display: none;
-  }
-  header {
-    padding-bottom: 25px;
-  }
   .site-header {
-    display: block;
-    text-align: center;
+    row-gap: 12px;
+    padding-bottom: 10px;
   }
-  .site-header nav ul {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-cols {
-    flex-direction: column;
-  }
-  .about-img {
-    width: auto;
-    padding: 0;
-  }
-  .about-img img {
-    width: 35%;
-    min-width: 400px;
-    max-width: 100%;
-  }
-  .about {
-    padding-top: 15px;
-  }
-  .about .about-row {
-    padding-top: 0;
-  }
-  .about-desc p:last-child {
-    margin-bottom: 0;
+}
+
+@media screen and (max-width: $breakpoint-gallery-one) {
+  :root {
+    --gallery-cols: 1;
   }
 }

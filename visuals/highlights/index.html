@@ -1,0 +1,11 @@
+---
+layout: default
+title: highlights
+gallery: highlights   # folder name in _artworks/ and assets/artwork/
+nav_order: 1   # position in the visuals submenu
+wide: true
+intro:   # optional text above the artwork (Markdown); leave empty for none
+---
+<section class="page-content">
+	{% include gallery.html folder=page.gallery %}
+</section>

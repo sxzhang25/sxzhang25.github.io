@@ -3,7 +3,15 @@
 	<nav>
 		<ul>
 			{% for item in site.data.nav %}
-			<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+			{%- assign url_prefix = page.url | slice: 0, item.url.size -%}
+			{%- capture submenu -%}{% include nav-menu.html parent=item.url depth=1 %}{%- endcapture -%}
+			<li class="nav-item{% if submenu != '' %} has-menu{% endif %}">
+				<a{% if url_prefix == item.url %} class="current" aria-current="page"{% endif %} href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				{%- if submenu != '' %}
+				{%- comment -%} Shown in full on hover; otherwise only the trail to the current page. {%- endcomment %}
+				<ul class="nav-menu{% if submenu contains 'in-trail' %} has-trail{% endif %}">{{ submenu }}</ul>
+				{%- endif %}
+			</li>
 			{% endfor %}
 		</ul>
 	</nav>

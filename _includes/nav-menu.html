@@ -1,0 +1,28 @@
+{%- comment -%}
+  Sub-pages of include.parent, as <li> items, followed (recursively) by their
+  own sub-pages, one indent level deeper.
+  A page counts as a sub-page if it sets `nav_order` in its front matter and its
+  URL is directly under include.parent (e.g. /visuals/highlights/ under
+  /visuals/). Siblings are sorted by nav_order.
+  Levels alternate upright/italic: the top-level nav is upright, so its
+  sub-pages (odd depths) get class "italic", their sub-pages are upright, etc.
+  Items get class "in-trail" when they are the current page or one of its
+  ancestors, and "current" when they are the current page.
+  Usage: {% include nav-menu.html parent="/visuals/" depth=1 %}
+  (Liquid variables are global, so everything is recomputed from include.*
+  on each iteration rather than kept from before a recursive call.)
+{%- endcomment -%}
+{%- assign menu_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" -%}
+{%- for child in menu_pages -%}
+	{%- assign parent_size = include.parent | split: '/' | size -%}
+	{%- assign child_size = child.url | split: '/' | size -%}
+	{%- assign child_prefix = child.url | slice: 0, include.parent.size -%}
+	{%- assign expected_size = parent_size | plus: 1 -%}
+	{%- if child_size == expected_size and child_prefix == include.parent -%}
+		{%- assign trail_prefix = page.url | slice: 0, child.url.size -%}
+		{%- assign depth_parity = include.depth | modulo: 2 -%}
+		<li class="nav-menu-item{% if depth_parity == 1 %} italic{% endif %}{% if trail_prefix == child.url %} in-trail{% endif %}{% if page.url == child.url %} current{% endif %}" style="--depth: {{ include.depth }}"><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+		{%- assign next_depth = include.depth | plus: 1 -%}
+		{%- include nav-menu.html parent=child.url depth=next_depth -%}
+	{%- endif -%}
+{%- endfor -%}

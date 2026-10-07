@@ -4,3 +4,5 @@ drafts/
 .jekyll-cache/
 .sass-cache/
 vendor/
+# Local-only archive (old blog, drafts); never committed.
+archive/

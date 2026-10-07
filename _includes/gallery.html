@@ -1,0 +1,31 @@
+{%- comment -%}
+  Gallery of the pieces in one folder of _artworks/ (direct children only),
+  preceded by the page's optional `intro` text.
+  Usage: {% include gallery.html folder=page.gallery %}
+  One continuous grid; images are lazy-loaded, so each one only downloads as you
+  scroll near it. Each cell has an id so the "back to gallery" link on a piece's
+  page returns to that piece.
+{%- endcomment -%}
+{%- if page.intro and page.intro != '' %}
+<div class="gallery-header">{{ page.intro | markdownify }}</div>
+{%- endif %}
+{%- assign gallery_dir = '_artworks/' | append: include.folder -%}
+{%- assign all_pieces = site.artworks | sort: 'date' | reverse -%}
+{%- assign shown = 0 -%}
+<ul class="gallery">
+	{%- for piece in all_pieces %}
+	{%- assign piece_dir = piece.relative_path | split: '/' | pop | join: '/' -%}
+	{%- if piece_dir == gallery_dir %}
+	{%- assign shown = shown | plus: 1 %}
+	<li class="gallery-cell" id="{{ piece.slug }}">
+		<a href="{{ piece.url | relative_url }}">
+			<img src="{{ piece.image | relative_url }}" alt="{{ piece.title }}" loading="lazy">
+			<p class="artwork-label"><i>{{ piece.title }}</i>{% if piece.medium %}<br>{{ piece.medium }}{% endif %}{% if piece.size %}<br>{{ piece.size }}{% endif %}</p>
+		</a>
+	</li>
+	{%- endif %}
+	{%- endfor %}
+</ul>
+{%- if shown == 0 %}
+<p>Coming soon.</p>
+{%- endif %}

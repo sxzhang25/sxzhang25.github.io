@@ -1,0 +1,39 @@
+---
+layout: default
+title: logs
+---
+{%- comment -%}
+  Paginated list of log entries (_posts/), 10 per page (see paginate in
+  _config.yml): /logs/, /logs/page2/, ... Each entry shows its title and
+  subtitle; dates are never shown.
+{%- endcomment %}
+<section class="page-content">
+{%- if paginator.posts.size == 0 %}
+	<p>No entries yet.</p>
+{%- else %}
+	<ul class="log-list">
+		{%- for post in paginator.posts %}
+		<li>
+			<a class="log-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			{%- if post.subtitle %}
+			<p class="log-subtitle">{{ post.subtitle }}</p>
+			{%- endif %}
+		</li>
+		{%- endfor %}
+	</ul>
+	{%- if paginator.total_pages > 1 %}
+	<nav class="log-pages" aria-label="Log pages">
+		{%- if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path | relative_url }}">&larr; newer</a>
+		{%- endif %}
+		{%- for n in (1..paginator.total_pages) %}
+		{%- if n == 1 %}{% assign n_path = '/logs/' %}{% else %}{% assign n_path = site.paginate_path | replace: ':num', n %}{% endif %}
+		<a href="{{ n_path | relative_url }}"{% if n == paginator.page %} aria-current="page"{% endif %}>{{ n }}</a>
+		{%- endfor %}
+		{%- if paginator.next_page %}
+		<a href="{{ paginator.next_page_path | relative_url }}">older &rarr;</a>
+		{%- endif %}
+	</nav>
+	{%- endif %}
+{%- endif %}
+</section>

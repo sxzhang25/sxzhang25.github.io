@@ -4,6 +4,7 @@ stylesheet: /css/main.css
 title_prefix: "sharon zhang | "
 ---
 {% include site-header.html %}
-<main>
+<main{% if page.wide %} class="wide"{% endif %}>
 	{{ content }}
 </main>
+{% if page.url == '/' %}{% include site-corner.html %}{% endif %}

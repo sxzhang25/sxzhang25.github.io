@@ -20,15 +20,15 @@ footer a:hover {
 }
 
 p, ol, ol li, ul, ul li, table {
-  font-family: var(--font-sans);
-  font-size: 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
   line-height: 1.65em;
   color: var(--dark);
 }
 
 th, td {
   vertical-align: top;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 ol {

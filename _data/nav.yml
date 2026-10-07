@@ -1,7 +1,9 @@
 # Header navigation, in display order.
-- title: cv
-  url: /cv.pdf
-- title: publications
-  url: /publications
-- title: github
-  url: https://github.com/sxzhang25
+- title: visuals
+  url: /visuals/
+- title: research
+  url: /research/
+- title: logs
+  url: /logs/
+- title: materials
+  url: /materials/

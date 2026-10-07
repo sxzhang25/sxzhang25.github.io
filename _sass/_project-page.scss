@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   margin: 60px auto;
   width: 85%;
   max-width: 1000px;
@@ -20,7 +20,7 @@ footer {
 }
 
 button {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   background-color: #6a6a6a;
   border: none;
   color: white;
@@ -40,7 +40,7 @@ h1 {
   font-size: 36px;
 }
 h2, h3 {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   color: var(--accent);
   font-weight: 500;
 }
@@ -70,7 +70,7 @@ header h1 {
 
 figcaption {
   font-size: 14px;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-style: italic;
   color: var(--dark);
   padding-top: 0px;
@@ -141,7 +141,7 @@ video {
 .meta {
   text-align: center;
   margin-bottom: 50px;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-weight: 600;
 }
 
@@ -163,6 +163,7 @@ video {
 .bibtex {
   background-color: #e7e7e7;
   font-family: var(--font-mono);
+  font-weight: var(--font-mono-weight);
   font-size: 12px;
   padding: 25px;
   line-height: normal;

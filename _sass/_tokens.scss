@@ -3,11 +3,14 @@
 
 $breakpoint-site: 1050px;
 $breakpoint-project: 875px;
+// Below this width the visuals gallery drops to a single column.
+$breakpoint-gallery-one: 640px;
 
 :root {
   --light: #faf9f9;
   --dark: #1d1d22;
   --accent: #3340f3;
+  --accent-ghost: #a0a6f6;  // the accent blue, lightened (submenu trail)
   --highlight: #fbff24;
   --link: #3340f3;
   --footer: #c0b9cf;
@@ -17,6 +20,21 @@ $breakpoint-project: 875px;
   --meta: #a19da1;
 
   --font-serif: 'Newsreader', 'Times New Roman', serif;
-  --font-sans: 'Zalando Sans', 'Helvetica', sans-serif;
-  --font-mono: 'Source Code Pro', monospace;
+  --font-body: 'Zalando Sans', 'Helvetica', sans-serif;
+  --font-mono: 'Geist Mono', Menlo, monospace;
+  --font-mono-weight: 400;
+
+  // Distance from the header to the first line of page content, the same on
+  // every page (home intro, visuals, research, logs, materials, ...).
+  --content-top: 89px;
+
+  // Side margin of the page column: 24px on phones, growing to 128px.
+  --page-margin: clamp(24px, 8vw, 128px);
+
+  // Visuals gallery: number of columns (fewer on narrow screens, see
+  // _site.scss), the gap between them, and the common height every image is
+  // scaled to. The columns share the full page width.
+  --gallery-cols: 4;
+  --gallery-gap: 30px;
+  --gallery-image-height: 300px;
 }

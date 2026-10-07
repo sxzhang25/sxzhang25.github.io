@@ -1,0 +1,12 @@
+---
+layout: default
+title: research
+---
+
+<section class="page-content">
+<p class="page-note">An asterisk (*) denotes equal contribution.</p>
+
+{% for pub in site.data.publications %}
+{% include publication-entry.html pub=pub %}
+{% endfor %}
+</section>

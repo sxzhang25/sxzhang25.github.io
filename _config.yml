@@ -5,7 +5,6 @@ url: https://sxzhang25.github.io
 baseurl: ""
 repository: sxzhang25/sxzhang25.github.io
 description: Sharon Zhang is a PhD student at Stanford working on tools for creating and editing visual content.
-tagline: cs research, tech + society and miscellaneous.
 github: sxzhang25
 twitter: 
   username: sxzhang25
@@ -23,14 +22,35 @@ plugins:
 
 markdown: kramdown
 
+# Artwork portfolio. Each gallery is a folder: images in assets/artwork/<gallery>/,
+# entries in _artworks/<gallery>/ (one file per piece, see _templates/artwork.md),
+# and a page at visuals/<gallery>/index.html. Each piece gets a page at
+# /visuals/<gallery>/<file name>/. Run `python3 new_artwork.py` to sync.
+collections:
+  artworks:
+    output: true
+    permalink: /visuals/:path/
+
+# Logs. Each entry is a file in _posts/ named YYYY-MM-DD-some-title.md (the date
+# only sets the order, newest first, and is never shown); create one with
+# `python3 new_log.py "Title" "Subtitle"`. Entries live at /logs/<some-title>/
+# and are listed on /logs/, 10 per page.
+permalink: /logs/:title/
+paginate: 10
+paginate_path: "/logs/page:num/"
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: log
+  - scope:
+      type: artworks
+    values:
+      layout: artwork
+
 sass:
   style: compressed
-
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-permalink: /blog/:year/:month/:day/:title
-excerpt_separator: "<!--excerpt-->"
 
 author: Sharon Zhang
 
@@ -41,8 +61,10 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - tag_generator.py
   - tests.ipynb
+  - new_artwork.py
+  - new_log.py
+  - _templates/
   - archive/
   - imgs/script.py
   - imgs/profile.png

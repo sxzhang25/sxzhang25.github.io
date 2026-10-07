@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- comment -%}
+  A single log entry: title, subtitle, then the entry text, with a link back to
+  the page of the logs list it appears on. Dates are never shown.
+{%- endcomment -%}
+{%- assign per_page = site.paginate | default: 10 -%}
+{%- for post in site.posts -%}
+	{%- if post.url == page.url -%}
+		{%- assign list_page = forloop.index0 | divided_by: per_page | plus: 1 -%}
+	{%- endif -%}
+{%- endfor -%}
+{%- if list_page > 1 -%}
+	{%- assign list_path = site.paginate_path | replace: ':num', list_page -%}
+{%- else -%}
+	{%- assign list_path = '/logs/' -%}
+{%- endif %}
+<article class="page-content log-entry">
+	<p class="log-title">{{ page.title }}</p>
+	{%- if page.subtitle %}
+	<p class="log-subtitle">{{ page.subtitle }}</p>
+	{%- endif %}
+	<div class="log-body">
+		{{ content }}
+	</div>
+	<p class="log-back"><a href="{{ list_path | relative_url }}">&larr; all logs</a></p>
+</article>

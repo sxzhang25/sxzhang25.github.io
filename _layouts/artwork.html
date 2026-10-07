@@ -1,0 +1,18 @@
+---
+layout: base
+stylesheet: /css/main.css
+title_prefix: "sharon zhang | "
+---
+{%- comment -%}
+  A single piece on its own: just the painting, centered, with its label below
+  and a link back to its spot in the gallery. No site header or nav.
+{%- endcomment -%}
+{%- assign gallery_folder = page.relative_path | split: '/' | pop | shift | join: '/' -%}
+<a class="artwork-back" href="{{ '/visuals/' | append: gallery_folder | append: '/' | relative_url }}#{{ page.slug }}">&larr; back to gallery</a>
+<main class="artwork-page">
+	<figure class="artwork">
+		<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+		<p class="artwork-label"><i>{{ page.title }}</i>{% if page.medium %}<br>{{ page.medium }}{% endif %}{% if page.size %}<br>{{ page.size }}{% endif %}</p>
+	</figure>
+	{{ content }}
+</main>
