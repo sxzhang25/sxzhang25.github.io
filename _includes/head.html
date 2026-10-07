@@ -1,12 +1,14 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <title>{{ include.title }}</title>
-<link rel="icon" type="image/svg+xml" href="{{ '/imgs/favicon.svg' | relative_url }}">
-<link rel="icon" type="image/png" sizes="512x512" href="{{ '/imgs/favicon.png' | relative_url }}">
+{%- comment -%} ?v= changes on every build, so browsers fetch the new favicon and CSS right after a deploy instead of reusing a cached copy. {%- endcomment -%}
+{%- assign asset_version = site.time | date: '%s' %}
+<link rel="icon" type="image/svg+xml" href="{{ '/imgs/favicon.svg' | relative_url }}?v={{ asset_version }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ '/imgs/favicon.png' | relative_url }}?v={{ asset_version }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{{ include.stylesheet | relative_url }}">
+<link rel="stylesheet" type="text/css" href="{{ include.stylesheet | relative_url }}?v={{ asset_version }}">
 {% if page.math %}{% include mathjax.html %}{% endif %}
 {% include analytics.html %}
 {% seo title=false %}

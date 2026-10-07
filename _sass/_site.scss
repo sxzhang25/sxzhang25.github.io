@@ -307,6 +307,7 @@ body:has(> .site-corner) {
 
 .artwork-back {
   position: absolute;
+  z-index: 1;  // above the (positioned) main, which otherwise covers it and takes the clicks
   top: 60px;
   left: var(--page-margin);
   font-family: var(--font-body);
