@@ -381,10 +381,9 @@ body:has(> .site-corner) {
 }
 .log-subtitle {
   margin: 2px 0 0;
-  color: var(--meta);
+  color: var(--meta);  // same gray as the date
 }
-// An entry's display_date, directly above the title, in the code font and the
-// subtitle's gray.
+// An entry's display_date, directly above the title, in the code font and gray.
 .log-date {
   margin: 0 0 2px;
   font-family: var(--font-mono);
@@ -405,6 +404,44 @@ body:has(> .site-corner) {
 }
 .log-back {
   margin-top: 40px;
+}
+
+// Figures in log entries ({% include figure.html %}). On wide screens each one
+// sits in the empty space to the right of the text column, lined up with the
+// text that follows it; later figures stack below earlier ones rather than
+// overlapping. The negative right margin takes the figure out of the text
+// column, so the text itself never wraps around it.
+.log-figure {
+  float: right;
+  clear: right;
+  width: var(--log-figure-width);
+  margin: 4px calc(-1 * (var(--log-figure-width) + var(--log-figure-gap))) 24px 0;
+}
+// A table shrinks to the image's width, and its caption (a table caption) is
+// laid out at exactly that width, so the right-aligned caption ends at the
+// image's right edge.
+.log-figure figure {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.log-figure img {
+  display: block;
+  width: auto;
+  max-width: var(--log-figure-width);
+  max-height: var(--log-figure-max-height);
+}
+.log-figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 8px;
+  text-align: right;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.4;
+  color: var(--meta);
 }
 
 // Publication list
@@ -486,6 +523,15 @@ body:has(> .site-corner) {
   .site-header {
     row-gap: 12px;
     padding-bottom: 10px;
+  }
+  // No room beside the text: figures sit full-width in the text flow.
+  .log-figure {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .log-figure img {
+    max-width: 100%;
   }
 }
 

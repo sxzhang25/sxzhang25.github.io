@@ -36,6 +36,14 @@ $breakpoint-gallery-one: 640px;
   // Visuals gallery: number of columns (fewer on narrow screens, see
   // _site.scss), the gap between them, and the common height every image is
   // scaled to. The columns share the full page width.
+  // Log entry figures: their width in the right-hand margin (the space between
+  // the 500px text column and the right page margin, capped at 400px), their
+  // maximum height (tall images get narrower instead), and the gap between them
+  // and the text.
+  --log-figure-gap: 98px;
+  --log-figure-width: min(400px, calc(100vw - 2 * var(--page-margin) - 500px - var(--log-figure-gap)));
+  --log-figure-max-height: 480px;
+
   --gallery-cols: 4;
   --gallery-gap: 30px;
   --gallery-image-height: 300px;

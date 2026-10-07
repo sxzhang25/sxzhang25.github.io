@@ -1,0 +1,26 @@
+{%- comment -%}
+  A figure in a log entry, shown in the right-hand margin beside the text that
+  follows it (or in the text flow on narrow screens).
+  Usage, on its own line where the figure should appear:
+    {% include figure.html src="photo.jpg" caption="Optional caption." %}
+  `src` is a file name in this entry's image folder, assets/logs/<entry>/ (the
+  entry's file name without the date), or a full path/URL starting with / or
+  http. `caption` is optional and may use Markdown (e.g. *italics*, links).
+{%- endcomment -%}
+{%- assign figure_src = include.src -%}
+{%- assign first_char = figure_src | slice: 0 -%}
+{%- unless first_char == '/' or figure_src contains '://' -%}
+	{%- assign figure_src = '/assets/logs/' | append: page.slug | append: '/' | append: include.src -%}
+{%- endunless -%}
+{%- comment -%}
+  The outer div is the slot beside the text; the figure inside shrinks to the
+  image's width, so the caption (below it) spans exactly the image's width.
+{%- endcomment %}
+<div class="log-figure">
+	<figure>
+		<img src="{{ figure_src | relative_url }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}" loading="lazy">
+		{%- if include.caption and include.caption != "" %}
+		<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>
+		{%- endif %}
+	</figure>
+</div>
