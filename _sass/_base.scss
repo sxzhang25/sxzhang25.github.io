@@ -19,6 +19,10 @@ footer a:hover {
   transition: .2s;
 }
 
+b, strong {
+  font-weight: var(--bold-weight);
+}
+
 p, ol, ol li, ul, ul li, table {
   font-family: var(--font-body);
   font-size: 14px;

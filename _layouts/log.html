@@ -2,8 +2,9 @@
 layout: default
 ---
 {%- comment -%}
-  A single log entry: title, subtitle, then the entry text, with a link back to
-  the page of the logs list it appears on. Dates are never shown.
+  A single log entry: display_date (if set), title, subtitle, then the entry
+  text, with a link back to the page
+  of the logs list it appears on.
 {%- endcomment -%}
 {%- assign per_page = site.paginate | default: 10 -%}
 {%- for post in site.posts -%}
@@ -17,10 +18,15 @@ layout: default
 	{%- assign list_path = '/logs/' -%}
 {%- endif %}
 <article class="page-content log-entry">
-	<p class="log-title">{{ page.title }}</p>
-	{%- if page.subtitle %}
-	<p class="log-subtitle">{{ page.subtitle }}</p>
-	{%- endif %}
+	<div class="log-item">
+		{%- if page.display_date and page.display_date != "" %}
+		<p class="log-date">{{ page.display_date }}</p>
+		{%- endif %}
+		<p class="log-title">{{ page.title }}</p>
+		{%- if page.subtitle and page.subtitle != "" %}
+		<p class="log-subtitle">{{ page.subtitle }}</p>
+		{%- endif %}
+	</div>
 	<div class="log-body">
 		{{ content }}
 	</div>

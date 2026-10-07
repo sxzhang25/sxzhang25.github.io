@@ -6,8 +6,9 @@ Usage:
 
 Writes _posts/<today>-<title-as-slug>.md with the title and subtitle filled in;
 add the entry text below the front matter. The date in the file name only sets
-the order on /logs/ (newest first) and is never shown. The entry appears at
-/logs/<title-as-slug>/.
+the order on /logs/ (newest first). To show a date, fill in display_date (any
+text, e.g. "Aug 2025"); it appears above the title. The
+entry appears at /logs/<title-as-slug>/.
 """
 
 import datetime
@@ -40,6 +41,7 @@ def main():
         "---\n"
         f"title: {yaml_string(title)}\n"
         f"subtitle: {yaml_string(subtitle)}\n"
+        'display_date: ""   # optional, shown above the title, e.g. "Aug 2025"\n'
         "---\n\n"
         "Write the entry here.\n"
     )

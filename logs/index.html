@@ -5,7 +5,8 @@ title: logs
 {%- comment -%}
   Paginated list of log entries (_posts/), 10 per page (see paginate in
   _config.yml): /logs/, /logs/page2/, ... Each entry shows its title and
-  subtitle; dates are never shown.
+  display_date (if set) above the title, then the title and subtitle. The date in the
+  file name only sets the order.
 {%- endcomment %}
 <section class="page-content">
 {%- if paginator.posts.size == 0 %}
@@ -13,9 +14,12 @@ title: logs
 {%- else %}
 	<ul class="log-list">
 		{%- for post in paginator.posts %}
-		<li>
+		<li class="log-item">
+			{%- if post.display_date and post.display_date != "" %}
+			<p class="log-date">{{ post.display_date }}</p>
+			{%- endif %}
 			<a class="log-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-			{%- if post.subtitle %}
+			{%- if post.subtitle and post.subtitle != "" %}
 			<p class="log-subtitle">{{ post.subtitle }}</p>
 			{%- endif %}
 		</li>

@@ -127,7 +127,7 @@ video {
 }
 .author-name {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: var(--bold-weight);
   line-height: 0em;
   display: inline;
 }
@@ -142,7 +142,7 @@ video {
   text-align: center;
   margin-bottom: 50px;
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: var(--bold-weight);
 }
 
 .abstract {

@@ -5,6 +5,7 @@
 # becomes the URL (/logs/some-title/).
 title: Some title
 subtitle: A short line shown under the title
+display_date: Aug 12-15, 2025   # optional; shown above the title (leave "" to hide)
 ---
 
 The entry text goes here, in Markdown.

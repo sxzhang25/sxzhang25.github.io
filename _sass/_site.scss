@@ -377,9 +377,18 @@ body:has(> .site-corner) {
 .log-title {
   margin: 0;
   color: var(--accent);
+  font-weight: var(--bold-weight);
 }
 .log-subtitle {
   margin: 2px 0 0;
+  color: var(--meta);
+}
+// An entry's display_date, directly above the title, in the code font and the
+// subtitle's gray.
+.log-date {
+  margin: 0 0 2px;
+  font-family: var(--font-mono);
+  font-weight: var(--font-mono-weight);
   color: var(--meta);
 }
 .log-pages {
@@ -415,6 +424,7 @@ body:has(> .site-corner) {
 .pub h2 {
   margin-bottom: 6px;
   font-family: var(--font-body);
+  font-weight: var(--bold-weight);
   font-size: 16px;
   color: var(--dark);
 }

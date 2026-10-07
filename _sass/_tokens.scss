@@ -23,6 +23,8 @@ $breakpoint-gallery-one: 640px;
   --font-body: 'Zalando Sans', 'Helvetica', sans-serif;
   --font-mono: 'Geist Mono', Menlo, monospace;
   --font-mono-weight: 400;
+  // Weight of bold text everywhere: slightly lighter than standard bold (700).
+  --bold-weight: 600;
 
   // Distance from the header to the first line of page content, the same on
   // every page (home intro, visuals, research, logs, materials, ...).
