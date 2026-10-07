@@ -6,3 +6,5 @@ drafts/
 vendor/
 # Local-only archive (old blog, drafts); never committed.
 archive/
+# Full-size image originals; resize_media.py writes the web copies to assets/.
+_media/

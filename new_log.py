@@ -8,8 +8,8 @@ Writes _posts/<today>-<title-as-slug>.md with the title and subtitle filled in;
 add the entry text below the front matter. The date in the file name only sets
 the order on /logs/ (newest first). To show a date, fill in display_date (any
 text, e.g. "Aug 2025"); it appears above the title. The
-entry appears at /logs/<title-as-slug>/. Its images go in
-assets/logs/<title-as-slug>/; place one with
+entry appears at /logs/<title-as-slug>/. Put its full-size images in
+_media/logs/<title-as-slug>/ and run resize_media.py; place one with
     {% include figure.html src="photo.jpg" caption="Optional caption." %}
 """
 
@@ -47,11 +47,10 @@ def main():
         "---\n\n"
         "Write the entry here.\n"
     )
-    images = ROOT / "assets" / "logs" / slug
+    images = ROOT / "_media" / "logs" / slug
     images.mkdir(parents=True, exist_ok=True)
-    (images / ".gitkeep").touch()
     print(f"created {entry.relative_to(ROOT)}  ->  /logs/{slug}/")
-    print(f"put this entry's images in {images.relative_to(ROOT)}/")
+    print(f"put this entry's images in {images.relative_to(ROOT)}/, then run resize_media.py")
 
 
 if __name__ == "__main__":

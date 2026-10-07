@@ -1,5 +1,5 @@
 ---
-image: /assets/artwork/highlights/coffee_on_21_dec_2022.png
+image: /assets/artwork/highlights/coffee_on_21_dec_2022.jpg
 title: coffee on 21 dec 2022
 medium: acrylic on canvas
 size: 24x30

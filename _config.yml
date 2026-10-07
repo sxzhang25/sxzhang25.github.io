@@ -64,6 +64,7 @@ exclude:
   - tests.ipynb
   - new_artwork.py
   - new_log.py
+  - resize_media.py
   - _templates/
   - archive/
   - imgs/script.py

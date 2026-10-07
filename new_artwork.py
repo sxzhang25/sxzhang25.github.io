@@ -6,7 +6,8 @@ Usage:
     python3 new_artwork.py --dry-run  # only report what would change
 
 Each gallery is a folder (folders can be nested, e.g. highlights/2024):
-    assets/artwork/<gallery>/      the images
+    _media/artwork/<gallery>/      the full-size images (run resize_media.py first)
+    assets/artwork/<gallery>/      the web-sized copies resize_media.py makes
     _artworks/<gallery>/           one entry (.md) per piece
     visuals/<gallery>/index.html   the gallery page, also listed in the visuals menu
 

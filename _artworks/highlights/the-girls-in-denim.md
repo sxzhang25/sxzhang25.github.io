@@ -1,5 +1,5 @@
 ---
-image: /assets/artwork/highlights/the_girls_in_denim.png
+image: /assets/artwork/highlights/the_girls_in_denim.jpg
 title: the girls in denim
 medium: Acrylic on canvas
 size: 24x30
