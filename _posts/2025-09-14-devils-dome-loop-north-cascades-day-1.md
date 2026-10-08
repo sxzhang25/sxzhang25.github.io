@@ -1,7 +1,7 @@
 ---
 title: "Trip report: Devil's Dome loop, day 1"
 subtitle: "Four days in North Cascades NP and the Pasayten Wilderness"
-display_date: "29 sep 2025"
+display_date: "14 sep 2025"
 ---
 
 <!-- draft: write the entry here -->
@@ -61,3 +61,9 @@ Next, Chris had an idea to sacrifice one of our Nalgene bottles to hold trail mi
 figures out how to open the small-lid Nalgenes yet. This made a good amount of progress, but still left us with a whole package of Pop Tarts that didn't fit anyhwere. At this point, it was just about dark and the rain had started again. We were almost out of hope when Chris managed to locate a wilderness toilet!
 After doing a quick scent check, we concluded that dropping food down there would be the safest option (goodbye, Pop Tarts). We ended the night cold, wet
 and extremely full but relieved.
+<br><br>
+
+---
+Total mileage: 12.36mi
+<br>
+Elevation gain: 1,601ft 

@@ -1,7 +1,7 @@
 ---
 title: "Trip report: Devil's Dome loop, day 2"
 subtitle: "The Big Climb™"
-display_date: "7 oct 2025"
+display_date: "15 sep 2025"
 ---
 
 <!-- draft: write the entry here -->
@@ -46,3 +46,9 @@ incredibly windy, so we opted for the tent rather early.
 
 All in all, it was a wonderful end to a tough day. If you have a chance to experience this campsite,
 I can't recommend it enough.
+<br><br>
+
+---
+Total mileage: 7.94 mi
+<br>
+Elevation gain: 5,548 ft 

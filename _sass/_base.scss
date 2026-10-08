@@ -49,10 +49,13 @@ ol > li:before {
   left: -1.6em;
 }
 
+// A short, thin rule (Markdown ---), at the left of the text.
 hr {
-  height: 2px;
+  width: 60px;
+  height: 1px;
+  margin: 1.5em 0;
+  border: 0;
   background-color: var(--accent);
-  border-color: transparent;
 }
 
 figure {
