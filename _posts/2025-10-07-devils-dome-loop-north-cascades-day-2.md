@@ -42,7 +42,7 @@ into darkness. The clouds cleared up at night and made for great stargazing. We 
 the third day called for an early wake-up. Also, as you might imagine night hours on top of a mountain can become
 incredibly windy, so we opted for the tent rather early.
 
-{% include figure.html src="P1016469.JPG" caption="The sun setting over our tent." %}
+{% include figure.html src="P1016469.JPG" caption="The sun setting over our tent (:" %}
 
 All in all, it was a wonderful end to a tough day. If you have a chance to experience this campsite,
 I can't recommend it enough.

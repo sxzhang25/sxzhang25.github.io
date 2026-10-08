@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
 	<head>
-		{%- if layout.title_prefix -%}{%- assign doc_title = layout.title_prefix | append: page.title -%}{%- else -%}{%- assign doc_title = page.title -%}{%- endif -%}
+		{%- assign doc_title = layout.tab_title | default: page.title -%}
 		{% include head.html title=doc_title stylesheet=layout.stylesheet %}
 	</head>
 	<body>
