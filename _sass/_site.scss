@@ -12,13 +12,10 @@
   --link: #ff6f61;
   --blockquote: #ff6f61;
   --accent-ghost: #{mix(#ff6f61, #1c1c1c, 50%)};
-  --highlight: #33eeff;   // light cyan-leaning blue, roughly the complement of the hover orange: text selection, toggle and favicon
-  --link-hover: transparent;
-  // Links turn burnt orange on hover instead of getting a background
-  // (!important so it also wins over the nav submenu's own link colors).
-  & a:hover {
-    color: #ff4500 !important;
-  }
+  --highlight: #33eeff;   // light cyan-leaning blue, opposite the warm accent: text selection, toggle and favicon
+  // Link hover background: like light mode's, a faint tint just off the page
+  // background, here warmed with a little of the coral accent.
+  --link-hover: #{mix(#ff6f61, #1c1c1c, 25%)};
 }
 :root[data-theme="dark"] {
   @include dark-colors;
