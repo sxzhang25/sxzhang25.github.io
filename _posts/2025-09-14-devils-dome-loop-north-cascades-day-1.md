@@ -64,6 +64,6 @@ and extremely full but relieved.
 <br><br>
 
 ---
-Total mileage: 12.36mi
+Total mileage: 12.36 mi
 <br>
-Elevation gain: 1,601ft 
+Elevation gain: 1,601 ft 
