@@ -44,8 +44,9 @@ At the start, we actually ran into a group of two on their way out from doing it
 into someone who saw a bear a few days ago. There was also potentially some bear scat along the route, so we were on alert and made noise 
 throughout the hike. Luckily, we did not end up seeing any evidence of bears.
 
-About halfway through, you finally move from the forest to the bank of Ross Lake and are rewarded with some stunning views of the lake and the surrounding mountains. I'm sure that on a sunny day the water would look amazing, but we got a much moodier scenery due to the clouds.
 {% include figure.html src="P1016340.JPG" caption="A very wet and moody day to start the trip." %}
+
+About halfway through, you finally move from the forest to the bank of Ross Lake and are rewarded with some stunning views of the lake and the surrounding mountains. I'm sure that on a sunny day the water would look amazing, but we got a much moodier scenery due to the clouds.
 Finally, after about 12 miles we hit our campsite at Devil's Creek. There are a handful of sites there, but we were the only group that night.
 Each site has a small fire pit area and a lot of logs to sit on. There is also a flowing creek near the campground which provided plenty of water.
 Since we got a little delayed by the rain, we arrived at camp just barely in time to have enough light for dinner.

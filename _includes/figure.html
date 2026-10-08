@@ -18,7 +18,7 @@
 {%- endcomment %}
 <div class="log-figure">
 	<figure>
-		<img src="{{ figure_src | relative_url }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}" loading="lazy">
+		<img src="{{ figure_src | relative_url }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}">
 		{%- if include.caption and include.caption != "" %}
 		<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>
 		{%- endif %}

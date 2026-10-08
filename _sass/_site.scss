@@ -427,16 +427,16 @@ body:has(> .site-corner) {
   margin-top: 40px;
 }
 
-// Figures in log entries ({% include figure.html %}). On wide screens each one
-// sits in the empty space to the right of the text column, lined up with the
-// text that follows it; later figures stack below earlier ones rather than
-// overlapping. The negative right margin takes the figure out of the text
-// column, so the text itself never wraps around it.
+// Figures in log entries ({% include figure.html %}) sit in the right margin,
+// a fixed gap beyond the text column,
+// starting level with the spot in the text where they are included. The script
+// in _layouts/log.html then moves them as little as possible so that they don't
+// overlap each other or run past the end of the text.
 .log-figure {
-  float: right;
-  clear: right;
+  position: absolute;
+  left: calc(100% + var(--log-figure-gap));
   width: var(--log-figure-width);
-  margin: 4px calc(-1 * (var(--log-figure-width) + var(--log-figure-gap))) 24px 0;
+  margin: 0;
 }
 // A table shrinks to the image's width, and its caption (a table caption) is
 // laid out at exactly that width, so the right-aligned caption ends at the
@@ -547,7 +547,7 @@ body:has(> .site-corner) {
   }
   // No room beside the text: figures sit full-width in the text flow.
   .log-figure {
-    float: none;
+    position: static;
     width: 100%;
     margin: 20px 0;
   }

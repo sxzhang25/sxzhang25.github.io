@@ -32,3 +32,47 @@ layout: default
 	</div>
 	<p class="log-back"><a href="{{ list_path | relative_url }}">&larr; all logs</a></p>
 </article>
+<script>
+// Margin figures: start each at its spot in the text, then move them as little
+// as possible (least squares) so they keep a gap between them and stay within
+// the height of the text. Pool-adjacent-violators on top_i - (heights + gaps of
+// the figures before it), then clamp to the text's top and bottom.
+(function () {
+	var body = document.querySelector('.log-body');
+	var figs = Array.prototype.slice.call(body.querySelectorAll('.log-figure'));
+	if (!figs.length) return;
+	var GAP = 24, NUDGE = 4;   // px between figures; first-line offset
+
+	function place() {
+		figs.forEach(function (f) { f.style.top = ''; });   // back to its spot in the text
+		if (getComputedStyle(figs[0]).position !== 'absolute') return;   // narrow screens: in the text
+		var offset = 0, z = [], offsets = [];
+		figs.forEach(function (f) {
+			offsets.push(offset);
+			z.push(f.offsetTop + NUDGE - offset);
+			offset += f.offsetHeight + GAP;
+		});
+		var blocks = [];   // runs of figures that move together: {sum, n}
+		z.forEach(function (v) {
+			blocks.push({ sum: v, n: 1 });
+			while (blocks.length > 1) {
+				var b = blocks[blocks.length - 1], a = blocks[blocks.length - 2];
+				if (a.sum / a.n <= b.sum / b.n) break;
+				a.sum += b.sum; a.n += b.n; blocks.pop();
+			}
+		});
+		var lo = body.offsetTop;
+		var hi = body.offsetTop + body.offsetHeight - (offset - GAP);   // last figure ends at the text's end
+		var i = 0;
+		blocks.forEach(function (b) {
+			var x = Math.max(lo, Math.min(hi, b.sum / b.n));   // if they can't all fit, keep the top in bounds
+			for (var k = 0; k < b.n; k++, i++) figs[i].style.top = (x + offsets[i]) + 'px';
+		});
+	}
+
+	place();
+	figs.forEach(function (f) { f.querySelector('img').addEventListener('load', place); });
+	window.addEventListener('resize', place);
+	if (document.fonts) document.fonts.ready.then(place);
+})();
+</script>
