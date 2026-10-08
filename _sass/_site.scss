@@ -1,5 +1,34 @@
 // Main site: page shell, header/nav, home page, publication and project lists.
 
+// Dark mode: follows the system setting unless the visitor picks a theme with
+// the toggle in the nav, which sets data-theme on <html> (remembered in
+// localStorage; see head.html and site-header.html). Main site only; project
+// pages stay light.
+@mixin dark-colors {
+  color-scheme: dark;
+  --light: #1c1c1c;   // background (soft black)
+  --dark: #f5e8d8;    // text (warm beige)
+  --accent: #ff6f61;  // muted coral
+  --link: #ff6f61;
+  --blockquote: #ff6f61;
+  --accent-ghost: #{mix(#ff6f61, #1c1c1c, 50%)};
+  --highlight: #33eeff;   // light cyan-leaning blue, roughly the complement of the hover orange: text selection, toggle and favicon
+  --link-hover: transparent;
+  // Links turn burnt orange on hover instead of getting a background
+  // (!important so it also wins over the nav submenu's own link colors).
+  & a:hover {
+    color: #ff4500 !important;
+  }
+}
+:root[data-theme="dark"] {
+  @include dark-colors;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-colors;
+  }
+}
+
 // The page spans the window with equal left and right margins (which shrink on
 // narrow screens): the header uses the full width, while page content stays a
 // readable width anchored to the left margin.
@@ -560,4 +589,21 @@ body:has(> .site-corner) {
   :root {
     --gallery-cols: 1;
   }
+}
+
+// Light/dark toggle at the end of the nav: a small circle split into the
+// current accent and highlight colors (like the favicon).
+.theme-toggle {
+  display: block;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--accent) 50%, var(--highlight) 50%);
+  cursor: pointer;
+}
+.nav-theme {
+  display: flex;
+  align-items: center;
 }

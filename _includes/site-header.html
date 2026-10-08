@@ -13,6 +13,15 @@
 				{%- endif %}
 			</li>
 			{% endfor %}
+			<li class="nav-theme"><button class="theme-toggle" type="button" aria-label="switch between light and dark mode" title="light / dark"></button></li>
 		</ul>
 	</nav>
 </header>
+<script>
+document.querySelector('.theme-toggle').addEventListener('click', function () {
+	var theme = siteTheme.isDark() ? 'light' : 'dark';
+	document.documentElement.dataset.theme = theme;
+	try { localStorage.setItem('theme', theme); } catch (e) {}
+	siteTheme.apply();
+});
+</script>

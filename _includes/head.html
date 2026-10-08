@@ -3,8 +3,29 @@
 <title>{{ include.title }}</title>
 {%- comment -%} ?v= changes on every build, so browsers fetch the new favicon and CSS right after a deploy instead of reusing a cached copy. {%- endcomment -%}
 {%- assign asset_version = site.time | date: '%s' %}
-<link rel="icon" type="image/svg+xml" href="{{ '/imgs/favicon.svg' | relative_url }}?v={{ asset_version }}">
-<link rel="icon" type="image/png" sizes="512x512" href="{{ '/imgs/favicon.png' | relative_url }}?v={{ asset_version }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/imgs/favicon.svg' | relative_url }}?v={{ asset_version }}" data-dark="{{ '/imgs/favicon-dark.svg' | relative_url }}?v={{ asset_version }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ '/imgs/favicon.png' | relative_url }}?v={{ asset_version }}" data-dark="{{ '/imgs/favicon-dark.png' | relative_url }}?v={{ asset_version }}">
+{%- comment -%}
+  Light/dark theme: the visitor's choice (from the toggle, kept in localStorage)
+  or else the system setting. Applied before the page draws so it doesn't
+  flash; also swaps the favicon. siteTheme.apply() reruns it after a toggle.
+{%- endcomment %}
+<script>
+window.siteTheme = (function () {
+	var root = document.documentElement, system = matchMedia('(prefers-color-scheme: dark)');
+	var icons = Array.prototype.slice.call(document.querySelectorAll('link[rel="icon"][data-dark]'));
+	icons.forEach(function (l) { l.dataset.light = l.getAttribute('href'); });
+	function isDark() { return root.dataset.theme ? root.dataset.theme === 'dark' : system.matches; }
+	function apply() {
+		var dark = isDark();
+		icons.forEach(function (l) { l.href = dark ? l.dataset.dark : l.dataset.light; });
+	}
+	try { var t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+	apply();
+	system.addEventListener('change', apply);
+	return { isDark: isDark, apply: apply };
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">

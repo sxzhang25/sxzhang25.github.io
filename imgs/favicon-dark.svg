@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Dark mode. Left half: accent coral (--accent). Right half: highlight sky blue (--highlight). -->
+  <path d="M32 0 A32 32 0 0 0 32 64 Z" fill="#ff6f61"/>
+  <path d="M32 0 A32 32 0 0 1 32 64 Z" fill="#33eeff"/>
+</svg>
