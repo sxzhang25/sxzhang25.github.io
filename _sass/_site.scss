@@ -4,18 +4,27 @@
 // the toggle in the nav, which sets data-theme on <html> (remembered in
 // localStorage; see head.html and site-header.html). Main site only; project
 // pages stay light.
+$dark-accent: #ff6f61;     // muted coral
+$dark-highlight: #33eeff;  // light cyan-leaning blue, opposite the warm accent
+// On hover the theme toggle previews the other theme's colors.
+:root {
+  --toggle-preview-accent: #{$dark-accent};
+  --toggle-preview-highlight: #{$dark-highlight};
+}
 @mixin dark-colors {
   color-scheme: dark;
   --light: #1c1c1c;   // background (soft black)
   --dark: #f5e8d8;    // text (warm beige)
-  --accent: #ff6f61;  // muted coral
-  --link: #ff6f61;
-  --blockquote: #ff6f61;
-  --accent-ghost: #{mix(#ff6f61, #1c1c1c, 50%)};
-  --highlight: #33eeff;   // light cyan-leaning blue, opposite the warm accent: text selection, toggle and favicon
+  --accent: #{$dark-accent};
+  --link: #{$dark-accent};
+  --blockquote: #{$dark-accent};
+  --accent-ghost: #{mix($dark-accent, #1c1c1c, 50%)};
+  --highlight: #{$dark-highlight};   // text selection, toggle and favicon
   // Link hover background: like light mode's, a faint tint just off the page
   // background, here warmed with a little of the coral accent.
-  --link-hover: #{mix(#ff6f61, #1c1c1c, 25%)};
+  --link-hover: #{mix($dark-accent, #1c1c1c, 25%)};
+  --toggle-preview-accent: #3340f3;      // light mode's accent and highlight
+  --toggle-preview-highlight: #fbff24;   // (see _tokens.scss)
 }
 :root[data-theme="dark"] {
   @include dark-colors;
@@ -593,6 +602,7 @@ body:has(> .site-corner) {
 // Light/dark toggle at the end of the nav: a small circle split into the
 // current accent and highlight colors (like the favicon).
 .theme-toggle {
+  position: relative;
   display: block;
   width: 14px;
   height: 14px;
@@ -601,6 +611,28 @@ body:has(> .site-corner) {
   border-radius: 50%;
   background: linear-gradient(to right, var(--accent) 50%, var(--highlight) 50%);
   cursor: pointer;
+}
+// The other theme's colors, faded in on hover (a gradient can't be animated
+// directly, so it sits on a layer whose opacity is).
+.theme-toggle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--toggle-preview-accent) 50%, var(--toggle-preview-highlight) 50%);
+  opacity: 0;
+  transition: opacity .1s;   // same as the theme switch fade below
+}
+.theme-toggle:hover::after,
+.theme-toggle:focus-visible::after {
+  opacity: 1;
+}
+// Switching themes with the toggle: a quick fade between the two color sets.
+// The class is only on <html> for the moment of the switch (see
+// site-header.html), so nothing fades on page load or on a system change.
+html.theme-fade,
+html.theme-fade * {
+  transition: background-color .1s ease, color .1s ease, border-color .1s ease !important;
 }
 .nav-theme {
   display: flex;

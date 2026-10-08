@@ -19,8 +19,12 @@
 </header>
 <script>
 document.querySelector('.theme-toggle').addEventListener('click', function () {
+	var root = document.documentElement;
 	var theme = siteTheme.isDark() ? 'light' : 'dark';
-	document.documentElement.dataset.theme = theme;
+	root.classList.add('theme-fade');
+	clearTimeout(window.themeFadeTimer);
+	window.themeFadeTimer = setTimeout(function () { root.classList.remove('theme-fade'); }, 150);
+	root.dataset.theme = theme;
 	try { localStorage.setItem('theme', theme); } catch (e) {}
 	siteTheme.apply();
 });
