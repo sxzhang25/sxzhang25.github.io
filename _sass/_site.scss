@@ -188,13 +188,15 @@ nav ul.nav-menu.has-trail,
   list-style: none;
 }
 
-// The page currently being viewed is marked with an asterisk. It is positioned
-// outside the link's box (in the gap between items) so that it does not shift
-// the other nav items.
-nav a.current {
+// The page currently being viewed is marked with an asterisk (in the nav, or
+// on the name for the home page). It is positioned outside the link's box (in
+// the gap between items) so that it does not shift the other nav items.
+nav a.current,
+.site-title a.current {
   position: relative;
 }
-nav a.current::after {
+nav a.current::after,
+.site-title a.current::after {
   content: "*";
   position: absolute;
   left: 100%;

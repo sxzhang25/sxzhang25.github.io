@@ -1,5 +1,5 @@
 <header class="site-header">
-	<h1 class="site-title"><a href="{{ '/' | relative_url }}">sharon zhang</a></h1>
+	<h1 class="site-title"><a{% if page.url == '/' %} class="current" aria-current="page"{% endif %} href="{{ '/' | relative_url }}">sharon zhang</a></h1>
 	<nav>
 		<ul>
 			{% for item in site.data.nav %}
