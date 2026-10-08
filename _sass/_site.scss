@@ -460,8 +460,37 @@ body:has(> .site-corner) {
 .log-body {
   margin-top: 30px;
 }
+// "All logs" above the entry's date and title.
 .log-back {
+  margin: 0 0 20px;
+}
+// Previous (older) and next (newer) entries at the bottom: the link as plain
+// as "all logs", with the entry's title (not part of the link) in small gray
+// text underneath. Next
+// sits at the right edge of the text column.
+.log-adjacent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
   margin-top: 40px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.log-prev,
+.log-next {
+  max-width: 45%;
+}
+.log-next {
+  margin-left: auto;   // stays on the right when there is no previous entry
+  text-align: right;
+}
+.log-adjacent-title {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--meta);
 }
 
 // Figures in log entries ({% include figure.html %}) sit in the right margin,

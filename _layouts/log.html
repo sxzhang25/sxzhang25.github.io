@@ -2,9 +2,10 @@
 layout: default
 ---
 {%- comment -%}
-  A single log entry: display_date (if set), title, subtitle, then the entry
-  text, with a link back to the page
-  of the logs list it appears on.
+  A single log entry: a link back to the page of the logs list it appears on,
+  display_date (if set), title, subtitle, then the entry text, and at the
+  bottom links to the previous (older) and next (newer) entries, each with its
+  title underneath.
 {%- endcomment -%}
 {%- assign per_page = site.paginate | default: 10 -%}
 {%- for post in site.posts -%}
@@ -18,6 +19,7 @@ layout: default
 	{%- assign list_path = '/logs/' -%}
 {%- endif %}
 <article class="page-content log-entry">
+	<p class="log-back"><a href="{{ list_path | relative_url }}">&larr; all logs</a></p>
 	<div class="log-item">
 		{%- if page.display_date and page.display_date != "" %}
 		<p class="log-date">{{ page.display_date }}</p>
@@ -30,7 +32,16 @@ layout: default
 	<div class="log-body">
 		{{ content }}
 	</div>
-	<p class="log-back"><a href="{{ list_path | relative_url }}">&larr; all logs</a></p>
+	{%- if page.previous or page.next %}
+	<nav class="log-adjacent" aria-label="Other logs">
+		{%- if page.previous %}
+		<div class="log-prev"><a href="{{ page.previous.url | relative_url }}">&larr; previous</a><span class="log-adjacent-title">{{ page.previous.title }}</span></div>
+		{%- endif %}
+		{%- if page.next %}
+		<div class="log-next"><a href="{{ page.next.url | relative_url }}">next &rarr;</a><span class="log-adjacent-title">{{ page.next.title }}</span></div>
+		{%- endif %}
+	</nav>
+	{%- endif %}
 </article>
 <script>
 // Margin figures: start each at its spot in the text, then move them as little
