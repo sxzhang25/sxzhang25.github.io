@@ -25,7 +25,7 @@ After a few miles, you leave the brush and come out above the treeline, leaving 
 This should have left us with a relatively smooth climb for the remaining few miles, except we proceeded to lose
 three crucial things: (1) the trail, (2) the raincover for Chris's pack and (3) our entire trowel bag!
 Only two out of these three things were ever recovered (you can decide which two), and the meandering took our total
-mileage for the day to just over 7 miles.
+mileage for the day to just under 8 miles.
 
 Once we hit the dome, however, everything turned around. We left behind the bears and the brush and were
 met with a beautiful sunny afternoon at our second campsite: the top of Devil's Dome!
