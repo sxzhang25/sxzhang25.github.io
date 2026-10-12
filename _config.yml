@@ -54,11 +54,9 @@ sass:
 
 author: Sharon Zhang
 
-# Google Analytics ID; the tag is only added to production builds (GitHub Pages).
-# This is the site's original Universal Analytics ID. Google stopped recording
-# Universal Analytics in 2023, so for visits to show up, replace it with the
-# site's GA4 measurement ID (G-XXXXXXXXXX) when there is one.
-google_analytics: UA-175004480-1
+# Google Analytics (GA4) measurement ID; the tag is only added to production
+# builds (GitHub Pages), so local previews aren't counted.
+google_analytics: G-0VF5F7LW4C
 
 exclude:
   - README.md
