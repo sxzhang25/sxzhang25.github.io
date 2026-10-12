@@ -54,8 +54,11 @@ sass:
 
 author: Sharon Zhang
 
-# Set to a GA4 measurement ID (e.g. G-XXXXXXXXXX) to enable analytics.
-google_analytics:
+# Google Analytics ID; the tag is only added to production builds (GitHub Pages).
+# This is the site's original Universal Analytics ID. Google stopped recording
+# Universal Analytics in 2023, so for visits to show up, replace it with the
+# site's GA4 measurement ID (G-XXXXXXXXXX) when there is one.
+google_analytics: UA-175004480-1
 
 exclude:
   - README.md
