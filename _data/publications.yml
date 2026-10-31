@@ -14,6 +14,8 @@
 - title: Providing Rapid Design Feedback for 3D Obstacle Course Games Using Constrained Solvability Queries
   authors: [Zander Majercik, Sharon Zhang, William Wang, Tejan Karmali, Fangjun Zhou, Yucheng Yuan, Jean-Peïc Chou, Maneesh Agrawala, Kayvon Fatahalian]
   venue: SIGGRAPH Asia 2026.
+  links:
+    - arxiv: https://arxiv.org/abs/2609.36225
 
 - title: Editing Motion Graphics Video via Motion Vectorization and Transformation
   authors: [Sharon Zhang, Jiaju Ma, Jiajun Wu, Daniel Ritchie, Maneesh Agrawala]
