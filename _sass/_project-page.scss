@@ -3,7 +3,15 @@
 :root {
   --light: #ffffff;
   --link-hover: #cbe0ec;
+  --button-bg: #6a6a6a;
+  --code-bg: #e7e7e7;
+
+  --pub-text-width: 800px;   // max width of running text
+  --pub-section-gap: 60px;   // vertical space between page sections
 }
+
+// ---------------------------------------------------------------------------
+// Page frame and element defaults
 
 body {
   font-family: var(--font-body);
@@ -17,21 +25,6 @@ footer {
   margin-top: 50px;
   border-top: 1px solid var(--footer);
   font-size: .8em;
-}
-
-button {
-  font-family: var(--font-body);
-  background-color: #6a6a6a;
-  border: none;
-  color: white;
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 h1 {
@@ -52,20 +45,9 @@ h3 {
 }
 
 p {
-  max-width: 800px;
+  max-width: var(--pub-text-width);
   margin-left: auto;
   margin-right: auto;
-}
-
-header {
-  vertical-align: middle;
-  padding-bottom: 100px;
-}
-header h1 {
-  font-family: var(--font-serif);
-  font-size: 36px;
-  line-height: 1.2em;
-  text-align: center;
 }
 
 figcaption {
@@ -73,115 +55,258 @@ figcaption {
   font-family: var(--font-body);
   font-style: italic;
   color: var(--dark);
-  padding-top: 0px;
-  width: 100%;
+  line-height: 1.5;
+  text-align: left;
 }
 
-img {
-  width: 100%;
-  padding: 20px 0px 20px 0px;
+button {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: white;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 video {
   vertical-align: top;
 }
 
+// ---------------------------------------------------------------------------
+// Header: title, venue, authors, links
+
+.pub-header {
+  text-align: center;
+  padding-bottom: 25px;
+
+  h1 {
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+}
+.pub-venue {
+  max-width: none;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1.4;
+  margin-top: .6em;
+}
+
+.pub-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+
+  li {
+    margin: 10px;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+.pub-author-name {
+  display: block;
+  font-weight: var(--bold-weight);
+}
+.pub-author-institution {
+  display: block;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 1.2em;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 50px;
+
+  li {
+    font-weight: var(--bold-weight);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Figures and sections
+
+.pub-figure {
+  width: 100%;
+  padding: 0;
+  margin: 20px 0 48px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    margin-top: 16px;
+  }
+}
+.pub-teaser {
+  margin-bottom: 50px;
+}
+.pub-figure--half {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pub-divider {
+  margin-bottom: 75px;
+}
+
+.pub-section {
+  margin-top: var(--pub-section-gap);
+
+  > h3 {
+    text-align: center;
+  }
+}
+.pub-section--left > h3 {
+  text-align: left;
+}
+
+// Side-by-side media (videos, SVG players) that wrap on narrow screens.
+.svgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+.svg {
+  font-family: var(--font-serif);
+  text-align: center;
+  overflow: hidden;
+
+  video,
+  object,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .video-embed {
+  display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   border: 0;
 }
 
-.svgs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
-  width: 100%;
-  margin-top: 50px;
-}
-.svg {
-  font-family: var(--font-serif);
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-}
-.svg video,
-.svg object,
-.svg img {
-  max-width: 100%;
-  height: auto;
-}
-
-.authors {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.author {
-  font-family: var(--font-serif);
-  text-align: center;
-  margin: 10px;
-}
-.author-name {
-  font-size: 16px;
-  font-weight: var(--bold-weight);
-  line-height: 0em;
-  display: inline;
-}
-.author-institution {
-  font-size: 16px;
-  color: var(--accent);
-  font-style: italic;
-  display: inline;
-}
-
-.meta {
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: var(--font-body);
-  font-weight: var(--bold-weight);
-}
-
-.abstract {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-.abstract h3 {
-  line-height: 0em;
-}
-.abstract img {
-  width: 100%;
-  padding-bottom: 40px;
-}
-
 .bibtex {
-  background-color: #e7e7e7;
+  background-color: var(--code-bg);
   font-family: var(--font-mono);
   font-weight: var(--font-mono-weight);
   font-size: 12px;
+  line-height: 1.5;
   padding: 25px;
-  line-height: normal;
+  margin: 0;
   overflow-x: auto;
+  white-space: pre;
 }
 
-@media screen and (max-width: $breakpoint-project) {
-  header {
-    padding-bottom: 25px;
-  }
-}
+// ---------------------------------------------------------------------------
+
 @media screen and (min-width: $breakpoint-project + 1) {
-  header {
-    display: flow-root;
+  .pub-header {
     padding-top: 10px;
     padding-bottom: 0;
   }
-  header h1 {
-    margin-bottom: 0;
+}
+@media screen and (max-width: $breakpoint-project) {
+  .pub-figure--half {
+    width: 100%;
   }
+  .pub-header h1 {
+    font-size: 28px;
+  }
+  .pub-venue {
+    font-size: 22px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Results tables (one <figure class="pub-table"> may hold several stacked tables)
+
+.pub-video {
+  margin: 30px 0 48px;
+}
+
+.pub-table {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 36px auto 48px;
+  figcaption {
+    margin-top: 12px;
+  }
+}
+.pub-table-scroll {
+  overflow-x: auto;
+  margin-bottom: 18px;
+}
+
+// Several small tables side by side; they stack when there isn't room.
+.pub-table-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 28px;
+
+  > .pub-table-scroll {
+    flex: 1 1 240px;
+  }
+}
+.pub-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--dark);
+  white-space: nowrap;
+}
+.pub-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: var(--bold-weight);
+  font-size: 14px;
+  padding: 0 6px 6px;   // left inset matches the cell padding below
+}
+.pub-table thead tr {
+  border-top: 2px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+}
+.pub-table tbody tr:last-child {
+  border-bottom: 1px solid var(--dark);
+}
+// A reference row (e.g. a no-verifier baseline) set off from the methods below it.
+.pub-table-baseline > th,
+.pub-table-baseline > td {
+  border-bottom: 1px solid var(--dark);
+}
+.pub-table th,
+.pub-table td {
+  padding: 3px 6px;
+  text-align: right;
+}
+.pub-table th {
+  font-weight: 500;
+}
+.pub-table th:first-child {
+  text-align: left;
+  border-right: 1px solid var(--dark);
+}
+.pub-table tbody th {
+  font-weight: 400;
 }

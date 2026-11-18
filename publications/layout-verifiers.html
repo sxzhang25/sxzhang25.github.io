@@ -1,0 +1,176 @@
+---
+layout: publication
+permalink: /publications/layout-verifiers.html
+title: Aggregating LLM-Based Weak Verifiers for Spatial Layout Generation
+display-title: Aggregating LLM-Based Weak Verifiers<br>for Spatial Layout Generation
+authors:
+  - name: Sharon Zhang
+    institution: Stanford University
+  - name: R. Kenny Jones
+    institution: Stanford University
+  - name: Jiajun Wu
+    institution: Stanford University
+  - name: Maneesh Agrawala
+    institution: Stanford University
+# paper: /publications/pdfs/layout-weak-verifiers-paper.pdf
+arxiv: https://arxiv.org/abs/2606.05268
+video: /publications/vids/layout-verifiers.mp4
+# supplemental: /publications/pdfs/layout-weak-verifiers-supp.pdf
+# results:
+# code:
+conference: <i>In submission</i>
+image: /publications/imgs/layout-weak-verifiers-teaser.jpg
+image-caption:
+  We introduce a system to verify the outputs of spatial layout generators against specific task descriptions.
+  Our approach builds a collection of LLM-based weak verifiers using a layout verification DSL, and aggregates them into a single strong verifier.
+  We apply our verification pipeline to several 3D and 2D layout domains.
+  The resulting task-specific strong verifiers mark various layouts as positive (green check)
+  if they match the task description and negative (red X) otherwise.
+  For each negative example we include a brief note on what violates the task description.
+  We show how these verifiers can be used automatically in conjunction with a layout generator to
+  produce layouts that match the task descriptions (see Verifier-Guided Layout Generation below).
+abstract:
+  LLM-based layout generation has shown promise in producing high-quality spatial layouts at scale from natural language descriptions.
+  However, directly prompting LLMs to produce layouts, even with structured primitives, often results in layouts that do not match a user's criteria.
+  While human-in-the-loop verification can help, it is often expensive and time-consuming.
+  We also find that the status quo LLM-as-a-judge approach is unreliable in spatial domains, particularly in 3D.
+  We present a system that overcomes these limitations and produces strong verifiers for 
+  spatial layout generation tasks by aggregating LLM-generated programmatic weak verifiers.
+  <!-- Given a task description, our pipeline asks an LLM to synthesize a collection of verifier programs using a layout verification DSL.
+  Each individual LLM-generated verifier usually provides an imperfect check for a match between the layout and the corresponding task
+  description. We show that by aggregating the responses of many such verifiers we can produce a stronger verifier.
+  Moreover, by applying techniques from weak learning, our pipeline can learn how to aggregate the weak verifiers
+  from a very sparse set of human labeled example layouts (about 10). -->
+  We find that the strong verifiers produced by our pipeline outperform the status-quo approach of
+  using a set of LLM judges to directly check whether a layout matches a task description,
+  raising F1-scores by up to 6.5x across a variety of layout design tasks over three different domains.
+  We also demonstrate that verifier-guided layout generation using natural language feedback from our
+  strong verifiers improves layout quality of a base layout generator from 37.2% to 77.3% (a 40.1 point improvement) according to human evaluation.
+bibtex: |
+  @article{zhang2026weakverifiers,
+      author = {Zhang, Sharon and Jones, R. Kenny and Wu, Jiajun and Agrawala, Maneesh},
+      title = {Aggregating LLM-Based Weak Verifiers for Spatial Layout Generation},
+      journal = {arXiv preprint arXiv:2606.05268},
+      year = {2026}
+  }
+---
+
+<section class="pub-section">
+  <h3>Method</h3>
+
+  {% capture caption %}The four stages of our verification pipeline.
+    <b>1. Dataset generation.</b> We first curate a dataset of training examples from a generator or an existing dataset.
+    <b>2. Dev set labeling.</b> The user then labels a small random subset (about 10) of these examples as positive or negative, possibly providing notes alongside each label, e.g. &ldquo;the piano is not in the corner.&rdquo;
+    <b>3. Weak verifier generation.</b> We provide an LLM with the user prompt, the labeled dev set examples, and documentation of our DSL and query it to generate a set of weak verifiers.
+    <b>4. Weak verifier aggregation.</b> We run all the weak verifiers on our entire training dataset and aggregate them into a single strong verifier.{% endcapture %}
+  {% include publication-figure.html src="/publications/imgs/layout-weak-verifiers-pipeline.png" alt="The four stages of our verification pipeline" caption=caption %}
+
+
+  <p>Our verification pipeline takes a user's task description of the desired layout as input
+    and outputs a strong verifier that evaluates whether a generated layout matches the prompt.
+    Rather than directly using an LLM as a judge, our approach is to use the LLM to generate many task-specific verifier programs.
+    To help the LLM write programs with complex spatial logic, we design a verification domain-specific language (DSL) that defines low-level spatial layout queries.
+    To make weak learning work in our setting, we encourage our LLM-based weak verifier generation to produce diverse verifier programs,
+    and then filter for a subset of higher-quality weak programmatic verifiers before aggregating their responses.</p>
+
+</section>
+
+<section class="pub-section">
+  <h3>Verification Results</h3>
+
+  <video class="video-embed pub-video" controls preload="metadata" poster="/publications/imgs/layout-verifiers-video-poster.jpg">
+    <source src="/publications/vids/layout-verifiers.mp4" type="video/mp4">
+  </video>
+
+  <p>Our experiments over three different layout domains (3D rooms, 2D posters and 3D objects) find support for three main claims:
+    (1) Using our programmatic weak verifiers in combination with any of the aggregation techniques outperforms directly using LLMs as judges by up to 6.5x in F1-score;
+    (2) Weaver aggregation generally outperforms the other aggregation methods with as few as 10 labeled layout examples;
+    (3) Using our strong verifiers in verifier-guided layout generation with Detailed feedback improves a base layout generator from 37.2% to 77.3% (a 40.1 point improvement) according to human evaluation.</p>
+
+
+  <figure class="pub-table pub-table--row">
+    <div class="pub-table-row">
+      <div class="pub-table-scroll">
+        <table>
+          <caption>3D Rooms (F1-Scores &uarr;)</caption>
+          <thead><tr><th scope="col">Verifier Type</th><th scope="col">Weaver</th><th scope="col">NM</th><th scope="col">LR</th><th scope="col">Top-1</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">LLM Vision Judges</th><td>0.27</td><td>0.35</td><td>0.12</td><td>0.34</td></tr>
+            <tr><th scope="row">LLM Judges</th><td>0.29</td><td>0.49</td><td>0.11</td><td>0.43</td></tr>
+            <tr><th scope="row">Ours</th><td><b>0.80</b></td><td><b>0.68</b></td><td><b>0.72</b></td><td><b>0.77</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pub-table-scroll">
+        <table>
+          <caption>2D Posters (F1-Scores &uarr;)</caption>
+          <thead><tr><th scope="col">Verifier Type</th><th scope="col">Weaver</th><th scope="col">NM</th><th scope="col">LR</th><th scope="col">Top-1</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">LLM Vision Judges</th><td>0.46</td><td>0.54</td><td>0.35</td><td>0.61</td></tr>
+            <tr><th scope="row">LLM Judges</th><td>0.21</td><td>0.18</td><td>0.23</td><td>0.23</td></tr>
+            <tr><th scope="row">Ours</th><td><b>0.79</b></td><td><b>0.62</b></td><td><b>0.69</b></td><td><b>0.74</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pub-table-scroll">
+        <table>
+          <caption>3D Objects (F1-Scores &uarr;)</caption>
+          <thead><tr><th scope="col">Verifier Type</th><th scope="col">Weaver</th><th scope="col">NM</th><th scope="col">LR</th><th scope="col">Top-1</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">LLM Vision Judges</th><td>0.40</td><td>0.58</td><td>0.49</td><td>0.56</td></tr>
+            <tr><th scope="row">LLM Judges</th><td>0.36</td><td>0.54</td><td>0.34</td><td>0.44</td></tr>
+            <tr><th scope="row">Ours</th><td><b>0.71</b></td><td><b>0.65</b></td><td><b>0.64</b></td><td><b>0.69</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <figcaption>Comparison against aggregating LLM judges. Across all domains, our programmatic weak verifiers outperform using LLM Judges as weak verifiers, regardless of the aggregation method being used.</figcaption>
+  </figure>
+</section>
+
+<section class="pub-section">
+  <h3>Verifier-Guided Layout Generation</h3>
+
+  <p>In addition to verification, we also use our strong verifiers for <i>verifier-guided layout generation</i>&mdash;a process that automates the iterative generate-then-verify loop.
+    To explore how the information within the verifier programs can help this process, we investigate two different forms of verifier feedback in this loop: <i>Binary</i> feedback, which simply uses the True/False verification decisions; and
+    <i>Detailed</i> feedback, which uses natural language messages explaining the decisions. Since our feedback messages come from many different weak verifiers of varying quality and logic, we contextualize the individual feedback messages with a <i>reliability</i> score defined using the learned aggregation weights.</p>
+
+  <figure class="pub-table pub-table--row">
+    <div class="pub-table-row">
+      <div class="pub-table-scroll">
+        <table>
+          <caption>Human Evaluator Pass Rate (&uarr;)</caption>
+          <thead><tr><th scope="col">Feedback Type</th><th scope="col">3D Rooms</th><th scope="col">2D Posters</th><th scope="col">3D Objects</th><th scope="col">Avg.</th></tr></thead>
+          <tbody>
+            <tr class="pub-table-baseline"><th scope="row">Base (No verifier)</th><td>26.2%</td><td>41.1%</td><td>44.3%</td><td>37.2%</td></tr>
+            <tr><th scope="row">LLM+Vision</th><td>49.2%</td><td>70.8%</td><td>40.8%</td><td>53.6%</td></tr>
+            <tr><th scope="row">Binary (Ours)</th><td>70.5%</td><td>63.1%</td><td>53.6%</td><td>62.4%</td></tr>
+            <tr><th scope="row">Detailed (Ours)</th><td><b>76.9%</b></td><td><b>83.7%</b></td><td><b>71.2%</b></td><td><b>77.3%</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pub-table-scroll">
+        <table>
+          <caption>Number of Iterations (&darr;)</caption>
+          <thead><tr><th scope="col">Feedback Type</th><th scope="col">3D Rooms</th><th scope="col">2D Posters</th><th scope="col">3D Objects</th><th scope="col">Avg.</th></tr></thead>
+          <tbody>
+            <tr class="pub-table-baseline"><th scope="row">Base (No verifier)</th><td>--</td><td>--</td><td>--</td><td>--</td></tr>
+            <tr><th scope="row">LLM+Vision</th><td>3.01</td><td><b>1.95</b></td><td><b>1.90</b></td><td><b>2.29</b></td></tr>
+            <tr><th scope="row">Binary (Ours)</th><td>3.48</td><td>5.77</td><td>4.50</td><td>4.59</td></tr>
+            <tr><th scope="row">Detailed (Ours)</th><td><b>2.73</b></td><td>2.49</td><td>1.94</td><td>2.39</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <figcaption>We compare feedback from an LLM+Vision judge against Binary feedback and Detailed feedback from our Weaver verifier. For each domain, we report the human evaluator pass rate (left) and the number of iterations required to generate a layout (right).</figcaption>
+  </figure>
+
+  <!-- {% capture caption %}We use feedback from our strong verifier to improve spatial layout generation through <i>verifier-guided layout generation</i>. Here, the initial layout only has two rows of bookshelves, violating the task description (underlined). Our Detailed feedback guides the generator to produce a positive layout in just one iteration, whereas the LLM+Vision feedback is misleading and results in more iterations.
+    Moreover, the final layout produced using LLM+Vision feedback does not contain multiple bookshelves in each row, whereas our Detailed feedback guides the generator to rearrange the existing bookshelves into three rows of two.{% endcapture %}
+  {% include publication-figure.html src="/publications/imgs/layout-weak-verifiers-itergen_llm_vs_detailed.jpg" alt="Verifier-guided layout generation with LLM+Vision versus Detailed feedback" caption=caption class="pub-figure--half" %}
+
+  {% capture caption %}Our Detailed feedback guides the generator to a positive layout in fewer iterations than Binary feedback.
+    Here, the initial layout violates the title text placement and alignment requirements in the task description (underlined).
+    Our Detailed feedback produces a positive layout with just one additional iteration, whereas Binary feedback requires three additional iterations.{% endcapture %}
+  {% include publication-figure.html src="/publications/imgs/layout-weak-verifiers-itergen_binary_vs_detailed.png" alt="Verifier-guided layout generation with Binary versus Detailed feedback" caption=caption %} -->
+</section>

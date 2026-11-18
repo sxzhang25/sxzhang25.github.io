@@ -2,49 +2,70 @@
 layout: base
 stylesheet: /css/publication.css
 ---
-<header>
-	<h1>{{ page.title }}</h1>
+{%- comment -%}
+  Paper project page. Everything above the page body comes from front matter:
+
+    title          plain-text title (browser tab, alt text)
+    display-title  optional heading override; may contain <br> to control line breaks
+    conference     optional venue line under the title
+    authors        list of {name, institution}
+    paper, arxiv, code, video, supplemental, results
+                   optional links, shown in this order when present
+    image          optional teaser figure; image-caption is its caption
+    abstract       abstract text (may contain inline HTML)
+    bibtex         optional BibTeX entry, rendered verbatim after the page body
+
+  The page body goes between the abstract and the BibTeX. Wrap each part in
+  <section class="pub-section"> with an <h3> heading, and use
+  {% include publication-figure.html %} for figures.
+{%- endcomment -%}
+{%- assign link_labels = "paper,arxiv,code,video,supplemental,results" | split: "," -%}
+<header class="pub-header">
+	<h1>{{ page.display-title | default: page.title }}</h1>
+	{%- if page.conference %}
+	<p class="pub-venue">{{ page.conference }}</p>
+	{%- endif %}
 </header>
 
 <main>
-	{% if page.conference %}<center><h2>{{ page.conference }}</h2></center>{% endif %}
+	<ul class="pub-authors">
+		{%- for author in page.authors %}
+		<li>
+			<span class="pub-author-name">{{ author.name }}</span>
+			<span class="pub-author-institution">{{ author.institution }}</span>
+		</li>
+		{%- endfor %}
+	</ul>
 
-	<div class="authors">
-		{% for author in page.authors %}
-		<div class="author">
-			<p class="author-name">{{ author.name }}</p>
-			<br>
-			<p class="author-institution">{{ author.institution }}</p>
-		</div>
-		{% endfor %}
-	</div>
+	<ul class="pub-links">
+		{%- for label in link_labels %}
+		{%- if page[label] %}
+		<li><a href="{{ page[label] }}">[{{ label }}]</a></li>
+		{%- endif %}
+		{%- endfor %}
+	</ul>
 
-	<p class="meta">
-		{% if page.paper %}<a href="{{ page.paper }}">[paper]</a>&nbsp;&nbsp;{% endif %}
-		{% if page.arxiv %}<a href="{{ page.arxiv }}">[arxiv]</a>&nbsp;&nbsp;{% endif %}
-		{% if page.code %}<a href="{{ page.code }}">[code]</a>&nbsp;&nbsp;{% endif %}
-		{% if page.video %}<a href="{{ page.video }}">[video]</a>&nbsp;&nbsp;{% endif %}
-		{% if page.supplemental %}<a href="{{ page.supplemental }}">[supplemental]</a>&nbsp;&nbsp;{% endif %}
-		{% if page.results %}<a href="{{ page.results }}">[results]</a>{% endif %}
-	</p>
+	{%- if page.image %}
+	{%- capture teaser_caption -%}
+		{%- if page.image-caption -%}<b>Figure 1.</b> {{ page.image-caption }}{%- endif -%}
+	{%- endcapture %}
+	{%- assign teaser_alt = page.title | append: " teaser figure" %}
+	{% include publication-figure.html src=page.image alt=teaser_alt caption=teaser_caption class="pub-teaser" loading="eager" %}
+	{%- endif %}
 
-	<div class="abstract">
-		{% if page.image %}
-		<center><img src="{{ page.image | relative_url }}" alt="{{ page.title }} teaser figure"></center>
-		{% endif %}
-		{% if page.image-caption %}
-		<div style="margin-bottom: 25px;">
-			<figcaption><b>Figure 1.</b> {{ page.image-caption }}</figcaption>
-		</div>
-		{% endif %}
-	</div>
+	<hr class="pub-divider">
 
-	<hr style="margin-bottom:75px;">
-
-	<center><h3>Abstract</h3></center>
-	<p>{{ page.abstract }}</p>
-
-	<br><br>
+	<section class="pub-section">
+		<h3>Abstract</h3>
+		<p>{{ page.abstract }}</p>
+	</section>
 
 	{{ content }}
+
+	{%- if page.bibtex %}
+	<section class="pub-section pub-section--left">
+		<h3>Bibtex</h3>
+		<pre class="bibtex">{{ page.bibtex | strip }}</pre>
+	</section>
+	{%- endif %}
 </main>

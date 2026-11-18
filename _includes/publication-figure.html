@@ -1,0 +1,14 @@
+{%- comment -%}
+  A full-width figure on a paper project page (_layouts/publication.html).
+  Usage:
+    {% include publication-figure.html src="/publications/imgs/x.png" alt="..." caption="..." %}
+  `alt` defaults to the caption with its HTML removed. `caption` may contain
+  inline HTML. `class` adds extra classes to the <figure>; `loading` defaults
+  to "lazy" (pass "eager" for figures near the top of the page).
+{%- endcomment -%}
+<figure class="pub-figure {{ include.class }}">
+	<img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | strip_html | strip | escape }}" loading="{{ include.loading | default: "lazy" }}">
+	{%- if include.caption and include.caption != "" %}
+	<figcaption>{{ include.caption }}</figcaption>
+	{%- endif %}
+</figure>
